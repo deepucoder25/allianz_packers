@@ -51,39 +51,39 @@ class MX_Controller
         $this->load = clone load_class('Loader');
         $this->load->initialize($this);
 
-        $this->comp['phone'] = '+91 0000000000';
-        $this->comp['phonehtml'] = 'tel:+910000000000';
-        $this->comp['phone1'] = '+91 0000000000';
-        $this->comp['phonehtml1'] = 'tel:+910000000000';
-        $this->comp['supportmail'] = 'support@mycompany.com';
-        $this->comp['replyToMail'] = 'support@mycompany.com';
-        $this->comp['mail'] = 'support@mycompany.com';    
-        $this->comp['mailhtml'] = "mailto:support@mycompany.com";
-        $this->comp['company3'] = 'MyCompany';
-        $this->comp['companydomain'] = 'mycompany.com';
+        $this->comp['phone'] = '+91 9899556839';
+        $this->comp['phonehtml'] = 'tel:+919899556839';
+        $this->comp['phone1'] = '+91 9999062299';
+        $this->comp['phonehtml1'] = 'tel:+919999062299';
+        $this->comp['supportmail'] = 'info@allianzpackers.com';
+        $this->comp['replyToMail'] = 'info@allianzpackers.com';
+        $this->comp['mail'] = 'info@allianzpackers.com';    
+        $this->comp['mailhtml'] = "mailto:info@allianzpackers.com";
+        $this->comp['company3'] = "Allianz Packers and Movers Pvt. Ltd.";
+        $this->comp['companydomain'] = 'allianzpackers.com';
 
         $this->comp['facebookhtml'] = "";
         $this->comp['youtubehtml'] = "";
         $this->comp['instagramhtml'] = "";
-        $this->comp['twitterhtml'] = "";
+        $this->comp['twitterhtml'] = "";   
         $this->comp['linkedinhtml'] = "";
-        $this->comp['whatsapphtml'] = "https://wa.me/910000000000";
+        $this->comp['whatsapphtml'] = "https://wa.me/919899556839";
 
-        $this->comp['address'] = "Shop No.17, Building No.2, Deeplaxmi Rajaram Residency, Kalher, Bhiwandi, Mumbai, Pin Code- 421302";
-        $this->comp['address1'] = "Shop No.17, Building No.2, Deeplaxmi Rajaram Residency";
-        $this->comp['address2'] = "Kalher, Bhiwandi, Mumbai, Pin Code- 421302";
-        $this->comp['addressRegion'] = "Mumbai";
-        $this->comp['postalCode'] = "421302";
-        $this->comp['companystate'] = "Maharashtra";
-        $this->comp['themeColor'] = "#0a4ebd";
+        $this->comp['address'] = "Plot No- 44A, B Block, Rangpur, MAHIPALPUR, NEW DELHI 110037, INDIA";
+        $this->comp['address1'] = "Plot No- 44A, B Block, Rangpur,";
+        $this->comp['address2'] = "MAHIPALPUR, NEW DELHI 110037, INDIA";
+        $this->comp['addressRegion'] = "New Delhi";
+        $this->comp['postalCode'] = "110037";
+        $this->comp['companystate'] = "Delhi";
+        $this->comp['themeColor'] = "#c61a1a";
 
-        $this->comp['experience'] = "40+";
-        $this->comp['startYear'] = "1986";
+        $this->comp['experience'] = "10+";
+        $this->comp['startYear'] = "2016";
 
-        $this->comp['happyClients'] = "39,850+";
-        $this->comp['yearsExperience'] = "40+";
+        $this->comp['happyClients'] = "29,850+";
+        $this->comp['yearsExperience'] = "10+";
         $this->comp['secureShifting'] = "100%";
-        $this->comp['statesCovered'] = "20+";
+        $this->comp['statesCovered'] = "18+";
 
         $this->comp['sku'] = "PM28957";
         $this->comp['mpn'] = "SPM28957";
