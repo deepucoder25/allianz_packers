@@ -6,6 +6,7 @@ $route['search'] = 'home/search';
 
 // Company Routes
 $route['about-us'] = 'about/index';
+$route["why-choose-us"] = "about/choose";
 $route['contact-us'] = 'contacts/index';
 $route['faqs'] = 'about/faqs';
 $route['photo-gallery'] = "gallery/photo_gallery";
@@ -29,25 +30,15 @@ $route["bike-transport-in-(:any)"] = "city_services/bike_transport/$1";
 
 // Services Routes
 $route["our-services"] = "services/index";
-$route["bike-transportation"] = "services/bike";
+$route["transportation-service"] = "services/transportation";
 $route["car-transportation"] = "services/car";
-$route["corporate-shifting"] = "services/corporate";
-$route["domestic-relocation"] = "services/domestic";
-$route["home-shifting"] = "services/homeShifting";
-$route["intercity-shifting"] = "services/intercity";
-$route["international-shifting"] = "services/international";
-$route["local-shifting"] = "services/local";
-$route["logistic-services"] = "services/logistic";
-$route["office-relocation"] = "services/office";
-$route["pet-relocation"] = "services/pet";
-$route["warehouse-and-storage"] = "services/storage";
+$route["door-to-door-moving"] = "services/door_to_door";
+$route["home-relocation"] = "services/homeRelocation";
+$route["office-shifting"] = "services/office";
+$route["warehouse-services"] = "services/warehouse";
+$route["parcel-services"] = "services/parcel";
+$route["insurance"] = "services/insurance";
 
-// Legacy/Compatibility Routes
-$route["home-relocation"] = "services/homeShifting";
-$route["storage-services"] = "services/storage";
-$route["car-transportation-service"] = "services/car";
-$route["infrastructure"] = "about/infrastructure";
-$route["why-choose-us"] = "about/choose";
 
 // Branch/City Routes
 $route["our-branches"] = "packers_movers/state";
