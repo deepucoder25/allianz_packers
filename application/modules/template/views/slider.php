@@ -1,10 +1,3 @@
-<?php
-$ci =& get_instance();
-$phone = isset($phone) ? $phone : ($ci->comp['phone'] ?? '');
-$phonehtml = isset($phonehtml) ? $phonehtml : ($ci->comp['phonehtml'] ?? '');
-$company3 = isset($company3) ? $company3 : ($ci->comp['company3'] ?? 'Allianz Packers & Movers');
-?>
-
 <section class="main-hero-slider">
   <!-- Bottom Left Decorative Wave -->
   <div class="slider-decor-wave d-none d-xl-block">
@@ -25,7 +18,7 @@ $company3 = isset($company3) ? $company3 : ($ci->comp['company3'] ?? 'Allianz Pa
           <div class="hero-content-top text-center text-xl-start">
             <div class="hero-badge-wrap mb-3">
               <span class="hero-badge shadow-sm">
-                <i class="bi bi-shield-check text-brand-red"></i> India's Most Trusted Moving Company
+                <span class="pulse-dot"></span> India's Most Trusted Moving Company
               </span>
             </div>
             
