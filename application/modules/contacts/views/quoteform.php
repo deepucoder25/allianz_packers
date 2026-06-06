@@ -1,110 +1,114 @@
-  <div class="hero-quote-card-container">
-            <!-- Card Header -->
-            <div class="hero-quote-header">
-              <h3 class="hero-quote-title">Get Your Best Moving Quote</h3>
-              <p class="hero-quote-subtitle">Quick, Fast & Free Estimates</p>
+<div class="hero-form-wrapper">
+  <div class="quote-form-card">
+    <div class="quote-form-header text-center">
+      <h3 class="quote-form-title">GET A <span class="text-brand-red">FREE</span> MOVING QUOTE</h3>
+      <p class="quote-form-subtitle">Quick, Easy & No Obligation</p>
+      <div class="quote-form-divider"></div>
+    </div>
+    
+    <form id="quoteform" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="quoteformresults" onsubmit="return false;">
+      <div class="quote-form-inputs d-flex flex-column gap-2">
+        <!-- Name & Phone Row -->
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="quote-input-group">
+              <span class="quote-input-icon"><i class="bi bi-person"></i></span>
+              <input type="text" name="name" class="quote-form-control" placeholder="Your Name" required>
             </div>
-            
-            <div class="hero-quote-white-card">
-              <!-- Card Body / Form -->
-              <div class="card-body-form">
-                <form id="quoteform" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="quoteformresults" onsubmit="return false;">
-                  
-                  <div class="form-row-custom">
-                    <!-- Name Input -->
-                    <div class="input-wrap-custom">
-                      <i class="bi bi-person input-icon-custom"></i>
-                      <input type="text" name="name" class="form-control-custom" placeholder="Your Name" >
-                    </div>
-                    
-                    <!-- Phone Input -->
-                    <div class="input-wrap-custom">
-                      <i class="bi bi-telephone input-icon-custom"></i>
-                      <input type="tel" name="phone" class="form-control-custom" placeholder="Phone Number" >
-                    </div>
-                    
-                    <!-- Email Input -->
-                    <div class="input-wrap-custom">
-                      <i class="bi bi-envelope input-icon-custom"></i>
-                      <input type="email" name="email" class="form-control-custom" placeholder="Email Address" >
-                    </div>
-                    
-                    <!-- Select Service -->
-                    <div class="input-wrap-custom select-wrap-custom">
-                      <span class="select-label-custom">Select Service</span>
-                      <select name="mtype" class="form-select-custom" >
-                        <option value="" disabled selected>Select Service</option>
-                        <option>Household Relocation</option>
-                        <option>Office Relocation</option>
-                        <option>Car/Bike Shifting</option>
-                        <option>Warehousing</option>
-                      </select>
-                    </div>
-                    
-                    <!-- Moving From -->
-                    <div class="input-wrap-custom half-width-mobile">
-                      <i class="bi bi-geo-alt input-icon-custom"></i>
-                      <input type="text" name="mfrom" class="form-control-custom" value="<?= @$city ?>" placeholder="Moving From" >
-                    </div>
-                    
-                    <!-- Moving To -->
-                    <div class="input-wrap-custom half-width-mobile">
-                      <i class="bi bi-geo-alt input-icon-custom"></i>
-                      <input type="text" name="mto" class="form-control-custom" placeholder="Moving To" >
-                    </div>
-                    
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn-submit-custom">
-                      <i class="bi bi-send submit-btn-icon-desktop"></i>
-                      <i class="bi bi-file-earmark-text submit-btn-icon-mobile"></i>
-                      <span>Get Quote</span>
-                    </button>
-                  </div>
-                  
-                  <div id="quoteformresults"></div>
-                </form>
-              </div>
-              
-              <!-- Card Footer / Trust Badge Bar (Desktop Only) -->
-              <div class="card-footer-trust d-none d-lg-flex justify-content-between align-items-center">
-                <div class="trust-item">
-                  <i class="bi bi-shield-check trust-icon"></i>
-                  <div class="trust-text">
-                    <strong>100% Secure</strong>
-                    <span>Your data is safe with us</span>
-                  </div>
-                </div>
-                <div class="divider-vertical"></div>
-                <div class="trust-item">
-                  <i class="bi bi-clock trust-icon"></i>
-                  <div class="trust-text">
-                    <strong>Quick Response</strong>
-                    <span>We respond within 15 mins</span>
-                  </div>
-                </div>
-                <div class="divider-vertical"></div>
-                <div class="trust-item">
-                  <i class="bi bi-currency-rupee trust-icon-circle"></i>
-                  <div class="trust-text">
-                    <strong>Best Price Guarantee</strong>
-                    <span>Get the most competitive rates</span>
-                  </div>
-                </div>
-                <div class="divider-vertical"></div>
-                <div class="trust-item">
-                  <i class="bi bi-headset trust-icon"></i>
-                  <div class="trust-text">
-                    <strong>24/7 Support</strong>
-                    <span>We are here to help</span>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Mobile Security Tag (Mobile Only, Inside the Card) -->
-              <div class="mobile-security-tag d-flex d-lg-none justify-content-center align-items-center gap-2 py-3">
-                <i class="bi bi-shield-check text-primary"></i>
-                <span>100% Secure. We never share your data.</span>
-              </div>
-            </div>
-
           </div>
+          <div class="col-6">
+            <div class="quote-input-group">
+              <span class="quote-input-icon"><i class="bi bi-telephone"></i></span>
+              <input type="tel" name="phone" class="quote-form-control" placeholder="Mobile Number" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email - Full Row -->
+        <div class="quote-input-group">
+          <span class="quote-input-icon"><i class="bi bi-envelope"></i></span>
+          <input type="email" name="email" class="quote-form-control" placeholder="Email Address">
+        </div>
+
+        <!-- Moving From & Moving To Row -->
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="quote-input-group quote-select-group">
+              <span class="quote-input-icon"><i class="bi bi-geo-alt"></i></span>
+              <input type="text" name="mfrom" class="quote-form-control" value="<?= isset($city) ? $city : '' ?>" placeholder="Moving From" required>
+              <span class="quote-select-caret"><i class="bi bi-chevron-down"></i></span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="quote-input-group quote-select-group">
+              <span class="quote-input-icon"><i class="bi bi-geo-alt"></i></span>
+              <input type="text" name="mto" class="quote-form-control" placeholder="Moving To" required>
+              <span class="quote-select-caret"><i class="bi bi-chevron-down"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Move Size & Preferred Move Date Row -->
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="quote-input-group quote-select-group w-100">
+              <span class="quote-input-icon"><i class="bi bi-box-seam"></i></span>
+              <select name="movesize" class="quote-form-control quote-select-field">
+                <option value="" disabled selected>Move Size</option>
+                <option value="1 BHK">1 BHK</option>
+                <option value="2 BHK">2 BHK</option>
+                <option value="3 BHK">3 BHK</option>
+                <option value="4 BHK/Villa">4 BHK / Villa</option>
+                <option value="Few Household Items">Few Items</option>
+                <option value="Office Relocation">Office Relocation</option>
+              </select>
+              <span class="quote-select-caret"><i class="bi bi-chevron-down"></i></span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="quote-input-group w-100">
+              <span class="quote-input-icon"><i class="bi bi-calendar-event"></i></span>
+              <input type="text" name="movedate" onfocus="(this.type='date')" onblur="(this.type='text')" class="quote-form-control" placeholder="Preferred Move Date">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden message field to combine movesize and movedate -->
+      <input type="hidden" name="message" id="quoteform_message">
+
+      <!-- Submit Button -->
+      <button type="submit" class="quote-submit-btn mt-3">
+        <span>GET FREE QUOTE</span>
+        <i class="bi bi-arrow-right-short ms-2 fs-5"></i>
+      </button>
+
+      <div id="quoteformresults" class="mt-2 text-center"></div>
+    </form>
+
+    <!-- Footer Guarantee -->
+    <div class="quote-form-footer text-center mt-3 d-flex align-items-center justify-content-center gap-1">
+      <i class="bi bi-shield-fill-check text-success"></i>
+      <span>Your information is 100% secure</span>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById('quoteform');
+  if (form) {
+    form.addEventListener('submit', function () {
+      const movesize = form.querySelector('select[name="movesize"]')?.value || '';
+      const movedate = form.querySelector('input[name="movedate"]')?.value || '';
+      let msg = '';
+      if (movesize) msg += 'Move Size: ' + movesize;
+      if (movedate) msg += (msg ? ' | ' : '') + 'Preferred Date: ' + movedate;
+      const msgInput = document.getElementById('quoteform_message');
+      if (msgInput) {
+        msgInput.value = msg;
+      }
+    });
+  }
+});
+</script>
