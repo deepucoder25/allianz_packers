@@ -42,11 +42,10 @@ $state = [
         "link" => "maharashtra"
     ],
     [
-        "image" => "bangalore.jpg",
-        "category" => "Bangalore",
-        "link" => "bangalore"
+        "image" => "karnataka.jpg",
+        "category" => "Karnataka",
+        "link" => "karnataka"
     ],
-
     [
         "image" => "west-bengal.jpg",
         "category" => "West Bengal",
@@ -56,6 +55,91 @@ $state = [
         "image" => "uttar-pradesh.jpg",
         "category" => "Uttar Pradesh",
         "link" => "uttar-pradesh"
+    ],
+    [
+        "image" => "delhi.jpg",
+        "category" => "Delhi",
+        "link" => "delhi"
+    ],
+    [
+        "image" => "haryana.jpg",
+        "category" => "Haryana",
+        "link" => "haryana"
+    ],
+    [
+        "image" => "gujarat.jpg",
+        "category" => "Gujarat",
+        "link" => "gujarat"
+    ],
+    [
+        "image" => "punjab.jpg",
+        "category" => "Punjab",
+        "link" => "punjab"
+    ],
+    [
+        "image" => "rajasthan.jpg",
+        "category" => "Rajasthan",
+        "link" => "rajasthan"
+    ],
+    [
+        "image" => "tamil-nadu.jpg",
+        "category" => "Tamil Nadu",
+        "link" => "tamil-nadu"
+    ],
+    [
+        "image" => "bihar.jpg",
+        "category" => "Bihar",
+        "link" => "bihar"
+    ],
+    [
+        "image" => "jharkhand.jpg",
+        "category" => "Jharkhand",
+        "link" => "jharkhand"
+    ],
+    [
+        "image" => "assam.jpg",
+        "category" => "Assam",
+        "link" => "assam"
+    ],
+    [
+        "image" => "goa.jpg",
+        "category" => "Goa",
+        "link" => "goa"
+    ],
+    [
+        "image" => "kerala.jpg",
+        "category" => "Kerala",
+        "link" => "kerala"
+    ],
+    [
+        "image" => "telangana.jpg",
+        "category" => "Telangana",
+        "link" => "telangana"
+    ],
+    [
+        "image" => "odisha.jpg",
+        "category" => "Odisha",
+        "link" => "odisha"
+    ],
+    [
+        "image" => "madhya-pradesh.jpg",
+        "category" => "Madhya Pradesh",
+        "link" => "madhya-pradesh"
+    ],
+    [
+        "image" => "uttarakhand.jpg",
+        "category" => "Uttarakhand",
+        "link" => "uttarakhand"
+    ],
+    [
+        "image" => "andhra-pradesh.jpg",
+        "category" => "Andhra Pradesh",
+        "link" => "andhra-pradesh"
+    ],
+    [
+        "image" => "jammu-and-kashmir.jpg",
+        "category" => "Jammu & Kashmir",
+        "link" => "jammu-and-kashmir"
     ],
 ];
 ?>

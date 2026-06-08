@@ -1,1 +1,237 @@
-﻿
+/* Unified Allianz Brand Design for State Cards */
+
+/* Section Heading styling */
+.portfolio-area {
+    background-color: #f8fafc !important; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* Enforce 5 boxes in one row on desktop (>= 1200px) */
+@media (min-width: 1200px) {
+    .portfolio-area .row > div {
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+    }
+}
+
+/* Staggered entry animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio-area .col-12 {
+    animation: fadeInUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+/* Add delays to columns for staggered load effect */
+.portfolio-area .col-12:nth-child(1) { animation-delay: 0.04s; }
+.portfolio-area .col-12:nth-child(2) { animation-delay: 0.08s; }
+.portfolio-area .col-12:nth-child(3) { animation-delay: 0.12s; }
+.portfolio-area .col-12:nth-child(4) { animation-delay: 0.16s; }
+.portfolio-area .col-12:nth-child(n+5) { animation-delay: 0.2s; }
+
+/* Card Main Container */
+.pm-states-card {
+    background: #ffffff;
+    border-radius: 16px !important; 
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02) !important;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    z-index: 1;
+}
+
+.pm-states-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 112, 190, 0.06) !important;
+    border-color: rgba(0, 112, 190, 0.2);
+}
+
+/* Image Container with Branded Fallback */
+.pm-states-img {
+    height: 150px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+/* Soft Pulsing Ring (Ripple) in center - using Allianz Blue */
+@keyframes ripple {
+    0% {
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+.pm-states-img::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 112, 190, 0.1);
+    z-index: 0;
+    animation: ripple 3s infinite ease-out;
+    pointer-events: none;
+}
+
+/* Floating Location Pin icon - Allianz Blue */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.pm-states-img::before {
+    content: "\f3e4"; /* Bootstrap Icons geo-alt-fill */
+    font-family: "bootstrap-icons" !important;
+    font-size: 2.4rem;
+    color: #0070be;
+    opacity: 0.15;
+    z-index: 1;
+    animation: float 3s infinite ease-in-out;
+    transition: opacity 0.3s ease;
+}
+
+.pm-states-card:hover .pm-states-img::before {
+    opacity: 0.3;
+}
+
+/* Hide broken image icon */
+.pm-states-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    color: transparent;
+    text-indent: -10000px;
+    transition: transform 0.5s ease;
+}
+
+.pm-states-card:hover .pm-states-img img {
+    transform: scale(1.06);
+}
+
+/* Soft Slate/Dark Frosted Glass Overlay on Hover */
+.pm-states-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.45); /* Slate-dark translucent overlay */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+.pm-states-card:hover .pm-states-overlay {
+    opacity: 1;
+}
+
+/* Branded Allianz View Button */
+.pm-states-overlay a.btn-warning {
+    background: #fcb900 !important; /* Gold background */
+    border: none !important;
+    color: #1a1a1a !important; /* Dark text */
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    padding: 0.5rem 1.25rem !important;
+    box-shadow: 0 4px 12px rgba(252, 185, 0, 0.3);
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.pm-states-card:hover .pm-states-overlay a.btn-warning {
+    transform: translateY(0);
+}
+
+.pm-states-overlay a.btn-warning:hover {
+    background-color: #ffffff !important; /* Clean white hover */
+    color: #0070be !important; /* Blue text on hover */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* Content Area below Image */
+.pm-states-card .p-3 {
+    background: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.02);
+    position: relative;
+    z-index: 4;
+}
+
+/* State Name styling */
+.pm-states-card h6 a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #334155 !important;
+    transition: color 0.3s ease;
+}
+
+.pm-states-card:hover h6 a {
+    color: #0070be !important;
+}
+
+/* Minimalist Pill Dash */
+.pm-states-yellow-dash {
+    display: inline-block;
+    width: 3px;
+    height: 14px;
+    background-color: #fcb900;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.pm-states-card:hover .pm-states-yellow-dash {
+    background-color: #0070be;
+    height: 18px;
+}
+
+/* Page header accents */
+.pm-states-title-span {
+    color: #0070be;
+    position: relative;
+}
+
+.pm-states-title-span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fcb900;
+    bottom: -3px;
+    left: 0;
+    border-radius: 2px;
+}
