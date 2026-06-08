@@ -53,7 +53,8 @@ a.top-bar-pill:hover {
 }
 
 .topbar-icon {
-  color: #ff3b30; /* Attractive vibrant red icon */
+  color: #ff3b30;
+  /* Attractive vibrant red icon */
   font-size: 15px;
   display: inline-flex;
   align-items: center;
@@ -106,6 +107,7 @@ a.top-bar-pill:hover .topbar-icon {
   .top-bar {
     font-size: 13px;
   }
+
   .top-bar-pill {
     padding: 5px 12px;
   }
@@ -117,10 +119,12 @@ a.top-bar-pill:hover .topbar-icon {
     box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.4);
     border-color: rgba(255, 255, 255, 0.12);
   }
+
   50% {
     box-shadow: 0 0 12px 4px rgba(255, 59, 48, 0.3);
     border-color: rgba(255, 59, 48, 0.5);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
     border-color: rgba(255, 255, 255, 0.12);
@@ -129,12 +133,31 @@ a.top-bar-pill:hover .topbar-icon {
 
 /* Telephone shaking animation */
 @keyframes phone-ring {
-  0%, 100% { transform: rotate(0deg); }
-  5% { transform: rotate(-15deg); }
-  10% { transform: rotate(15deg); }
-  15% { transform: rotate(-15deg); }
-  20% { transform: rotate(15deg); }
-  25% { transform: rotate(0deg); }
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  5% {
+    transform: rotate(-15deg);
+  }
+
+  10% {
+    transform: rotate(15deg);
+  }
+
+  15% {
+    transform: rotate(-15deg);
+  }
+
+  20% {
+    transform: rotate(15deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
 }
 
 .phone-pulse-pill {
@@ -232,6 +255,7 @@ a.top-bar-pill:hover .topbar-icon {
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -288,12 +312,10 @@ a.top-bar-pill:hover .topbar-icon {
   left: -150%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.35) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.35) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: skewX(-25deg);
   animation: quote-shimmer 4s infinite ease-in-out;
 }
@@ -332,8 +354,13 @@ a.top-bar-pill:hover .topbar-icon {
 }
 
 @keyframes icon-wiggle {
-  0% { transform: rotate(-8deg); }
-  100% { transform: rotate(8deg); }
+  0% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(8deg);
+  }
 }
 
 .call-btn-text-wrap {
@@ -401,12 +428,10 @@ a.top-bar-pill:hover .topbar-icon {
   left: -150%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.45) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.45) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: skewX(-25deg);
   animation: quote-shimmer 3s infinite ease-in-out;
 }
@@ -418,22 +443,28 @@ a.top-bar-pill:hover .topbar-icon {
 }
 
 @keyframes quote-heartbeat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
     box-shadow: 0 3px 8px rgba(198, 26, 26, 0.2);
   }
+
   15% {
     transform: scale(1.06);
     box-shadow: 0 5px 15px rgba(198, 26, 26, 0.4);
   }
+
   30% {
     transform: scale(1);
     box-shadow: 0 3px 8px rgba(198, 26, 26, 0.2);
   }
+
   45% {
     transform: scale(1.06);
     box-shadow: 0 5px 15px rgba(198, 26, 26, 0.4);
   }
+
   60% {
     transform: scale(1);
     box-shadow: 0 3px 8px rgba(198, 26, 26, 0.2);
@@ -444,9 +475,11 @@ a.top-bar-pill:hover .topbar-icon {
   0% {
     left: -150%;
   }
+
   50% {
     left: 150%;
   }
+
   100% {
     left: 150%;
   }
