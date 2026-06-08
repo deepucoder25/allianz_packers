@@ -125,7 +125,7 @@ $services_list = [
           </div>
           <div class="services-home-card-curve"></div>
           <div class="services-home-card-right">
-            <img src="<?= base_url('assets/images/services_modules/' . $service['image']) ?>" alt="<?= $service['title_1'] . ' ' . $service['title_2'] ?>" loading="lazy">
+            <img src="<?= base_url('assets/images/services_modules/' . $service['image']) ?>" alt="<?= $company3?> <?= $service['title_1'] . ' ' . $service['title_2'] ?>" loading="lazy">
           </div>
         </div>
       </div>

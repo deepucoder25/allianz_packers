@@ -53,7 +53,7 @@
 
       <!-- Right Image Column -->
       <div class="col-lg-6 position-relative min-vh-50 about-image-col">
-        <img src="<?=base_url('assets/images/services_modules/img1.jpg') ?>" alt="Allianz Packers Movers" class="about-img w-100 h-100 object-fit-cover" loading="lazy">
+        <img src="<?=base_url('assets/images/services_modules/img1.jpg') ?>" alt="<?= $company3 ?> Moving Services" class="about-img w-100 h-100 object-fit-cover" loading="lazy">
       </div>
 
   </div>

@@ -89,7 +89,7 @@ $process_steps = [
       <!-- Left side: Moving truck -->
       <div class="col-lg-3 d-none d-lg-block text-left">
         <div class="header-truck-wrap">
-          <img src="<?= base_url('assets/images/home_modules/moving_truck.jpg') ?>" class="header-truck-img" alt="Allianz Moving Truck" loading="lazy">
+          <img src="<?= base_url('assets/images/home_modules/moving_truck.jpg') ?>" class="header-truck-img" alt="<?= $company3?> Moving Truck" loading="lazy">
         </div>
       </div>
       
