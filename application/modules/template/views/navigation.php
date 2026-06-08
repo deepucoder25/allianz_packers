@@ -12,7 +12,7 @@
       $active_tab = 'home';
   } elseif ($class === 'about' || in_array($segment1, ['about-us', 'why-choose-us', 'faqs', 'testimonials'])) {
       $active_tab = 'about';
-  } elseif ($class === 'services' || in_array($segment1, ['our-services', 'home-shifting', 'office-relocation', 'car-transportation', 'bike-transportation', 'warehouse-and-storage', 'domestic-relocation', 'international-shifting', 'corporate-shifting', 'intercity-shifting', 'local-shifting', 'logistic-services', 'pet-relocation', 'home-relocation', 'storage-services', 'car-transportation-service', 'transportation-service', 'door-to-door-moving', 'warehouse-services', 'parcel-services', 'insurance'])) {
+  } elseif ($class === 'services' || in_array($segment1, ['our-services', 'home-relocation', 'office-shifting', 'car-transportation', 'transportation-service', 'door-to-door-moving', 'warehouse-services', 'parcel-services', 'insurance'])) {
       $active_tab = 'services';
   } elseif ($class === 'packers_movers' || $segment1 === 'our-branches') {
       $active_tab = 'locations';

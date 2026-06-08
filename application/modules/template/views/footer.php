@@ -49,15 +49,14 @@
         <div class="col-lg-2 col-md-6 mb-4">
           <h4 class="footer-col-title">OUR SERVICES</h4>
           <ul class="footer-links-list list-unstyled m-0 p-0">
-            <li><a href="<?= site_url('home-relocation') ?>"><i class="bi bi-chevron-right"></i> Household Shifting</a></li>
+            <li><a href="<?= site_url('home-relocation') ?>"><i class="bi bi-chevron-right"></i> Home Relocation</a></li>
             <li><a href="<?= site_url('office-shifting') ?>"><i class="bi bi-chevron-right"></i> Office Shifting</a></li>
-            <li><a href="<?= site_url('local-shifting') ?>"><i class="bi bi-chevron-right"></i> Local Shifting</a></li>
-            <li><a href="<?= site_url('our-services') ?>"><i class="bi bi-chevron-right"></i> Domestic Relocation</a></li>
-            <li><a href="<?= site_url('our-services') ?>"><i class="bi bi-chevron-right"></i> International Relocation</a></li>
             <li><a href="<?= site_url('car-transportation') ?>"><i class="bi bi-chevron-right"></i> Car Transportation</a></li>
-            <li><a href="<?= site_url('parcel-services') ?>"><i class="bi bi-chevron-right"></i> Packing Services</a></li>
-            <li><a href="<?= site_url('door-to-door-moving') ?>"><i class="bi bi-chevron-right"></i> Loading & Unloading</a></li>
-            <li><a href="<?= site_url('warehouse-services') ?>"><i class="bi bi-chevron-right"></i> Warehousing & Storage</a></li>
+            <li><a href="<?= site_url('transportation-service') ?>"><i class="bi bi-chevron-right"></i> Transportation Service</a></li>
+            <li><a href="<?= site_url('door-to-door-moving') ?>"><i class="bi bi-chevron-right"></i> Door to Door Moving</a></li>
+            <li><a href="<?= site_url('warehouse-services') ?>"><i class="bi bi-chevron-right"></i> Warehouse Services</a></li>
+            <li><a href="<?= site_url('parcel-services') ?>"><i class="bi bi-chevron-right"></i> Parcel Services</a></li>
+            <li><a href="<?= site_url('insurance') ?>"><i class="bi bi-chevron-right"></i> Transit Insurance</a></li>
           </ul>
         </div>
 

@@ -1,7 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
+<section class="service-breadcrumbs py-4">
     <div class="container">
         <nav class="bc-nav">
             <a href="<?= site_url() ?>">Home</a>

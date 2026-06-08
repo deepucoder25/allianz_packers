@@ -294,7 +294,7 @@
 /* Absolute Truck Position */
 .footer-truck-img {
   position: absolute;
-  bottom: -100px;
+  bottom: -140px;
   right: 0;
   width: 440px;
   z-index: 1;

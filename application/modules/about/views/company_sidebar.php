@@ -1,92 +1,200 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
+
+// Dynamic city fallback
+$city = isset($city) ? $city : (isset($addressRegion) ? $addressRegion : 'India');
+?>
 
 <aside class="service-sidebar">
-    <!-- Company Navigation Menu -->
-    <div class="sidebar-widget widget-services mb-4">
-        <h3 class="widget-title">About Company</h3>
-        <ul class="sidebar-services-list">
-            <?php
-            $sidebar_links = [
-                ['slug' => 'about-us',          'name' => 'About Us',          'icon' => 'bi-info-circle'],
-                ['slug' => 'why-choose-us',     'name' => 'Why Choose Us',     'icon' => 'bi-patch-question'],
-                ['slug' => 'faqs',              'name' => 'FAQ',               'icon' => 'bi-chat-left-text'],
-                ['slug' => 'testimonials',      'name' => 'Testimonial',       'icon' => 'bi-chat-quote'],
-                ['slug' => 'reviews',           'name' => 'Customer Reviews',  'icon' => 'bi-star-half'],
-                ['slug' => 'photo-gallery',     'name' => 'Photo Gallery',     'icon' => 'bi-images'],
-                ['slug' => 'video-gallery',     'name' => 'Video Gallery',     'icon' => 'bi-play-circle'],
-            ];
-
-            foreach ($sidebar_links as $link):
-                $is_active = ($active_link === $link['slug']) ? 'active' : '';
-            ?>
-                <li>
-                    <a href="<?= site_url($link['slug']) ?>" class="d-flex align-items-center justify-content-between <?= $is_active ?>">
-                        <span class="d-flex align-items-center gap-2">
-                            <i class="bi <?= $link['icon'] ?> service-icon"></i>
-                            <span class="service-name"><?= $link['name'] ?></span>
-                        </span>
-                        <i class="bi bi-chevron-right arrow-icon"></i>
-                    </a>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-
-    <!-- Contact & Action CTA Widget -->
-    <div class="sidebar-widget widget-contact-cta mb-4 text-center">
-        <div class="cta-inner-card">
-            <div class="cta-icon-box">
-                <i class="bi bi-headset"></i>
+    <!-- Company Navigation Menu (Same-to-Same Screenshot Layout) -->
+    <div class="sidebar-widget widget-services mb-4 p-0 overflow-hidden">
+        <!-- Widget Header -->
+        <div class="widget-services-header">
+            <!-- Animated Background shapes -->
+            <div class="header-animation-wrap">
+                <div class="anim-orb orb-1"></div>
+                <div class="anim-orb orb-2"></div>
+                <div class="anim-star star-1"><i class="bi bi-star-fill"></i></div>
+                <div class="anim-star star-2"><i class="bi bi-star-fill"></i></div>
+                <div class="anim-star star-3"><i class="bi bi-star-fill"></i></div>
             </div>
-            <h3 class="cta-title">Need Urgent Shifting?</h3>
-            <p class="cta-desc">Get in touch with our moving experts for a fast and free quotation.</p>
             
-            <div class="cta-buttons d-flex flex-column gap-3">
-                <a href="<?= $phonehtml ?>" class="btn-sidebar-cta btn-sidebar-call">
-                    <i class="bi bi-telephone-fill me-2"></i> <?= $phone ?>
-                </a>
-                
-                <a href="<?= $whatsapphtml ?>" target="_blank" rel="noopener" class="btn-sidebar-cta btn-sidebar-whatsapp">
-                    <i class="bi bi-whatsapp me-2"></i> WhatsApp Chat
-                </a>
-                
-                <button type="button" class="btn-sidebar-cta btn-sidebar-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
-                    <i class="bi bi-file-earmark-text me-2"></i> Get a Free Quote
-                </button>
+            <div class="d-flex align-items-start gap-3 mb-2">
+                <!-- Left Column: Icon Circle & Underline -->
+                <div class="d-flex flex-column align-items-center">
+                    <div class="header-icon-circle">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </div>
+                    <span class="accent-line-circle"></span>
+                </div>
+                <!-- Right Column: Title & Underline -->
+                <div class="d-flex flex-column align-items-start pt-1">
+                    <h3 class="widget-title">About Company</h3>
+                    <span class="accent-line-text"></span>
+                </div>
             </div>
+            <p class="widget-desc m-0">Know more about our premium moving standards.</p>
+        </div>
+        
+        <!-- Widget Body -->
+        <div class="widget-services-body">
+            <ul class="sidebar-services-list" id="sidebarServiceList">
+                <?php
+                $sidebar_links = [
+                    ['slug' => 'about-us',          'name' => 'About Us',          'icon' => 'bi-info-circle-fill'],
+                    ['slug' => 'why-choose-us',     'name' => 'Why Choose Us',     'icon' => 'bi-patch-question-fill'],
+                    ['slug' => 'faqs',              'name' => 'FAQ',               'icon' => 'bi-chat-left-text-fill'],
+                    ['slug' => 'testimonials',      'name' => 'Testimonial',       'icon' => 'bi-chat-quote-fill'],
+                    ['slug' => 'reviews',           'name' => 'Customer Reviews',  'icon' => 'bi-star-fill'],
+                    ['slug' => 'photo-gallery',     'name' => 'Photo Gallery',     'icon' => 'bi-images'],
+                    ['slug' => 'video-gallery',     'name' => 'Video Gallery',     'icon' => 'bi-play-btn-fill'],
+                ];
+
+                foreach ($sidebar_links as $link):
+                    $is_active = ($active_link === $link['slug']) ? 'active' : '';
+                ?>
+                    <li>
+                        <a href="<?= site_url($link['slug']) ?>" class="d-flex align-items-center justify-content-between <?= $is_active ?>">
+                            <span class="d-flex align-items-center gap-3">
+                                <span class="service-icon-wrap bg-light-tint">
+                                    <i class="bi <?= $link['icon'] ?>"></i>
+                                </span>
+                                <span class="service-name"><?= $link['name'] ?></span>
+                            </span>
+                            <i class="bi bi-chevron-right arrow-icon"></i>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
         </div>
     </div>
 
-    <!-- Trusted Badge Widget -->
+    <!-- Contact & Action CTA Widget (Image-matched Premium Design) -->
+    <div class="sidebar-widget widget-contact-cta mb-4 text-center">
+        <!-- Headset Icon Circle -->
+        <div class="cta-headset-circle">
+            <i class="bi bi-headset"></i>
+        </div>
+        
+        <!-- Titles -->
+        <h3 class="cta-title">Need Help Moving<br>in <span class="cta-city-highlight"><?= $city ?></span>?</h3>
+        <p class="cta-desc">Get a free consultation from our shifting experts. Available 24/7.</p>
+        
+        <!-- White Inner Card -->
+        <div class="cta-contact-card">
+            <!-- Row 1: Support Line -->
+            <a href="<?= $phonehtml ?>" class="cta-contact-row">
+                <div class="cta-contact-left">
+                    <div class="cta-phone-icon-circle">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="cta-contact-text-wrap text-start">
+                        <span class="cta-contact-label">Call Support <span class="cta-live-badge"><span class="live-pulse-dot"></span> LIVE</span></span>
+                        <span class="cta-contact-value"><?= $phone ?></span>
+                    </div>
+                </div>
+                <div class="cta-contact-right">
+                    <i class="bi bi-chevron-right"></i>
+                </div>
+            </a>
+            
+            <div class="cta-card-divider"></div>
+            
+            <!-- Row 2: Alternate Line -->
+            <a href="<?= $phonehtml1 ?>" class="cta-contact-row">
+                <div class="cta-contact-left">
+                    <div class="cta-phone-icon-circle">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="cta-contact-text-wrap text-start">
+                        <span class="cta-contact-label">Alternate Line</span>
+                        <span class="cta-contact-value"><?= $phone1 ?></span>
+                    </div>
+                </div>
+                <div class="cta-contact-right">
+                    <i class="bi bi-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Bottom Buttons Row -->
+        <div class="cta-action-buttons-row">
+            <a href="<?= $whatsapphtml ?>" target="_blank" rel="noopener" class="btn-cta-action btn-cta-whatsapp">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+            <button type="button" class="btn-cta-action btn-cta-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
+                <i class="bi bi-file-earmark-check"></i> Get Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Trusted Badge Widget (Timeline Design matching screenshot) -->
     <div class="sidebar-widget widget-trusted-badges">
-        <h4 class="widget-sub-title mb-3">Why Choose <?= $company3 ?>?</h4>
-        <ul class="trusted-points-list">
-            <li class="d-flex align-items-start gap-2 mb-3">
-                <i class="bi bi-patch-check-fill text-success mt-1"></i>
-                <div>
-                    <strong><?= $yearsExperience ?> Years Experience</strong>
-                    <p class="m-0 text-muted small">Relocating since <?= $startYear ?>.</p>
+        <div class="trusted-header d-flex align-items-start gap-2 mb-4">
+            <i class="bi bi-patch-check-fill trusted-header-icon"></i>
+            <div>
+                <h4 class="trusted-title">Why Choose <?= $company3 ?>?</h4>
+                <div class="trusted-header-line"></div>
+            </div>
+        </div>
+        
+        <ul class="trusted-timeline-list m-0 p-0">
+            <!-- Point 1 -->
+            <li class="trusted-timeline-item d-flex align-items-center gap-3 position-relative mb-4">
+                <div class="timeline-dot dot-purple"></div>
+                <div class="timeline-icon-box bg-purple-light text-purple">
+                    <i class="bi bi-clock"></i>
+                </div>
+                <div class="timeline-content text-start">
+                    <h5 class="timeline-item-title"><?= $yearsExperience ?> Years Experience</h5>
+                    <p class="timeline-item-desc">Trusted since <?= $startYear ?></p>
                 </div>
             </li>
-            <li class="d-flex align-items-start gap-2 mb-3">
-                <i class="bi bi-people-fill text-primary mt-1"></i>
-                <div>
-                    <strong><?= $happyClients ?> Happy Clients</strong>
-                    <p class="m-0 text-muted small">Trusted by families and businesses.</p>
+            
+            <!-- Point 2 -->
+            <li class="trusted-timeline-item d-flex align-items-center gap-3 position-relative mb-4">
+                <div class="timeline-dot dot-green"></div>
+                <div class="timeline-icon-box bg-green-light text-green">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+                <div class="timeline-content text-start">
+                    <h5 class="timeline-item-title"><?= $happyClients ?> Happy Clients</h5>
+                    <p class="timeline-item-desc">Families and businesses trust us</p>
                 </div>
             </li>
-            <li class="d-flex align-items-start gap-2 mb-3">
-                <i class="bi bi-shield-check text-warning mt-1"></i>
-                <div>
-                    <strong>Verified &amp; Licensed</strong>
-                    <p class="m-0 text-muted small">ISO certified packers and movers.</p>
+            
+            <!-- Point 3 -->
+            <li class="trusted-timeline-item d-flex align-items-center gap-3 position-relative mb-4">
+                <div class="timeline-dot dot-orange"></div>
+                <div class="timeline-icon-box bg-orange-light text-orange">
+                    <i class="bi bi-patch-check-fill"></i>
+                </div>
+                <div class="timeline-content text-start">
+                    <h5 class="timeline-item-title">Verified &amp; Licensed</h5>
+                    <p class="timeline-item-desc">ISO certified packers and movers</p>
                 </div>
             </li>
-            <li class="d-flex align-items-start gap-2">
-                <i class="bi bi-file-earmark-lock-fill text-danger mt-1"></i>
-                <div>
-                    <strong><?= $secureShifting ?> Secure Shifting</strong>
-                    <p class="m-0 text-muted small">Complete transit insurance options.</p>
+            
+            <!-- Point 4 -->
+            <li class="trusted-timeline-item d-flex align-items-center gap-3 position-relative mb-4">
+                <div class="timeline-dot dot-red"></div>
+                <div class="timeline-icon-box bg-red-light text-red">
+                    <i class="bi bi-shield-fill-check"></i>
+                </div>
+                <div class="timeline-content text-start">
+                    <h5 class="timeline-item-title"><?= $secureShifting ?> Secure Shifting</h5>
+                    <p class="timeline-item-desc">Complete transit insurance options</p>
+                </div>
+            </li>
+            
+            <!-- Point 5 -->
+            <li class="trusted-timeline-item d-flex align-items-center gap-3 position-relative">
+                <div class="timeline-dot dot-gold"></div>
+                <div class="timeline-icon-box bg-gold-light text-gold">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="timeline-content text-start">
+                    <h5 class="timeline-item-title">Pan-India Coverage</h5>
+                    <p class="timeline-item-desc">100+ branches across 20+ states</p>
                 </div>
             </li>
         </ul>
