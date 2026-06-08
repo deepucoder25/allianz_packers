@@ -130,7 +130,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
             </div>
 
             <!-- Card 2 (Highlighted: Priya Sharma) -->
-            <div class="col-lg-4 col-md-6 col-12 d-flex align-items-stretch">
+            <div class="col-lg-4 col-md-6 d-none d-md-flex align-items-stretch">
               <div class="testimonial-card highlighted w-100">
                 <!-- Top-Right Red Quote Badge -->
                 <div class="testimonial-corner-badge">
@@ -259,7 +259,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
             </div>
 
             <!-- Card 3 (Highlighted: Amit Verma) -->
-            <div class="col-lg-4 col-md-6 col-12 d-flex align-items-stretch">
+            <div class="col-lg-4 col-md-6 d-none d-md-flex align-items-stretch">
               <div class="testimonial-card highlighted w-100">
                 <!-- Top-Right Red Quote Badge -->
                 <div class="testimonial-corner-badge">
@@ -384,7 +384,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
             </div>
 
             <!-- Card 1 (Highlighted: Rahul Mehta) -->
-            <div class="col-lg-4 col-md-6 col-12 d-flex align-items-stretch">
+            <div class="col-lg-4 col-md-6 d-none d-md-flex align-items-stretch">
               <div class="testimonial-card highlighted w-100">
                 <!-- Top-Right Red Quote Badge -->
                 <div class="testimonial-corner-badge">

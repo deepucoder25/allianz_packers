@@ -1,82 +1,91 @@
 <?php
 $locations = [
-  
-
-    // Added from screenshot
-    ["city" => "Aurangabad", "state" => "maharashtra"],
-    ["city" => "Chandigarh", "state" => "chandigarh"],
-    ["city" => "Dhanbad", "state" => "jharkhand"],
-    ["city" => "Gwalior", "state" => "madhya-pradesh"],
-    ["city" => "Hyderabad", "state" => "telangana"],
-    ["city" => "Jodhpur", "state" => "rajasthan"],
-    ["city" => "Kota", "state" => "rajasthan"],
-    ["city" => "Meerut", "state" => "uttar-pradesh"],
-    ["city" => "Navi Mumbai", "state" => "maharashtra"],
-    ["city" => "Rajkot", "state" => "gujarat"],
-    ["city" => "Siliguri", "state" => "west-bengal"],
-    ["city" => "Vijayawada", "state" => "andhra-pradesh"],
-
-    ["city" => "Ahmedabad", "state" => "gujarat"],
-    ["city" => "Bangalore", "state" => "karnataka"],
-    ["city" => "Chennai", "state" => "tamil-nadu"],
-    ["city" => "Faridabad", "state" => "haryana"],
-    ["city" => "Gurugram", "state" => "haryana"],
-    ["city" => "Indore", "state" => "madhya-pradesh"],
-    ["city" => "Jamshedpur", "state" => "jharkhand"],
-    ["city" => "Mumbai", "state" => "maharashtra"],
-    ["city" => "Ranchi", "state" => "jharkhand"],
-    ["city" => "Surat", "state" => "gujarat"],
-    ["city" => "Visakhapatnam", "state" => "andhra-pradesh"],
-
-    ["city" => "Allahabad", "state" => "uttar-pradesh"],
-    ["city" => "Bareilly", "state" => "uttar-pradesh"],
-    ["city" => "Coimbatore", "state" => "tamil-nadu"],
-    ["city" => "Ghaziabad", "state" => "uttar-pradesh"],
-    ["city" => "Howrah", "state" => "west-bengal"],
-    ["city" => "Jabalpur", "state" => "madhya-pradesh"],
-    ["city" => "Ludhiana", "state" => "punjab"],
-    ["city" => "Nagpur", "state" => "maharashtra"],
-    ["city" => "Pune", "state" => "maharashtra"],
-    ["city" => "Solapur", "state" => "maharashtra"],
-    ["city" => "Vadodara", "state" => "gujarat"],
-
-    ["city" => "Amritsar", "state" => "punjab"],
-    ["city" => "Bhopal", "state" => "madhya-pradesh"],
+    // Column 1
     ["city" => "Delhi", "state" => "delhi"],
-    ["city" => "Hubli-Dharwad", "state" => "karnataka"],
+    ["city" => "Noida", "state" => "uttar-pradesh"],
+    ["city" => "Gurgaon", "state" => "haryana"],
+    ["city" => "Ghaziabad", "state" => "uttar-pradesh"],
+    ["city" => "Chandigarh", "state" => "chandigarh"],
     ["city" => "Jaipur", "state" => "rajasthan"],
+    ["city" => "Dehradun", "state" => "uttarakhand"],
+    ["city" => "Mohali", "state" => "punjab"],
+    ["city" => "Ambala", "state" => "haryana"],
+    ["city" => "Faridabad", "state" => "haryana"],
+
+    // Column 2
     ["city" => "Kolkata", "state" => "west-bengal"],
+    ["city" => "Lucknow", "state" => "uttar-pradesh"],
+    ["city" => "Patna", "state" => "bihar"],
+    ["city" => "Kanpur", "state" => "uttar-pradesh"],
+    ["city" => "Jammu", "state" => "jammu-and-kashmir"],
+    ["city" => "Indore", "state" => "madhya-pradesh"],
+    ["city" => "Bhubaneswar", "state" => "odisha"],
+    ["city" => "Jabalpur", "state" => "madhya-pradesh"],
+    ["city" => "Hubli", "state" => "karnataka"],
+    ["city" => "Meerut", "state" => "uttar-pradesh"],
+
+    // Column 3
+    ["city" => "Mumbai", "state" => "maharashtra"],
+    ["city" => "Pune", "state" => "maharashtra"],
+    ["city" => "Navi Mumbai", "state" => "maharashtra"],
+    ["city" => "Ahmedabad", "state" => "gujarat"],
+    ["city" => "Nagpur", "state" => "maharashtra"],
+    ["city" => "Bhopal", "state" => "madhya-pradesh"],
+    ["city" => "Surat", "state" => "gujarat"],
+    ["city" => "Jhansi", "state" => "uttar-pradesh"],
+    ["city" => "Ranchi", "state" => "jharkhand"],
+    ["city" => "Goa", "state" => "goa"],
+
+    // Column 4
+    ["city" => "Chennai", "state" => "tamil-nadu"],
+    ["city" => "Bangalore", "state" => "karnataka"],
+    ["city" => "Hyderabad", "state" => "telangana"],
+    ["city" => "Coimbatore", "state" => "tamil-nadu"],
+    ["city" => "Visakhapatnam", "state" => "andhra-pradesh"],
     ["city" => "Madurai", "state" => "tamil-nadu"],
-    ["city" => "Nashik", "state" => "maharashtra"],
-    ["city" => "Raipur", "state" => "chhattisgarh"],
-    ["city" => "Srinagar", "state" => "jammu-and-kashmir"],
+    ["city" => "Mysore", "state" => "karnataka"],
+    ["city" => "Tirupur", "state" => "tamil-nadu"],
+    ["city" => "Kerala", "state" => "kerala"],
 ];
 ?>
 
 <section class="search-location-section py-5">
-    <div class="container">
-
-        <div class="location-heading mb-4">
-            <h2 class="h5 fw-bold mb-0">Search By Location</h2>
-        </div>
-
-        <div class="row g-3">
-            <?php foreach ($locations as $location): 
-                $citySlug = strtolower(str_replace(' ', '-', $location['city']));
-                $link = $citySlug . "-packers-movers-" . $location['state'];
-            ?>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                    <ul class="location-list mb-0">
-                        <li>
-                            <a href="<?= site_url($link) ?>" aria-label="Packers and Movers in <?= $location['city'] ?>">
-                                Packers &amp; Movers <?= $location['city'] ?>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            <?php endforeach; ?>
-        </div>
-
+  <div class="container">
+    
+    <!-- Section Header (reusing services styles) -->
+    <div class="services-home-header mb-5">
+      <div class="services-home-accent text-uppercase mb-2">
+        <span class="dot-accent">—</span> LOCATIONS WE SERVE <span class="dot-accent">—</span>
+      </div>
+      <h2 class="services-home-title">Our Service <span>Locations</span></h2>
+      <div class="services-home-divider mb-3"></div>
+      <p class="services-home-desc">
+        We provide professional, secure, and hassle-free relocation services in all major cities across India.
+      </p>
     </div>
+
+    <!-- City Cards Grid -->
+    <div class="row g-3 justify-content-center" id="cityCardsRow">
+      <?php foreach ($locations as $index => $location): 
+          $citySlug = strtolower(str_replace(' ', '-', $location['city']));
+          $link = $citySlug . "-packers-movers-" . $location['state'];
+          $delay = ($index % 30) * 0.025;
+      ?>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 city-card-col" style="animation-delay: <?= $delay ?>s;">
+          <a href="<?= site_url($link) ?>" class="location-pill-card" aria-label="Packers and Movers in <?= htmlspecialchars($location['city']) ?>">
+            <div class="location-icon-circle">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div class="location-info">
+              <span class="location-sub">Packers &amp; Movers</span>
+              <span class="location-city"><?= htmlspecialchars($location['city']) ?></span>
+            </div>
+          </a>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+  </div>
 </section>
+
 

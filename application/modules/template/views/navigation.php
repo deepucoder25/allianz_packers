@@ -25,7 +25,7 @@
 
   <!-- Slim Top Bar -->
   <div class="top-bar">
-    <div class="container-fluid px-4 px-lg-5">
+    <div class="container">
       <!-- Desktop Top Bar -->
       <div class="top-bar-desktop d-none d-lg-flex justify-content-between align-items-center">
         <!-- Left Side: Address & Email with Glass Pills -->
@@ -74,7 +74,7 @@
 
   <!-- Main Header -->
   <header class="main-header" id="mainHeader">
-    <div class="container-fluid px-4 px-lg-5 d-flex align-items-center justify-content-between">
+    <div class="container d-flex align-items-center justify-content-between">
       <!-- Logo Wrap -->
       <div class="logo-wrap-container d-flex align-items-center">
         <a href="<?= site_url() ?>" class="brand-wrap text-decoration-none d-flex align-items-center">

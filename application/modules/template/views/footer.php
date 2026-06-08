@@ -9,7 +9,7 @@
 
   <!-- Section 1: Main Columns -->
   <div class="footer-columns-section py-5">
-    <div class="container-fluid px-4 px-lg-5 position-relative">
+    <div class="container position-relative">
       
       <!-- Moving Truck Image -->
       <img src="<?= base_url('assets/images/home_modules/moving_truck.jpg') ?>" alt="<?= $company3 ?> Moving Truck" class="footer-truck-img d-none d-xl-block" loading="lazy">
@@ -125,7 +125,7 @@
 
   <!-- Section 3: Trust Badges Bar -->
   <div class="footer-trust-bar py-4">
-    <div class="container-fluid px-4 px-lg-5">
+    <div class="container">
       <div class="d-flex justify-content-between align-items-center gap-4 flex-wrap">
         
         <!-- Badge 1 -->
@@ -190,7 +190,7 @@
   <!-- Section 4: Copyright, Socials & Payments -->
   <?php $company_display = rtrim($company3, '.'); ?>
   <div class="footer-bottom-bar py-3">
-    <div class="container-fluid px-4 px-lg-5">
+    <div class="container">
       <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap">
         
         <!-- Copyright -->
