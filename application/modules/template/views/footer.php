@@ -82,7 +82,6 @@
             <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-chevron-right"></i> Track Your Shipment</a></li>
             <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-chevron-right"></i> Terms & Conditions</a></li>
             <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
-            <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right"></i> Cancellation Policy</a></li>
           </ul>
         </div>
 
