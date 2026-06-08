@@ -26,6 +26,7 @@
 .footer-columns-section {
   position: relative;
   background-color: #ffffff;
+  padding-top: 15px !important;
 }
 
 .footer-columns-section .row {

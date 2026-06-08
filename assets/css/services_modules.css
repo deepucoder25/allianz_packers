@@ -1178,3 +1178,30 @@
     color: #64748b !important;
     margin: 0 !important;
 }
+
+/* Mobile responsive layout for breadcrumbs feature pills (2x2 grid / col-6) */
+@media (max-width: 575.98px) {
+    .service-breadcrumbs .bc-features {
+        gap: 10px !important;
+        justify-content: center !important;
+    }
+    .service-breadcrumbs .bc-feature-pill {
+        width: calc(50% - 5px) !important;
+        padding: 8px 10px !important;
+        gap: 8px !important;
+        border-radius: 12px !important;
+    }
+    .service-breadcrumbs .bc-feature-pill .pill-icon {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 0.95rem !important;
+    }
+    .service-breadcrumbs .bc-feature-pill .pill-text strong {
+        font-size: 0.78rem !important;
+        line-height: 1.2 !important;
+    }
+    .service-breadcrumbs .bc-feature-pill .pill-text small {
+        font-size: 0.65rem !important;
+        line-height: 1.2 !important;
+    }
+}

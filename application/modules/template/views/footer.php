@@ -2,7 +2,7 @@
   <!-- Section 0: Wavy Top Divider -->
   <div class="footer-top-wave">
     <svg viewBox="0 0 1440 100" class="footer-wave-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,35 C480,85 960,5 1440,45 L1440,100 L0,100 Z" fill="var(--brand-red)"></path>
+      <path d="M0,35 C480,85 960,5 1440,45 L1440,80 L0,80 Z" fill="var(--brand-red)"></path>
       <path d="M0,45 C480,95 960,15 1440,55 L1440,100 L0,100 Z" fill="#ffffff"></path>
     </svg>
   </div>
@@ -118,7 +118,7 @@
   <!-- Section 2: Wave Divider -->
   <div class="footer-wave-container">
     <svg viewBox="0 0 1440 100" class="footer-wave-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,35 C480,85 960,5 1440,45 L1440,100 L0,100 Z" fill="var(--brand-red)"></path>
+      <path d="M0,35 C480,85 960,5 1440,45 L1440,80 L0,80 Z" fill="var(--brand-red)"></path>
       <path d="M0,45 C480,95 960,15 1440,55 L1440,100 L0,100 Z" fill="#151515"></path>
     </svg>
   </div>
