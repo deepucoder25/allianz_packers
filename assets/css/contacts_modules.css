@@ -1,0 +1,487 @@
+/* ==========================================================================
+   CONTACT US MODULE STYLING (contacts.php)
+   ========================================================================== */
+
+.contact-section {
+    font-family: 'Outfit', sans-serif;
+    color: var(--brand-dark, #1a1a1a);
+}
+
+.bg-light-section {
+    background-color: #f8fafc;
+}
+
+/* Unique Contact Details Card Styles */
+.contact-cards-stack {
+    padding-left: 24px !important; /* Make room on the container level for the overlapping floating icons */
+}
+
+.contact-card-unique {
+    position: relative;
+    background: linear-gradient(135deg, rgba(198, 26, 26, 0.96) 0%, rgba(12, 9, 10, 0.98) 100%) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    padding: 24px 28px 24px 46px !important; /* Indent content on left to make room for absolute icon */
+    margin-left: 20px !important; /* Offset the entire card to the right */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+    color: #ffffff !important;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                box-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                border-color 0.3s ease !important;
+}
+
+/* Unique alternating asymmetric border-radii */
+.contact-card-unique:nth-child(2) {
+    border-radius: 24px 8px 24px 24px !important;
+}
+.contact-card-unique:nth-child(3) {
+    border-radius: 24px 24px 24px 8px !important;
+}
+.contact-card-unique:nth-child(4) {
+    border-radius: 8px 24px 24px 24px !important;
+}
+
+/* Floating Overlapping Squircle Badge Container */
+.contact-icon-unique {
+    position: absolute;
+    left: -26px; /* Floats half-outside the card border */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+    border: 1px solid rgba(198, 26, 26, 0.18) !important;
+    color: #c61a1a !important; /* Red icon color initially */
+    font-size: 19px;
+    border-radius: 16px; /* Squircle appearance */
+    box-shadow: 0 8px 24px rgba(198, 26, 26, 0.16), 0 4px 10px rgba(0, 0, 0, 0.04) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                background 0.4s ease, 
+                color 0.4s ease, 
+                border-color 0.4s ease, 
+                box-shadow 0.4s ease !important;
+    z-index: 2;
+}
+
+/* Hover States & Micro-interactions */
+.contact-card-unique:hover {
+    transform: translateY(-6px) scale(1.01) !important;
+    box-shadow: 0 16px 36px rgba(198, 26, 26, 0.18), 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Invert colors and rotate/scale badge on hover */
+.contact-card-unique:hover .contact-icon-unique {
+    transform: translateY(-50%) scale(1.12) rotate(8deg) !important;
+    background: linear-gradient(135deg, #c61a1a 0%, #0c090a 100%) !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 10px 25px rgba(198, 26, 26, 0.4) !important;
+}
+
+.contact-card-title {
+    font-size: 16.5px;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+}
+
+.contact-card-text {
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.82) !important;
+    line-height: 1.55;
+}
+
+.contact-unique-link {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    position: relative;
+    display: inline-block;
+    transition: opacity 0.2s ease !important;
+}
+
+.contact-unique-link:hover {
+    opacity: 0.9;
+}
+
+/* Premium sliding underline on hover */
+.contact-unique-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    bottom: -1px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.contact-unique-link:hover::after {
+    width: 100%;
+}
+
+/* Contact Form Box Styling */
+.contact-form-box {
+    background: #ffffff;
+    border-radius: 20px !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #eef0f3;
+}
+
+/* Gradient Top Border Accent instead of single warning border */
+.contact-form-box.contact-border-gradient {
+    border-top: 5px solid transparent !important;
+    border-image: linear-gradient(90deg, #c61a1a, #0c090a) 1 !important;
+}
+
+.contact-title-primary {
+    font-size: 26px;
+    font-weight: 850;
+    color: var(--brand-dark, #1a1a1a);
+    letter-spacing: -0.5px;
+}
+
+.contact-input-rounded {
+    border-radius: 12px !important;
+    border: 1.5px solid #e2e8f0 !important;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+    color: #334155 !important;
+    transition: all 0.3s ease !important;
+}
+
+.contact-input-rounded:focus {
+    border-color: #c61a1a !important;
+    box-shadow: 0 0 0 3px rgba(198, 26, 26, 0.1) !important;
+    outline: none !important;
+}
+
+/* Premium Red-to-Black Gradient Submit Button */
+.btn-gradient-submit {
+    background: linear-gradient(135deg, #c61a1a 0%, #0c090a 100%) !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 15px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 12px !important;
+    border: none !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 15px rgba(198, 26, 26, 0.25) !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-gradient-submit:hover {
+    transform: translateY(-2.5px) !important;
+    box-shadow: 0 8px 22px rgba(198, 26, 26, 0.45), 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn-gradient-submit:active {
+    transform: translateY(-0.5px) !important;
+}
+
+/* Responsive adjustment */
+@media (max-width: 991.98px) {
+    .contact-card-unique {
+        padding: 24px 24px 24px 44px !important;
+    }
+    .contact-form-box {
+        padding: 24px 20px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-cards-stack {
+        padding-left: 15px !important;
+    }
+    .contact-card-unique {
+        padding: 20px 20px 20px 42px !important;
+        margin-left: 12px !important;
+    }
+    .contact-icon-unique {
+        left: -18px;
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+        border-radius: 12px;
+    }
+}
+
+/* ==========================================================================
+   BRANCH OFFICES SECTION (contacts.php - Our Locations)
+   ========================================================================== */
+.branch-offices-section {
+    background-color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+}
+
+.office-eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brand-red, #c61a1a);
+    letter-spacing: 1.5px;
+    display: inline-block;
+}
+
+.office-main-title {
+    font-size: 32px;
+    font-weight: 850;
+    color: var(--brand-dark, #1a1a1a);
+    letter-spacing: -0.5px;
+}
+
+.office-subtitle {
+    font-size: 14.5px;
+    max-width: 600px;
+    margin: 8px auto 0;
+    line-height: 1.5;
+}
+
+.branch-card {
+    background-color: #ffffff;
+    border: 1px solid #eef0f3;
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.branch-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+    border-color: rgba(198, 26, 26, 0.15);
+}
+
+.branch-city {
+    font-size: 16.5px;
+    font-weight: 800;
+    color: var(--brand-dark, #1a1a1a);
+    border-bottom: 2px solid rgba(198, 26, 26, 0.08);
+    padding-bottom: 8px;
+    letter-spacing: -0.2px;
+}
+
+.branch-address,
+.branch-phone,
+.branch-email {
+    font-size: 13px;
+    line-height: 1.55;
+    margin-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.branch-address i,
+.branch-phone i,
+.branch-email i {
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* ==========================================================================
+   QUOTE MODAL REDESIGN (quotemodal.php)
+   ========================================================================== */
+
+/* Fade-in Backdrop Blur */
+.contact-custom-modal.modal {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+}
+
+/* Modal Content Card */
+.contact-custom-modal .modal-content {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 24px !important;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.12) !important;
+    padding: 30px !important;
+    overflow: hidden;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Modal Header styling */
+.contact-custom-modal .contact-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(198, 26, 26, 0.06) !important;
+    padding-bottom: 16px !important;
+    margin-bottom: 24px !important;
+}
+
+.contact-custom-modal .contact-form-header span {
+    font-size: 24px;
+    font-weight: 850;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #c61a1a 0%, #0c090a 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* Modal Close Button */
+.contact-custom-modal .contact-form-header button.close {
+    background: #f1f5f9 !important;
+    border: none !important;
+    width: 34px;
+    height: 34px;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b !important;
+    font-size: 13px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    cursor: pointer;
+    padding: 0;
+}
+
+.contact-custom-modal .contact-form-header button.close:hover {
+    background: rgba(198, 26, 26, 0.1) !important;
+    color: #c61a1a !important;
+    transform: rotate(90deg) scale(1.05) !important;
+}
+
+/* Form Groups & Icons */
+.contact-custom-modal .form-group {
+    margin-bottom: 18px !important;
+}
+
+.contact-custom-modal .form-icon {
+    position: relative;
+    width: 100%;
+}
+
+.contact-custom-modal .form-icon i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 16px;
+    pointer-events: none;
+    transition: color 0.3s ease !important;
+    z-index: 5;
+}
+
+/* Textarea Icon Alignment adjustment */
+.contact-custom-modal .form-textarea-icon i {
+    top: 18px !important;
+    transform: none !important;
+}
+
+/* Form Controls (Inputs / Textarea) */
+.contact-custom-modal .form-control {
+    width: 100% !important;
+    background: #f8fafc !important;
+    border: 1.5px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 12px 16px 12px 46px !important; /* Left padding ensures text doesn't overlap icon */
+    font-size: 14.5px !important;
+    color: #334155 !important;
+    transition: all 0.3s ease !important;
+}
+
+.contact-custom-modal .form-control:not(textarea) {
+    height: 48px !important;
+}
+
+.contact-custom-modal .form-control::placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.85;
+}
+
+/* Focus State animations */
+.contact-custom-modal .form-control:focus {
+    background: #ffffff !important;
+    border-color: #c61a1a !important;
+    box-shadow: 0 0 0 3.5px rgba(198, 26, 26, 0.1) !important;
+    outline: none !important;
+}
+
+.contact-custom-modal .form-icon:focus-within i {
+    color: #c61a1a !important;
+}
+
+/* Button container spacing */
+.contact-custom-modal .contact-quote-gap {
+    gap: 12px;
+}
+
+/* Submit & Reset Button Styling */
+.contact-custom-modal .btn-modal-submit {
+    background: linear-gradient(135deg, #c61a1a 0%, #0c090a 100%) !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 14.5px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 12px !important;
+    border: none !important;
+    padding: 12px 28px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 15px rgba(198, 26, 26, 0.25) !important;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-custom-modal .btn-modal-submit:hover {
+    transform: translateY(-2.5px) !important;
+    box-shadow: 0 8px 22px rgba(198, 26, 26, 0.45), 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.contact-custom-modal .btn-modal-submit:active {
+    transform: translateY(-0.5px) !important;
+}
+
+.contact-custom-modal .btn-modal-reset {
+    background: #ffffff !important;
+    color: #ef4444 !important; /* Soft red text */
+    font-weight: 700 !important;
+    font-size: 14.5px !important;
+    border-radius: 12px !important;
+    border: 1.5px solid #fecaca !important; /* Soft border red */
+    padding: 12px 24px !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+}
+
+.contact-custom-modal .btn-modal-reset:hover {
+    background: #fef2f2 !important; /* Light-red fill on hover */
+    border-color: #fca5a5 !important;
+}
+
+.contact-custom-modal .btn-modal-reset:active {
+    background: #fee2e2 !important;
+}
+
+/* Responsive Overrides */
+@media (max-width: 575.98px) {
+    .contact-custom-modal .modal-content {
+        padding: 20px !important;
+        border-radius: 18px !important;
+    }
+    .contact-custom-modal .contact-form-header span {
+        font-size: 20px;
+    }
+    .contact-custom-modal .form-control {
+        padding: 10px 14px 10px 42px !important;
+    }
+    .contact-custom-modal .form-icon i {
+        left: 14px;
+        font-size: 15px;
+    }
+    .contact-custom-modal .btn-modal-submit,
+    .contact-custom-modal .btn-modal-reset {
+        padding: 10px 16px !important;
+        font-size: 13px !important;
+    }
+}

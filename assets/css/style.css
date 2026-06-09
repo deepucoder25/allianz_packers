@@ -1,8 +1,7 @@
-﻿@import "footer.css";
+@import "footer.css";
 @import "slider.css";
 @import "navigation.css";
 @import "home_modules.css";
-@import "about_modules.css";
 @import "services_modules.css";
 @import "city_page.css";
 
@@ -12,3 +11,4 @@
 @import "packers_movers_modules.css";
 @import "reviews_modules.css";
 @import "template_modules.css";
+@import "contacts_modules.css";

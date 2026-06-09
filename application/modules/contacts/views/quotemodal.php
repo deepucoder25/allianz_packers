@@ -1,5 +1,5 @@
 <div class="modal fade contact-custom-modal" id="qteModal" tabindex="-1" role="dialog" aria-labelledby="qteModal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="contact-form-header">
                 <span>Get a free quote</span>
@@ -50,15 +50,15 @@
                         </div>
                     </div>
                 </div>
-           <div class="form-group">
-    <div class="form-icon">
-        <i class="bi bi-chat-left-text"></i>
-        <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Describe your relocation needs..."></textarea>
-    </div>
-</div>
+            <div class="form-group">
+                <div class="form-icon form-textarea-icon">
+                    <i class="bi bi-chat-left-text"></i>
+                    <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Describe your relocation needs..."></textarea>
+                </div>
+            </div>
                 <div class="d-flex justify-content-center mt-2 contact-quote-gap">
-                    <button id="submitbquotemodal" type="submit" class="theme-btn">Get My Free Quote <i class="bi bi-send-fill"></i></button>
-                    <button onclick="document.getElementById('resultquotemodal').innerHTML = '';" type="reset" class="theme-btn">Clear Form</button>
+                    <button id="submitbquotemodal" type="submit" class="btn-modal-submit">Get My Free Quote <i class="bi bi-send-fill ms-2"></i></button>
+                    <button onclick="document.getElementById('resultquotemodal').innerHTML = '';" type="reset" class="btn-modal-reset">Clear Form</button>
                 </div>
  
                 <div id="resultquotemodal"></div>
