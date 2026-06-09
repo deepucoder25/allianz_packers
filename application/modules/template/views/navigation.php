@@ -158,7 +158,7 @@
           </div>
           <div class="call-btn-text-wrap">
             <span class="call-btn-label">CALL US NOW</span>
-            <span class="call-btn-num"><?= $phone ?><?php if (isset($phone1) && !empty($phone1)): ?> / <?= $phone1 ?><?php endif; ?></span>
+            <span class="call-btn-num"><?= $phone ?></span>
           </div>
         </a>
 
