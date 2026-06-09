@@ -231,6 +231,27 @@
   </div>
 </footer>
 
+<!-- Floating / Sticky Action Buttons (Call and Get Quote) -->
+<div class="footer-fixed-actions">
+  <div class="fixed-actions-container">
+    <!-- Call Action Button -->
+    <a href="<?= $phonehtml ?>" class="action-btn btn-call" aria-label="Call Us Now">
+      <div class="action-btn-icon">
+        <i class="bi bi-telephone-fill"></i>
+      </div>
+      <span class="action-btn-text">Call Now</span>
+    </a>
+    
+    <!-- Get Quote Action Button -->
+    <button type="button" class="action-btn btn-quote" data-bs-toggle="modal" data-bs-target="#qteModal" aria-label="Get Free Quote">
+      <div class="action-btn-icon">
+        <i class="bi bi-file-earmark-text-fill"></i>
+      </div>
+      <span class="action-btn-text">Get Quote</span>
+    </button>
+  </div>
+</div>
+
 <?php $this->load->view('contacts/quotemodal'); ?>
 <?php $this->load->view('contacts/callmeback_modal'); ?>
 <?php $this->load->view('contacts/review_modal'); ?>

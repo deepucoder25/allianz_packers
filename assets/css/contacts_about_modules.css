@@ -11,116 +11,103 @@
     background-color: #f8fafc;
 }
 
-/* Unique Contact Details Card Styles */
+/* Unique Contact Details Card Styles - Clean, Light-Themed Accent Cards */
 .contact-cards-stack {
-    padding-left: 24px !important; 
+    padding-left: 0 !important; 
 }
 
 .contact-card-unique {
     position: relative;
-    background: linear-gradient(135deg, rgba(198, 26, 26, 0.96) 0%, rgba(12, 9, 10, 0.98) 100%) !important;
-    backdrop-filter: blur(15px) !important;
-    -webkit-backdrop-filter: blur(15px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    padding: 24px 28px 24px 46px !important; /* Indent content on left to make room for absolute icon */
-    margin-left: 20px !important; /* Offset the entire card to the right */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
-    color: #ffffff !important;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    border-left: 5px solid var(--brand-red, #c61a1a) !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02) !important;
+    color: var(--brand-dark, #1a1a1a) !important;
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
                 box-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
-                border-color 0.3s ease !important;
+                border-left-color 0.3s ease !important;
 }
 
-/* Unique alternating asymmetric border-radii */
-.contact-card-unique:nth-child(2) {
-    border-radius: 24px 8px 24px 24px !important;
-}
-.contact-card-unique:nth-child(3) {
-    border-radius: 24px 24px 24px 8px !important;
-}
+/* Alternating border-radius effects removed for a unified, clean shape */
+.contact-card-unique:nth-child(2),
+.contact-card-unique:nth-child(3),
 .contact-card-unique:nth-child(4) {
-    border-radius: 8px 24px 24px 24px !important;
+    border-radius: 16px !important;
 }
 
-/* Floating Overlapping Squircle Badge Container */
+/* Soft Circular Icon Badges */
 .contact-icon-unique {
-    position: absolute;
-    left: -26px; /* Floats half-outside the card border */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 52px;
-    height: 52px;
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
-    border: 1px solid rgba(198, 26, 26, 0.18) !important;
-    color: #c61a1a !important; /* Red icon color initially */
-    font-size: 19px;
-    border-radius: 16px; /* Squircle appearance */
-    box-shadow: 0 8px 24px rgba(198, 26, 26, 0.16), 0 4px 10px rgba(0, 0, 0, 0.04) !important;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: rgba(198, 26, 26, 0.06) !important;
+    border: none !important;
+    color: var(--brand-red, #c61a1a) !important;
+    font-size: 20px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
                 background 0.4s ease, 
                 color 0.4s ease, 
-                border-color 0.4s ease, 
                 box-shadow 0.4s ease !important;
     z-index: 2;
 }
 
 /* Hover States & Micro-interactions */
 .contact-card-unique:hover {
-    transform: translateY(-6px) scale(1.01) !important;
-    box-shadow: 0 16px 36px rgba(198, 26, 26, 0.18), 0 8px 20px rgba(0, 0, 0, 0.08) !important;
-    border-color: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-5px) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08) !important;
+    border-left-color: var(--brand-dark, #1a1a1a) !important;
 }
 
 /* Invert colors and rotate/scale badge on hover */
 .contact-card-unique:hover .contact-icon-unique {
-    transform: translateY(-50%) scale(1.12) rotate(8deg) !important;
-    background: linear-gradient(135deg, #c61a1a 0%, #0c090a 100%) !important;
+    transform: scale(1.1) rotate(10deg) !important;
+    background: linear-gradient(135deg, var(--brand-red, #c61a1a) 0%, #e53935 100%) !important;
     color: #ffffff !important;
-    border-color: rgba(255, 255, 255, 0.15) !important;
-    box-shadow: 0 10px 25px rgba(198, 26, 26, 0.4) !important;
+    box-shadow: 0 6px 15px rgba(198, 26, 26, 0.3) !important;
 }
 
 .contact-card-title {
     font-size: 16.5px;
     font-weight: 800;
+    color: var(--brand-dark, #1a1a1a) !important;
+    margin-bottom: 6px;
     letter-spacing: -0.2px;
 }
 
 .contact-card-text {
-    font-size: 13.5px;
-    color: rgba(255, 255, 255, 0.82) !important;
+    font-size: 14px;
+    color: #555555 !important;
     line-height: 1.55;
+    margin: 0;
 }
 
 .contact-unique-link {
-    color: #ffffff !important;
+    color: var(--brand-dark, #1a1a1a) !important;
     text-decoration: none !important;
+    font-weight: 600;
     position: relative;
     display: inline-block;
-    transition: opacity 0.2s ease !important;
+    transition: color 0.3s ease !important;
+    border-bottom: 1px dashed rgba(26, 26, 26, 0.2);
 }
 
 .contact-unique-link:hover {
-    opacity: 0.9;
+    color: var(--brand-red, #c61a1a) !important;
+    border-bottom-color: var(--brand-red, #c61a1a);
 }
 
-/* Premium sliding underline on hover */
 .contact-unique-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 1.5px;
-    bottom: -1px;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.7);
-    transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.contact-unique-link:hover::after {
-    width: 100%;
+    display: none !important;
 }
 
 /* Contact Form Box Styling */
@@ -190,7 +177,7 @@
 /* Responsive adjustment */
 @media (max-width: 991.98px) {
     .contact-card-unique {
-        padding: 24px 24px 24px 44px !important;
+        padding: 20px !important;
     }
     .contact-form-box {
         padding: 24px 20px !important;
@@ -199,18 +186,16 @@
 
 @media (max-width: 575.98px) {
     .contact-cards-stack {
-        padding-left: 15px !important;
+        padding-left: 0 !important;
     }
     .contact-card-unique {
-        padding: 20px 20px 20px 42px !important;
-        margin-left: 12px !important;
+        padding: 16px !important;
+        gap: 15px;
     }
     .contact-icon-unique {
-        left: -18px;
-        width: 42px;
-        height: 42px;
-        font-size: 16px;
-        border-radius: 12px;
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
     }
 }
 
@@ -477,8 +462,15 @@
     }
     .contact-custom-modal .btn-modal-submit,
     .contact-custom-modal .btn-modal-reset {
-        padding: 10px 16px !important;
-        font-size: 13px !important;
+        padding: 12px 16px !important;
+        font-size: 13.5px !important;
+        width: 100% !important;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-custom-modal .contact-quote-gap {
+        flex-direction: column !important;
+        gap: 10px !important;
     }
 }
 

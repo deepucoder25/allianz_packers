@@ -403,7 +403,7 @@
 }
 
 /* Bottom Stats Bar Card styling */
-.reviews-stats-bar {
+.city-reviews-section .reviews-stats-bar {
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 18px;
@@ -1527,7 +1527,7 @@
         padding-top: 12px;
     }
 
-    .reviews-stats-bar {
+    .city-reviews-section .reviews-stats-bar {
         padding: 16px;
     }
 

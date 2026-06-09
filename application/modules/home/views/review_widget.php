@@ -501,7 +501,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
               </svg>
             </div>
             <div class="stat-content">
-              <h3>20,000+</h3>
+              <h5><?=$happyClients?></h5>
               <p>Happy Customers</p>
             </div>
           </div>
@@ -519,7 +519,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
               </svg>
             </div>
             <div class="stat-content">
-              <h3>50,000+</h3>
+              <h5>20,000+</h5>
               <p>Successful Moves</p>
             </div>
           </div>
@@ -535,7 +535,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
               </svg>
             </div>
             <div class="stat-content">
-              <h3>15+</h3>
+              <h5><?=$experience ?></h5>
               <p>Years of Experience</p>
             </div>
           </div>
@@ -551,8 +551,8 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
               </svg>
             </div>
             <div class="stat-content">
-              <h3>500+</h3>
-              <p>Cities Served</p>
+              <h5><?= $statesCovered ?></h5>
+              <p>States Served</p>
             </div>
           </div>
         </div>
@@ -567,7 +567,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
               </svg>
             </div>
             <div class="stat-content">
-              <h3>24/7</h3>
+              <h5>24/7</h5>
               <p>Customer Support</p>
             </div>
           </div>
