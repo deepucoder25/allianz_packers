@@ -342,31 +342,34 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
         <div class="col-xl-8 col-lg-7 col-12">
           <div class="footer-contacts-wrap d-flex align-items-center justify-content-between flex-wrap gap-3">
             
-            <!-- Call Option -->
-            <a href="<?= $phonehtml ?>" class="contact-option-item d-flex align-items-center text-decoration-none">
-              <div class="contact-option-icon">
-                <!-- Telephone Fill Bootstrap Icon -->
-                <i class="bi bi-telephone-fill"></i>
-              </div>
-              <div class="contact-option-text ms-2">
-                <span class="label">Call Us</span>
-                <span class="value"><?= $phone ?></span>
-                <span class="sub">Mon - Sat | 9 AM - 7 PM</span>
-              </div>
-            </a>
+            <!-- Call & WhatsApp Grouped in One Row -->
+            <div class="call-wa-group d-flex align-items-center gap-3">
+              <!-- Call Option -->
+              <a href="<?= $phonehtml ?>" class="contact-option-item d-flex align-items-center text-decoration-none">
+                <div class="contact-option-icon">
+                  <!-- Telephone Fill Bootstrap Icon -->
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="contact-option-text ms-2">
+                  <span class="label">Call Us</span>
+                  <span class="value"><?= $phone ?></span>
+                  <span class="sub">Mon - Sat | 9 AM - 7 PM</span>
+                </div>
+              </a>
 
-            <!-- WhatsApp Option -->
-            <a href="<?= $whatsapphtml ?>" target="_blank" class="contact-option-item d-flex align-items-center text-decoration-none">
-              <div class="contact-option-icon">
-                <!-- WhatsApp Bootstrap Icon -->
-                <i class="bi bi-whatsapp"></i>
-              </div>
-              <div class="contact-option-text ms-2">
-                <span class="label">WhatsApp Us</span>
-                <span class="value"><?= $phone ?></span>
-                <span class="sub">Quick responses</span>
-              </div>
-            </a>
+              <!-- WhatsApp Option -->
+              <a href="<?= $whatsapphtml ?>" target="_blank" class="contact-option-item d-flex align-items-center text-decoration-none">
+                <div class="contact-option-icon">
+                  <!-- WhatsApp Bootstrap Icon -->
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div class="contact-option-text ms-2">
+                  <span class="label">WhatsApp Us</span>
+                  <span class="value"><?= $phone ?></span>
+                  <span class="sub">Quick responses</span>
+                </div>
+              </a>
+            </div>
 
             <!-- Email Option -->
             <a href="<?= $mailhtml ?>" class="contact-option-item d-flex align-items-center text-decoration-none">

@@ -60,5 +60,14 @@ class About extends MX_Controller
         $data['view_file'] = "terms";
         echo Modules::run('template/layout2', $data);
     }
+
+    function moving_tips()
+    {
+        $data['title'] = "Expert Shifting & Moving Tips | " . $this->comp['company3'];
+        $data['description'] = "Get expert moving tips, a weekly packing checklist, and shifting hacks from " . $this->comp['company3'] . " to make your home relocation smooth and stress-free.";
+        $data['module'] = "about";
+        $data['view_file'] = "moving_tips";
+        echo Modules::run('template/layout2', $data);
+    }
 }
 

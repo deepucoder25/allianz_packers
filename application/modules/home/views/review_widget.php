@@ -493,7 +493,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
       <div class="row align-items-center justify-content-between g-4 py-2">
         
         <!-- Stat Item 1: Star/Happy Customers -->
-        <div class="col-lg col-md-4 col-sm-6 col-12 stat-item-col">
+        <div class="col-lg col-md-4 col-sm-6 col-6 stat-item-col">
           <div class="stat-item d-flex align-items-center justify-content-lg-center">
             <div class="stat-icon-circle">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -508,7 +508,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
         </div>
 
         <!-- Stat Item 2: Truck/Successful Moves -->
-        <div class="col-lg col-md-4 col-sm-6 col-12 stat-item-col">
+        <div class="col-lg col-md-4 col-sm-6 col-6 stat-item-col">
           <div class="stat-item d-flex align-items-center justify-content-lg-center">
             <div class="stat-icon-circle">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -526,7 +526,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
         </div>
 
         <!-- Stat Item 3: Medal/Years of Experience -->
-        <div class="col-lg col-md-4 col-sm-6 col-12 stat-item-col">
+        <div class="col-lg col-md-4 col-sm-6 col-6 stat-item-col">
           <div class="stat-item d-flex align-items-center justify-content-lg-center">
             <div class="stat-icon-circle">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -542,7 +542,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
         </div>
 
         <!-- Stat Item 4: Pin/Cities Served -->
-        <div class="col-lg col-md-4 col-sm-6 col-12 stat-item-col">
+        <div class="col-lg col-md-4 col-sm-6 col-6 stat-item-col">
           <div class="stat-item d-flex align-items-center justify-content-lg-center">
             <div class="stat-icon-circle">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -558,7 +558,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
         </div>
 
         <!-- Stat Item 5: Headset/Customer Support -->
-        <div class="col-lg col-md-4 col-sm-6 col-12 stat-item-col">
+        <div class="col-lg col-md-4 col-sm-6 col-6 stat-item-col">
           <div class="stat-item d-flex align-items-center justify-content-lg-center">
             <div class="stat-icon-circle">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">

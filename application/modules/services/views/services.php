@@ -46,48 +46,56 @@
                     'slug' => 'home-relocation',
                     'name' => 'Home Relocation',
                     'icon' => 'bi-house-heart',
+                    'image' => 'home_relocation.jpg',
                     'desc' => 'Professional household shifting services with safety guaranteed. Safe packaging, loading, transport, and unpacking of your precious memories.'
                 ],
                 [
                     'slug' => 'office-shifting',
                     'name' => 'Office Shifting',
                     'icon' => 'bi-building-gear',
+                    'image' => 'office_shifting.jpg',
                     'desc' => 'Minimize downtime with our corporate and business relocation services. Experienced staff handles computers, records, and office furniture securely.'
                 ],
                 [
                     'slug' => 'car-transportation',
                     'name' => 'Car Transportation',
                     'icon' => 'bi-car-front',
+                    'image' => 'img4.jpg',
                     'desc' => 'Secure car carrier and transport options to ship your vehicles across India. Damage-free door-to-door transit under safety supervision.'
                 ],
                 [
                     'slug' => 'transportation-service',
                     'name' => 'Transportation Service',
                     'icon' => 'bi-truck',
+                    'image' => 'img1.jpg',
                     'desc' => 'Fast, safe, and commercial goods transportation service. A huge fleet of clean container trucks handles logistics with tracking.'
                 ],
                 [
                     'slug' => 'door-to-door-moving',
                     'name' => 'Door to Door Moving',
                     'icon' => 'bi-door-open',
+                    'image' => 'local_shifting.jpg',
                     'desc' => 'Comprehensive shifting solutions covering complete doorstep-to-doorstep transition, packing, transporting, loading, and setup.'
                 ],
                 [
                     'slug' => 'warehouse-services',
                     'name' => 'Warehouse Services',
                     'icon' => 'bi-box-seam',
+                    'image' => 'warehousing.jpg',
                     'desc' => 'Short-term and long-term secure warehousing & storage solutions. 24/7 monitored, clean, pest-controlled, and fire-safe facilities.'
                 ],
                 [
                     'slug' => 'parcel-services',
                     'name' => 'Parcel Services',
                     'icon' => 'bi-gift',
+                    'image' => 'parcel_services.jpg',
                     'desc' => 'Cost-effective part-load and single parcel delivery services. Safe and reliable parcel shifting for household goods and business products.'
                 ],
                 [
                     'slug' => 'insurance',
                     'name' => 'Transit Insurance',
                     'icon' => 'bi-shield-check',
+                    'image' => 'img2.jpg',
                     'desc' => 'Complete financial peace of mind. Comprehensive transit insurance coverage protects your goods against any unforeseen damage on the road.'
                 ],
             ];
@@ -95,8 +103,9 @@
             foreach ($services_list as $s):
             ?>
                 <div class="service-card">
-                    <div class="service-card-header">
-                        <div class="service-card-icon-box">
+                    <div class="service-card-header" style="height: 180px; position: relative; overflow: hidden; padding: 0;">
+                        <img src="<?= base_url('assets/images/services_modules/' . $s['image']) ?>" alt="<?= $s['name'] ?>" class="w-100 h-100 object-fit-cover service-header-img" style="position: absolute; top: 0; left: 0; filter: brightness(0.65); transition: transform 0.5s ease;">
+                        <div class="service-card-icon-box" style="position: absolute; bottom: 20px; left: 20px; z-index: 2; margin-bottom: 0;">
                             <i class="bi <?= $s['icon'] ?>"></i>
                         </div>
                     </div>
@@ -114,3 +123,10 @@
         </div>
     </div>
 </section>
+
+<!-- Image Hover Zoom Effect for Service Cards -->
+<style>
+.service-card:hover .service-header-img {
+    transform: scale(1.1);
+}
+</style>

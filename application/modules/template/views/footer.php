@@ -78,8 +78,7 @@
           <h4 class="footer-col-title">SUPPORT</h4>
           <ul class="footer-links-list list-unstyled m-0 p-0">
             <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-chevron-right"></i> FAQs</a></li>
-            <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right"></i> Moving Tips</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-chevron-right"></i> Track Your Shipment</a></li>
+            <li><a href="<?= site_url('moving-tips') ?>"><i class="bi bi-chevron-right"></i> Moving Tips</a></li>
             <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-chevron-right"></i> Terms & Conditions</a></li>
             <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right"></i> Privacy Policy</a></li>
           </ul>

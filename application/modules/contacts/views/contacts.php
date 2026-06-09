@@ -106,7 +106,7 @@ $branch_offices = [
             </div>
             
             <!-- Contact Form -->
-            <div class="col-lg-7">
+            <div class="col-lg-7 mt-4 mt-lg-0">
                 <div class="contact-form-box bg-white p-4 p-md-5 rounded-4 shadow-lg h-100 contact-border-gradient">
                     <h2 class="fw-bold mb-4 contact-title-primary">Send Us A Message</h2>
                     <form id="contactform" class="ajax-form" data-url="<?php echo site_url('contacts/contact') ?>" data-result="contactformresults" onsubmit="return false;">
@@ -149,7 +149,7 @@ $branch_offices = [
             <h2 class="fw-bold office-main-title mt-2">Our Branch Offices Across India</h2>
             <p class="office-subtitle text-muted">We have a strong presence in all major Indian metro cities to support your shifting needs.</p>
         </div>
-        <div class="row">
+        <div class="row g-4">
             <?php foreach ($branch_offices as $office): ?>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="branch-card p-4 rounded-4 h-100 shadow-sm border border-light-subtle">

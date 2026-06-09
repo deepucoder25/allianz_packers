@@ -12,8 +12,10 @@
 }
 
 /* Unique Contact Details Card Styles - Clean, Light-Themed Accent Cards */
-.contact-cards-stack {
-    padding-left: 0 !important; 
+@media (min-width: 992px) {
+    .contact-cards-stack {
+        padding-left: 0 !important; 
+    }
 }
 
 .contact-card-unique {
@@ -185,9 +187,6 @@
 }
 
 @media (max-width: 575.98px) {
-    .contact-cards-stack {
-        padding-left: 0 !important;
-    }
     .contact-card-unique {
         padding: 16px !important;
         gap: 15px;
@@ -816,3 +815,4 @@
     left: -10px;
     top: -4px;
 }
+
