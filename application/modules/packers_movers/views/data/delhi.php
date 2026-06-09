@@ -4,16 +4,16 @@
 
 //SELECT name as nm,latitude as lat,longitude as lon,state_code as sc FROM `cities` WHERE state_code='DL'
 $cities = array(
-		array('nm' => 'Alipur','lat' => '28.79862000','lon' => '77.13314000','sc' => 'DL'),
-		array('nm' => 'Bawana','lat' => '28.79820000','lon' => '77.03431000','sc' => 'DL'),
-		array('nm' => 'Central Delhi','lat' => '28.64857000','lon' => '77.21895000','sc' => 'DL'),
+		// array('nm' => 'Alipur','lat' => '28.79862000','lon' => '77.13314000','sc' => 'DL'),
+		// array('nm' => 'Bawana','lat' => '28.79820000','lon' => '77.03431000','sc' => 'DL'),
+		// array('nm' => 'Central Delhi','lat' => '28.64857000','lon' => '77.21895000','sc' => 'DL'),
 		array('nm' => 'Delhi','lat' => '28.65195000','lon' => '77.23149000','sc' => 'DL'),
-		array('nm' => 'Deoli','lat' => '28.50254000','lon' => '77.23117000','sc' => 'DL'),
-		array('nm' => 'East Delhi','lat' => '28.66242000','lon' => '77.29122000','sc' => 'DL'),
+		// array('nm' => 'Deoli','lat' => '28.50254000','lon' => '77.23117000','sc' => 'DL'),
+		// array('nm' => 'East Delhi','lat' => '28.66242000','lon' => '77.29122000','sc' => 'DL'),
 		// array('nm' => 'Karol Bagh','lat' => '28.65136000','lon' => '77.19072000','sc' => 'DL'),
 		// array('nm' => 'Najafgarh','lat' => '28.60922000','lon' => '76.97982000','sc' => 'DL'),
 		// array('nm' => 'Narela','lat' => '28.85267000','lon' => '77.09288000','sc' => 'DL'),
-		// array('nm' => 'New Delhi','lat' => '28.63576000','lon' => '77.22445000','sc' => 'DL'),
+		array('nm' => 'New Delhi','lat' => '28.63576000','lon' => '77.22445000','sc' => 'DL'),
 		// array('nm' => 'North Delhi','lat' => '28.66920000','lon' => '77.22273000','sc' => 'DL'),
 		// array('nm' => 'North East Delhi','lat' => '28.68690000','lon' => '77.30195000','sc' => 'DL'),
 		// array('nm' => 'North West Delhi','lat' => '28.70113000','lon' => '77.10154000','sc' => 'DL'),

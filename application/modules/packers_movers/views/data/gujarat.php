@@ -1,8 +1,8 @@
 <?php
 //SELECT name as nm,latitude as lat,longitude as lon,state_code as sc FROM `cities` WHERE state_code='GJ'
 $cities = array(
-		array('nm' => 'Abrama','lat' => '20.85865000','lon' => '72.90648000','sc' => 'GJ'),
-		array('nm' => 'Adalaj','lat' => '23.16453000','lon' => '72.58107000','sc' => 'GJ'),
+		// array('nm' => 'Abrama','lat' => '20.85865000','lon' => '72.90648000','sc' => 'GJ'),
+		// array('nm' => 'Adalaj','lat' => '23.16453000','lon' => '72.58107000','sc' => 'GJ'),
 		array('nm' => 'Ahmedabad','lat' => '23.02579000','lon' => '72.58727000','sc' => 'GJ'),
 		// array('nm' => 'Ahwa','lat' => '20.75718000','lon' => '73.68626000','sc' => 'GJ'),
 		// array('nm' => 'Amod','lat' => '21.99317000','lon' => '72.87047000','sc' => 'GJ'),
@@ -162,7 +162,7 @@ $cities = array(
 		// array('nm' => 'Surendranagar','lat' => '22.72706000','lon' => '71.64856000','sc' => 'GJ'),
 		// array('nm' => 'Sanand','lat' => '22.99227000','lon' => '72.38177000','sc' => 'GJ'),
 		// array('nm' => 'Sayla','lat' => '22.54925000','lon' => '71.48324000','sc' => 'GJ'),
-		// array('nm' => 'Surat','lat' => '21.17801000','lon' => '72.81189000','sc' => 'GJ'),
+		array('nm' => 'Surat','lat' => '21.17801000','lon' => '72.81189000','sc' => 'GJ'),
 		// array('nm' => 'Talaja','lat' => '21.35270000','lon' => '72.03524000','sc' => 'GJ'),
 		// array('nm' => 'Tankara','lat' => '22.65622000','lon' => '70.74945000','sc' => 'GJ'),
 		// array('nm' => 'Tapi','lat' => '21.12000000','lon' => '73.40000000','sc' => 'GJ'),

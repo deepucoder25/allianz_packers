@@ -37,11 +37,6 @@
 <?php
 $state = [
     [
-        "image" => "maharashtra.jpg",
-        "category" => "Maharashtra",
-        "link" => "maharashtra"
-    ],
-    [
         "image" => "karnataka.jpg",
         "category" => "Karnataka",
         "link" => "karnataka"
@@ -92,34 +87,14 @@ $state = [
         "link" => "bihar"
     ],
     [
-        "image" => "jharkhand.jpg",
-        "category" => "Jharkhand",
-        "link" => "jharkhand"
-    ],
-    [
-        "image" => "assam.jpg",
-        "category" => "Assam",
-        "link" => "assam"
-    ],
-    [
         "image" => "goa.jpg",
         "category" => "Goa",
         "link" => "goa"
     ],
     [
-        "image" => "kerala.jpg",
-        "category" => "Kerala",
-        "link" => "kerala"
-    ],
-    [
         "image" => "telangana.jpg",
         "category" => "Telangana",
         "link" => "telangana"
-    ],
-    [
-        "image" => "odisha.jpg",
-        "category" => "Odisha",
-        "link" => "odisha"
     ],
     [
         "image" => "madhya-pradesh.jpg",
@@ -135,12 +110,7 @@ $state = [
         "image" => "andhra-pradesh.jpg",
         "category" => "Andhra Pradesh",
         "link" => "andhra-pradesh"
-    ],
-    [
-        "image" => "jammu-and-kashmir.jpg",
-        "category" => "Jammu & Kashmir",
-        "link" => "jammu-and-kashmir"
-    ],
+    ]
 ];
 ?>
 
