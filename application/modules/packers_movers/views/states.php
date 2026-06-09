@@ -133,7 +133,7 @@ $state = [
             <?php foreach ($state as $item): ?>
                 
                 <!-- 4 Columns in One Row on Desktop -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
 
                     <div class="pm-states-card bg-white rounded-4 overflow-hidden shadow-sm h-100">
 
