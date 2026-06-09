@@ -1,63 +1,97 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<section class="py-5">
+<!-- Breadcrumbs Section -->
+<section class="service-breadcrumbs py-4">
     <div class="container">
-        <h1 class="mb-4">Terms &amp; Conditions</h1>
-        
-        <p class="lead">
-            Welcome to <strong><?= $company3 ?></strong>. These Terms &amp; Conditions govern your use of our website and relocation services. By booking a move or using our services, you agree to be bound by these terms.
-        </p>
+        <nav class="bc-nav">
+            <a href="<?= site_url() ?>">Home</a>
+            <span class="bc-sep">›</span>
+            <span class="bc-current">Terms &amp; Conditions</span>
+        </nav>
+        <h1><span class="bc-title-white">Terms &amp;</span> <span class="bc-title-orange">Conditions</span></h1>
+        <p class="bc-desc">Please read the terms and guidelines governing all relocations, bookings, and operations at <?= $company3 ?>.</p>
+        <div class="bc-features">
+            <div class="bc-feature-pill">
+                <div class="pill-icon"><i class="bi bi-clock-history"></i></div>
+                <div class="pill-text"><strong>Since <?= $startYear ?></strong><small><?= $experience ?> Years Legacy</small></div>
+            </div>
+            <div class="bc-feature-pill">
+                <div class="pill-icon"><i class="bi bi-patch-check-fill"></i></div>
+                <div class="pill-text"><strong>ISO Certified</strong><small>Licensed &amp; Verified</small></div>
+            </div>
+            <div class="bc-feature-pill">
+                <div class="pill-icon"><i class="bi bi-people-fill"></i></div>
+                <div class="pill-text"><strong>Expert Team</strong><small>CMD to Branch Staff</small></div>
+            </div>
+            <div class="bc-feature-pill">
+                <div class="pill-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="pill-text"><strong>Pan-India</strong><small>100+ Branches</small></div>
+            </div>
+        </div>
+    </div>
+    <div class="bc-wave-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
+            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
+        </svg>
+    </div>
+</section>
 
-        <h2 class="h4 mt-4 mb-3">1. Service Booking &amp; Shifting Quotes</h2>
-        <ul>
-            <li>Shifting quotes provided by us are based on the inventory list and details supplied by you.</li>
-            <li>Any change in the inventory list, travel distance, floor levels, or loading conditions will result in an adjustment of the final price.</li>
-            <li>The final service pricing is subject to taxes and other applicable duties as outlined in the invoice.</li>
-        </ul>
+<!-- Main Page Content Section -->
+<section class="service-details-section mb-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="about-document-card p-4 p-md-5 rounded-4 shadow-sm bg-white border border-light-subtle text-start">
+                    
+                    <p class="lead text-muted mb-4">
+                        Welcome to <strong><?= $company3 ?></strong>. These Terms &amp; Conditions govern all relocations, slot bookings, and transport operations. By booking a move or using our services, you agree to be bound by these terms.
+                    </p>
 
-        <h2 class="h4 mt-4 mb-3">2. Excluded &amp; Restricted Items</h2>
-        <p>
-            For safety and legal reasons, we do not transport the following items:
-        </p>
-        <ul>
-            <li>Hazardous materials, explosives, and flammable liquids (e.g., gas cylinders, fuel).</li>
-            <li>Valuables including cash, jewelry, gold, and extremely important original documents. We advise carrying these items personally.</li>
-            <li>Contraband, illegal items, or restricted substances.</li>
-            <li>Perishable goods or live plants unless special arrangements are formally agreed upon.</li>
-        </ul>
+                    <hr class="my-4 opacity-10">
 
-        <h2 class="h4 mt-4 mb-3">3. Payments &amp; Billing</h2>
-        <ul>
-            <li>A booking advance may be required to confirm the shifting slot.</li>
-            <li>The remaining balance must be paid in full at the time of loading or unloading, as agreed in the service order.</li>
-            <li>Payments can be made via credit card, net banking, UPI, or other options approved by our billing desk.</li>
-        </ul>
+                    <h3 class="fw-bold mb-3 about-doc-subtitle"><i class="bi bi-calendar-check-fill me-2 text-danger"></i>1. Service Bookings &amp; Shifting Quotes</h3>
+                    <ul class="about-doc-list mb-4 text-muted">
+                        <li>Shifting quotes are generated based on the apartment &amp; room size, inventory list of goods to be moved, movement date, and movement distance.</li>
+                        <li>Choosing the right movers and packers is crucial; therefore, please ensure all details provided during booking are accurate. We always share transparent quotes including all costs with no hidden fees.</li>
+                    </ul>
 
-        <h2 class="h4 mt-4 mb-3">4. Transit Insurance &amp; Liability</h2>
-        <ul>
-            <li>While we take utmost care of your goods, unexpected accidents or road conditions can occur. We strongly recommend choosing transit insurance.</li>
-            <li>Our liability for any damage is strictly limited to the terms of the transit insurance policy.</li>
-            <li>All damage claims must be documented and submitted within 24 hours of unloading.</li>
-        </ul>
+                    <h3 class="fw-bold mb-3 about-doc-subtitle"><i class="bi bi-cash-coin me-2 text-danger"></i>2. Advance Token Payments</h3>
+                    <ul class="about-doc-list mb-4 text-muted">
+                        <li>Customers are required to pay a token amount in advance to confirm slot bookings.</li>
+                        <li>This token payment helps avoid last-minute delays or inconveniences and will be adjusted in the final quotation payment.</li>
+                    </ul>
 
-        <h2 class="h4 mt-4 mb-3">5. Delivery Timeline &amp; Delays</h2>
-        <p>
-            We make every effort to deliver your goods on schedule. However, we are not liable for transit delays caused by traffic accidents, road closures, strikes, bad weather, or other events beyond our reasonable control.
-        </p>
+                    <h3 class="fw-bold mb-3 about-doc-subtitle"><i class="bi bi-arrow-left-right me-2 text-danger"></i>3. Rescheduling &amp; Cancellation Policy</h3>
+                    <ul class="about-doc-list mb-4 text-muted">
+                        <li>We understand that shifting plans can change at any time. You get a **FREE Cancellation** policy when you book with us, ensuring no financial risk.</li>
+                        <li>You can reschedule your movement by informing your dedicated move manager at least 2 days before the booked date.</li>
+                        <li>Changes to the relocation date are FREE of cost for the following categories: weekdays to weekdays, weekend to weekend, and weekend to weekdays.</li>
+                    </ul>
 
-        <h2 class="h4 mt-4 mb-3">6. Governing Law</h2>
-        <p>
-            These Terms &amp; Conditions are governed by and construed in accordance with the laws of India. Any legal disputes arising from our services shall be subject to the exclusive jurisdiction of the courts near our registered office.
-        </p>
+                    <h3 class="fw-bold mb-3 about-doc-subtitle"><i class="bi bi-wrench-adjustable me-2 text-danger"></i>4. Furniture Dismantling &amp; Assembly</h3>
+                    <ul class="about-doc-list mb-4 text-muted">
+                        <li>Our packers and movers will dismantle and assemble beds and other standard furniture items.</li>
+                        <li>This service is provided without any extra costs, provided that the dedicated shifting manager is notified beforehand.</li>
+                    </ul>
 
-        <h2 class="h4 mt-4 mb-3">7. Contact Us</h2>
-        <p>
-            If you have any questions about our Terms &amp; Conditions, please get in touch with us:
-        </p>
-        <p class="mb-0">
-            <strong><?= $company3 ?></strong><br>
-            Email: <a href="<?= $mailhtml ?>"><?= $mail ?></a><br>
-            Phone: <a href="<?= $phonehtml ?>"><?= $phone ?></a>
-        </p>
+                    <h3 class="fw-bold mb-3 about-doc-subtitle"><i class="bi bi-shield-fill-check me-2 text-danger"></i>5. Transit Insurance &amp; Liability</h3>
+                    <ul class="about-doc-list mb-4 text-muted">
+                        <li>To protect costly household goods, we provide goods insurance policies along with our relocation services.</li>
+                        <li>You can insure your items by informing your dedicated move manager prior to the move. Customers will be required to purchase our secured package, which includes insurance coverage and other benefits.</li>
+                    </ul>
+
+                    <h3 class="fw-bold mb-3 about-doc-subtitle"><i class="bi bi-envelope-fill me-2 text-danger"></i>6. Contact Us</h3>
+                    <p class="text-muted mb-4">
+                        If you have any questions about our Terms &amp; Conditions, please get in touch with us:
+                    </p>
+                    <div class="p-4 bg-light rounded-4 border border-light-subtle d-inline-block text-start">
+                        <h6 class="fw-bold mb-2"><?= $company3 ?></h6>
+                        <p class="small text-muted mb-1"><i class="bi bi-envelope-fill me-2 text-success"></i>Email: <a href="<?= $mailhtml ?>" class="text-danger text-decoration-none fw-semibold"><?= $mail ?></a></p>
+                        <p class="small text-muted mb-0"><i class="bi bi-telephone-fill me-2 text-warning"></i>Phone: <a href="<?= $phonehtml ?>" class="text-danger text-decoration-none fw-semibold"><?= $phone ?></a></p>
+                        <p class="small text-muted mb-0"><i class="bi bi-telephone-fill me-2 text-warning"></i>Phone: <a href="<?= $phonehtml1 ?>" class="text-danger text-decoration-none fw-semibold"><?= $phone1 ?></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

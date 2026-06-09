@@ -13,7 +13,7 @@
 
 /* Unique Contact Details Card Styles */
 .contact-cards-stack {
-    padding-left: 24px !important; /* Make room on the container level for the overlapping floating icons */
+    padding-left: 24px !important; 
 }
 
 .contact-card-unique {
@@ -214,9 +214,7 @@
     }
 }
 
-/* ==========================================================================
-   BRANCH OFFICES SECTION (contacts.php - Our Locations)
-   ========================================================================== */
+/* BRANCH OFFICES SECTION (contacts.php - Our Locations)*/
 .branch-offices-section {
     background-color: #ffffff;
     font-family: 'Outfit', sans-serif;
@@ -285,9 +283,7 @@
     margin-top: 2px;
 }
 
-/* ==========================================================================
-   QUOTE MODAL REDESIGN (quotemodal.php)
-   ========================================================================== */
+/* QUOTE MODAL REDESIGN (quotemodal.php) */
 
 /* Fade-in Backdrop Blur */
 .contact-custom-modal.modal {
@@ -484,4 +480,347 @@
         padding: 10px 16px !important;
         font-size: 13px !important;
     }
+}
+
+
+/* Premium Styles for About Us Dropdown Modules */
+
+
+/* 1. Common & Layout Overrides */
+.service-main-content {
+    color: var(--text-gray);
+}
+
+.service-section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--brand-dark);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.service-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--brand-red) 0%, var(--brand-dark) 100%);
+    border-radius: 2px;
+}
+
+/* 2. Mission & Vision Dual Cards */
+.about-mv-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    transition: var(--transition-smooth);
+}
+
+.about-mv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06) !important;
+    border-color: rgba(198, 26, 26, 0.2) !important;
+}
+
+.mv-icon-badge {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: var(--transition-smooth);
+}
+
+.bg-red-soft {
+    background-color: rgba(198, 26, 26, 0.06);
+}
+
+.bg-dark-soft {
+    background-color: rgba(26, 26, 26, 0.06);
+}
+
+.text-red {
+    color: var(--brand-red);
+}
+
+.text-dark {
+    color: var(--brand-dark);
+}
+
+.about-mv-card:hover .mv-icon-badge {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.about-mv-card:hover .bg-red-soft {
+    background-color: var(--brand-red);
+    color: #ffffff !important;
+}
+
+.about-mv-card:hover .bg-dark-soft {
+    background-color: var(--brand-dark);
+    color: #ffffff !important;
+}
+
+/* 3. Milestones Timeline */
+.about-milestone-timeline {
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+.timeline-trail-line {
+    position: absolute;
+    left: 48px;
+    top: 15px;
+    bottom: 15px;
+    width: 3px;
+    background: linear-gradient(180deg, var(--brand-red) 0%, var(--brand-dark) 100%);
+    border-radius: 3px;
+}
+
+.timeline-milestone-item {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-bullet-year {
+    position: absolute;
+    left: -48px;
+    top: 8px;
+    width: 54px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    transition: var(--transition-smooth);
+}
+
+.bg-red-gradient {
+    background: linear-gradient(135deg, var(--brand-red) 0%, #e03b3b 100%);
+}
+
+.bg-dark-gradient {
+    background: linear-gradient(135deg, var(--brand-dark) 0%, #3a3a3a 100%);
+}
+
+.timeline-milestone-content {
+    background: #ffffff;
+    transition: var(--transition-smooth);
+}
+
+.timeline-milestone-item:hover .timeline-bullet-year {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(198, 26, 26, 0.2);
+}
+
+.timeline-milestone-item:hover .timeline-milestone-content {
+    border-color: rgba(198, 26, 26, 0.15) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important;
+    transform: translateX(4px);
+}
+
+/* 4. Shifting / Quality Commitment Banner */
+.about-commitment-card {
+    border-left: 5px solid var(--brand-red) !important;
+    background: linear-gradient(90deg, rgba(198, 26, 26, 0.02) 0%, rgba(255, 255, 255, 0) 100%);
+    border-top: 1px solid rgba(0,0,0,0.03) !important;
+    border-right: 1px solid rgba(0,0,0,0.03) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.03) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+}
+
+.about-commitment-card.border-success {
+    border-left-color: var(--brand-dark) !important;
+    background: linear-gradient(90deg, rgba(26, 26, 26, 0.02) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* 5. Why Choose Us Page Hover Transitions */
+.about-choose-transition-hover {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    transition: var(--transition-smooth);
+}
+
+.about-choose-transition-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07) !important;
+    border-color: rgba(198, 26, 26, 0.15) !important;
+}
+
+.about-icon-box-lg {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    background-color: rgba(198, 26, 26, 0.06) !important;
+    color: var(--brand-red) !important;
+    transition: var(--transition-smooth);
+    margin: 0 auto;
+}
+
+.about-choose-transition-hover:hover .about-icon-box-lg {
+    background-color: var(--brand-red) !important;
+    color: #ffffff !important;
+    transform: scale(1.1) rotate(6deg);
+}
+
+/* 6. Custom FAQ Accordion */
+.about-custom-faq-accordion .accordion-item {
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    margin-bottom: 16px;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.015) !important;
+    transition: var(--transition-smooth);
+}
+
+.about-custom-faq-accordion .accordion-item:hover {
+    border-color: rgba(198, 26, 26, 0.15) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03) !important;
+}
+
+.about-custom-faq-accordion .accordion-button {
+    font-size: 16px;
+    font-weight: 600 !important;
+    color: var(--brand-dark) !important;
+    padding: 20px 24px;
+    border-radius: 12px !important;
+    transition: var(--transition-smooth);
+}
+
+.about-custom-faq-accordion .accordion-button:not(.collapsed) {
+    background-color: rgba(198, 26, 26, 0.02) !important;
+    color: var(--brand-red) !important;
+    box-shadow: none !important;
+}
+
+.about-custom-faq-accordion .accordion-button::after {
+    background-image: none !important;
+    content: "+";
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: var(--transition-smooth);
+}
+
+.about-custom-faq-accordion .accordion-button:not(.collapsed)::after {
+    content: "−";
+    color: var(--brand-red);
+    transform: rotate(180deg);
+}
+
+/* 7. Testimonials Client Initials Avatars */
+.about-testimonial-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    transition: var(--transition-smooth);
+}
+
+.about-testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+    border-color: rgba(198, 26, 26, 0.15) !important;
+}
+
+.about-avatar-initials {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.avatar-grad-1 { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+.avatar-grad-2 { background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59); }
+.avatar-grad-3 { background: linear-gradient(135deg, #4776e6, #8e54e9); }
+.avatar-grad-4 { background: linear-gradient(135deg, #11998e, #38ef7d); }
+.avatar-grad-5 { background: linear-gradient(135deg, #f12711, #f5af19); }
+
+.about-quote-icon-lg {
+    font-size: 42px;
+    color: var(--brand-red);
+}
+
+.about-italic-text {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.about-font-sm-075 {
+    font-size: 0.75rem;
+}
+
+.about-font-sm-070 {
+    font-size: 0.7rem;
+}
+
+.about-bg-success-soft {
+    background-color: rgba(198, 26, 26, 0.05);
+}
+
+/* 8. Privacy & Terms (Document Templates) */
+.about-document-card {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02) !important;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-doc-subtitle {
+    color: var(--brand-dark);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(198, 26, 26, 0.08);
+    padding-bottom: 8px;
+}
+
+.about-doc-subtitle i {
+    color: var(--brand-red) !important;
+}
+
+.about-doc-list {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.about-doc-list li {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 15px;
+}
+
+.about-doc-list li::before {
+    content: "•";
+    color: var(--brand-red);
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: -10px;
+    top: -4px;
 }

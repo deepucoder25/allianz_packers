@@ -66,14 +66,17 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h6 class="fw-bold mb-1">Excellent Household Shifting</h6>
+                                <h6 class="fw-bold mb-1">Hassle-Free Relocation</h6>
                                 <p class="small text-muted mb-3 about-italic-text">
-                                    "I shifted my entire household goods from Delhi to Bangalore. The crew arrived on time and packed everything carefully using double-layered bubble wrap. Not even a single glass item broke during the transit. Highly recommended!"
+                                    "It was great experience with Allianz Packers. I was so hassle free while Moving and packing but with them I didn't find any issues, thank you for your consultation and support and to the whole team!"
                                 </p>
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <strong class="d-block small">Ramanuj Sharma</strong>
-                                        <small class="text-muted text-uppercase about-font-sm-075">Delhi to Bangalore</small>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="about-avatar-initials avatar-grad-1">DP</div>
+                                        <div>
+                                            <strong class="d-block small">Dhananjay Pandey</strong>
+                                            <small class="text-muted text-uppercase about-font-sm-075">Verified Client</small>
+                                        </div>
                                     </div>
                                     <span class="badge about-bg-success-soft text-success rounded-pill px-2 py-1 small about-font-sm-070">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -93,16 +96,19 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-empty"></i>
                                 </div>
-                                <h6 class="fw-bold mb-1">Safe Car &amp; Bike Carrier Service</h6>
+                                <h6 class="fw-bold mb-1">Excellent Shifting Services</h6>
                                 <p class="small text-muted mb-3 about-italic-text">
-                                    "We relocated our Hyundai i20 and Royal Enfield from Mumbai to Gurgaon. <?= $company3 ?> used a dedicated car carrier and delivered both vehicles door-to-door without a single scratch. Very transparent pricing as well."
+                                    "Excellent services, very cooperative staff, each and every item packed &amp; unpacked very professionally. Very good services. Packing was done in a professional manner. Staff is trained and polite."
                                 </p>
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <strong class="d-block small">Priya Nair</strong>
-                                        <small class="text-muted text-uppercase about-font-sm-075">Mumbai to Gurgaon</small>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="about-avatar-initials avatar-grad-2">PS</div>
+                                        <div>
+                                            <strong class="d-block small">Priyank Srivastava</strong>
+                                            <small class="text-muted text-uppercase about-font-sm-075">Verified Client</small>
+                                        </div>
                                     </div>
                                     <span class="badge about-bg-success-soft text-success rounded-pill px-2 py-1 small about-font-sm-070">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -124,14 +130,17 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h6 class="fw-bold mb-1">Smooth Office Relocation</h6>
+                                <h6 class="fw-bold mb-1">Delhi to Jammu Shifting</h6>
                                 <p class="small text-muted mb-3 about-italic-text">
-                                    "We had to move our IT office branch with 45 work stations from Pune to Hyderabad. The planning and execution by <?= $company3 ?> was flawless. We resumed our operations on Monday morning without any downtime."
+                                    "Thanks Allianz packers for perfect services Delhi to Jammu. Timely Delivered and staff behavior is very good and polite during the entire relocation process."
                                 </p>
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <strong class="d-block small">Vikram Malhotra</strong>
-                                        <small class="text-muted text-uppercase about-font-sm-075">Pune to Hyderabad</small>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="about-avatar-initials avatar-grad-3">MK</div>
+                                        <div>
+                                            <strong class="d-block small">Mahesh Kumar (Moksh)</strong>
+                                            <small class="text-muted text-uppercase about-font-sm-075">Delhi to Jammu</small>
+                                        </div>
                                     </div>
                                     <span class="badge about-bg-success-soft text-success rounded-pill px-2 py-1 small about-font-sm-070">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -151,16 +160,19 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h6 class="fw-bold mb-1">Reliable Local Shifting</h6>
+                                <h6 class="fw-bold mb-1">Bangalore to Varanasi Relocation</h6>
                                 <p class="small text-muted mb-3 about-italic-text">
-                                    "Shifted our 3 BHK flat within Kolkata. The team completed the loading, transport, and unloading in just under 6 hours. Their pricing was highly competitive and the crew was incredibly polite and helpful."
+                                    "Had shifted my items from Bangalore to Varanasi. Home visit for quotation and packing was very good. Courteous communication, excellent follow-up, and items were delivered properly."
                                 </p>
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <strong class="d-block small">Amitava Bose</strong>
-                                        <small class="text-muted text-uppercase about-font-sm-075">Local Kolkata Shifting</small>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="about-avatar-initials avatar-grad-4">RW</div>
+                                        <div>
+                                            <strong class="d-block small">Rajeshwari</strong>
+                                            <small class="text-muted text-uppercase about-font-sm-075">Bangalore to Varanasi</small>
+                                        </div>
                                     </div>
                                     <span class="badge about-bg-success-soft text-success rounded-pill px-2 py-1 small about-font-sm-070">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -182,14 +194,17 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h6 class="fw-bold mb-1">Stress-Free Pet Relocation</h6>
+                                <h6 class="fw-bold mb-1">Bangalore to Jaipur Move</h6>
                                 <p class="small text-muted mb-3 about-italic-text">
-                                    "Extremely thankful to <?= $company3 ?> for safely shifting my Labrador from Siliguri to Chennai. They handled the documentation, custom travel crate, and kept feeding and walking him during breaks. Amazing care!"
+                                    "I used the services to shift my household items from Bangalore to Jaipur. No negative point to highlight. Their shifting, packing, and moving services were good on each aspect."
                                 </p>
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <strong class="d-block small">Dr. Rajesh Patel</strong>
-                                        <small class="text-muted text-uppercase about-font-sm-075">Siliguri to Chennai</small>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="about-avatar-initials avatar-grad-5">AK</div>
+                                        <div>
+                                            <strong class="d-block small">Ashish Kumar</strong>
+                                            <small class="text-muted text-uppercase about-font-sm-075">Bangalore to Jaipur</small>
+                                        </div>
                                     </div>
                                     <span class="badge about-bg-success-soft text-success rounded-pill px-2 py-1 small about-font-sm-070">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -211,14 +226,17 @@
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h6 class="fw-bold mb-1">IBA Approved Billing &amp; Shifting</h6>
+                                <h6 class="fw-bold mb-1">Professional Home Moving</h6>
                                 <p class="small text-muted mb-3 about-italic-text">
-                                    "As a bank employee, I needed IBA approved packers and movers for my official transfer from Patna to Lucknow. <?= $company3 ?> provided accurate quotation, consignment note, and bills. Claim settlement was smooth."
+                                    "Had moving my home items. Excellent services, very cooperative staff, each and every item packed &amp; unpacked very professionally. Staff is trained, polite, and very helpful."
                                 </p>
                                 <div class="user-details pt-3 border-top mt-auto d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <strong class="d-block small">Siddharth Sen</strong>
-                                        <small class="text-muted text-uppercase about-font-sm-075">Patna to Lucknow</small>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="about-avatar-initials avatar-grad-1">PY</div>
+                                        <div>
+                                            <strong class="d-block small">Priyanka</strong>
+                                            <small class="text-muted text-uppercase about-font-sm-075">Verified Client</small>
+                                        </div>
                                     </div>
                                     <span class="badge about-bg-success-soft text-success rounded-pill px-2 py-1 small about-font-sm-070">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified

@@ -45,12 +45,12 @@
                 <div class="service-main-content">
                     
                     <h2 class="service-section-title">The Difference We Make</h2>
-                    <div class="about-service-text">
+                    <div class="about-service-text mb-4">
                         <p>
-                            Relocation is not just about moving boxes; it's about moving lives, memories, and valuable assets. At <strong><?= $company3 ?></strong>, we are committed to making your transition seamless, safe, and stress-free. Over our 30+ year journey, we have refined our processes to become India's most trusted name in packers and movers.
+                            Choosing the right packers and movers is crucial for home relocation; therefore, it is best to verify moving companies before hiring them. By choosing cheap moving companies, you might get lots of fake promises for the best shifting services in India; however, you will face hidden charges after completing the move. <strong><?= $company3 ?></strong> always shares the best quotes including all hidden costs.
                         </p>
                         <p>
-                            We employ only seasoned packing professionals, utilize superior packing materials, and possess a vast fleet of specialized transport carriers. Our transparent pricing structure and pan-India presence ensure you receive high-quality service at the most reasonable prices, with no hidden surprises.
+                            We are reliable Packers &amp; Movers who understand customers' requirements correctly and rectify all your problems related to Movers and Packers Services in Delhi, Bangalore, Pune, Ahmedabad, Gurgaon, Mumbai, Hyderabad, Noida, and other major cities.
                         </p>
                     </div>
 
@@ -60,63 +60,79 @@
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light text-center about-choose-transition-hover">
                                 <div class="icon-box text-success mb-3 about-icon-box-lg">
-                                    <i class="bi bi-shield-lock-fill"></i>
+                                    <i class="bi bi-geo-alt-fill"></i>
                                 </div>
-                                <h5 class="fw-bold">100% Safe Shifting</h5>
+                                <h5 class="fw-bold">Strong Network</h5>
                                 <p class="small text-muted mb-0">
-                                    We use heavy-duty multi-layered bubble wraps, customized crates, and premium carton sheets. Your belongings are guarded against impact, moisture, and dust during the entire journey.
+                                    We have a strong network of 50+ self-owned offices covering 500+ destinations within India, ensuring seamless intercity shifting.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light text-center about-choose-transition-hover">
                                 <div class="icon-box text-success mb-3 about-icon-box-lg">
-                                    <i class="bi bi-truck"></i>
+                                    <i class="bi bi-cpu-fill"></i>
                                 </div>
-                                <h5 class="fw-bold">Specialized Vehicle Carriers</h5>
+                                <h5 class="fw-bold">Technologically Advanced</h5>
                                 <p class="small text-muted mb-0">
-                                    Our cars and bikes are moved inside covered, enclosed container carriers to ensure they are shielded from road debris, weather, and external damage, providing door-to-door delivery.
+                                    We are technologically advanced and possess fully computerized and well-networked branches to track and coordinate your move.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light text-center about-choose-transition-hover">
                                 <div class="icon-box text-success mb-3 about-icon-box-lg">
-                                    <i class="bi bi-tags-fill"></i>
+                                    <i class="bi bi-box-seam-fill"></i>
                                 </div>
-                                <h5 class="fw-bold">Transparent Fair Pricing</h5>
+                                <h5 class="fw-bold">International Standards</h5>
                                 <p class="small text-muted mb-0">
-                                    No hidden costs. We provide a detailed itemized breakdown of expenses upfront so you know exactly what you are paying for, eliminating any post-move disputes.
+                                    We use packing materials of international standards and employ the most efficient techniques for maintenance and safety of goods.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 p-4 bg-light text-center about-choose-transition-hover">
                                 <div class="icon-box text-success mb-3 about-icon-box-lg">
-                                    <i class="bi bi-clock-history"></i>
+                                    <i class="bi bi-headset"></i>
                                 </div>
-                                <h5 class="fw-bold">Punctual &amp; Prompt Delivery</h5>
+                                <h5 class="fw-bold">24/7 Live Support</h5>
                                 <p class="small text-muted mb-0">
-                                    Time is crucial. We carefully map logistics routes, utilize advanced tracking systems, and plan departures to guarantee your items arrive precisely when expected.
+                                    We keep customer satisfaction on the top most of our priorities and thus, along with qualified services, we also provide 24*7 customer support.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <h2 class="service-section-title mt-4">Industry Credentials</h2>
-                    <div class="about-service-text">
-                        <p>
-                            <strong><?= $company3 ?></strong> is fully accredited with major relocation and standard certifications. Our logistics team operates on the highest standards of safety guidelines.
-                        </p>
-                        <ul>
-                            <li><strong>ISO Certified Quality Systems</strong>: Complies with strict international standards of service management.</li>
-                            <li><strong>IBA Approved Transporters</strong>: Offering official, bank-approved billing and shifting options for corporate and government employee relocations.</li>
-                            <li><strong>Full Transit Insurance Options</strong>: Offering peace of mind with complete cargo valuation and swift claim settlements.</li>
-                        </ul>
+                    <h2 class="service-section-title mt-4">Why Allianz Packers?</h2>
+                    <div class="about-service-text mb-5">
+                        <div class="mb-4">
+                            <h5 class="fw-bold text-dark"><i class="bi bi-patch-check-fill text-danger me-2"></i>Best Packers and Movers in India</h5>
+                            <p class="small text-muted">Shifting a house starts with searching the best Packers and Movers India through various modes. We always believe in providing the best services in the industry to refer it to other clients through word-of-mouth publicity.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-bold text-dark"><i class="bi bi-tags-fill text-danger me-2"></i>Packers and Movers Price in India</h5>
+                            <p class="small text-muted">Selecting the best packers and movers next comes a price. We always look for safe, reliable, and cost-effective Packers and Movers India to save time and money. We offer cost-effective solutions for packing and moving household goods anywhere in India.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-bold text-dark"><i class="bi bi-award-fill text-danger me-2"></i>Top Packers and Movers in India</h5>
+                            <p class="small text-muted">We are known as a reliable packers and movers in India; we prioritize the safety and rest of all your significant goods and belongingness. We provide you with guaranteed security, the best quality packing, and immediate claim settlement.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-bold text-dark"><i class="bi bi-shield-fill-check text-danger me-2"></i>Secure Packers and Movers in India</h5>
+                            <p class="small text-muted">We have a team of well-experienced employees who do all your packers and movers' services safely in a given time frame. Our consultants provide you with relocation services like transportation, loading, unloading, trailer, custom clearance, and workplace shifting.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-bold text-dark"><i class="bi bi-cash-coin text-danger me-2"></i>Reasonable Price Packers and Movers in India</h5>
+                            <p class="small text-muted">Packers and movers' demands are high. We provide you with reliable packers and movers services at a reasonable price with the assistance of our experienced employees, providing hassle-free moving with 100% safety and security.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-bold text-dark"><i class="bi bi-star-fill text-danger me-2"></i>Reputed Packers and Movers in India</h5>
+                            <p class="small text-muted">We are well-reputed packers and movers giving you unmatched packers and movers services. We offer you packing &amp; unpacking, loading &amp; unloading, house relocation, transport, local shifting, office shifting, domestic shifting, custom clearance, warehousing, and trailer services.</p>
+                        </div>
                     </div>
 
                     <!-- Client satisfaction banner -->
-                    <div class="p-4 bg-light border-start border-5 border-success rounded-3 mt-5">
+                    <div class="p-4 bg-light border-start border-5 border-success rounded-3 mt-5 about-commitment-card">
                         <h5 class="fw-bold text-success mb-2">Our Quality Commitment</h5>
                         <p class="mb-0 text-muted small">
                             "We believe that a satisfied client is our greatest advertisement. Every single move receives the absolute dedication of our branch managers, supervisors, packing experts, and customer care executives."

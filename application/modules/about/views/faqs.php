@@ -58,12 +58,12 @@
                         <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
                             <h2 class="accordion-header" id="faq-heading-1">
                                 <button class="accordion-button fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-1" aria-expanded="true" aria-controls="faq-collapse-1">
-                                    1. What services does <?= $company3 ?> provide?
+                                    1. What happens to my booking if I have to change or cancel the date?
                                 </button>
                             </h2>
                             <div id="faq-collapse-1" class="accordion-collapse collapse show" aria-labelledby="faq-heading-1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body bg-white text-muted small pt-0">
-                                    We offer complete, end-to-end relocation services across India including household shifting, office relocation, vehicle (car/bike) carrier transport, warehouse storage, domestic shifting, corporate movements, international relocations, and pet relocations.
+                                    We understand that shifting plans can change at any time. You get a Free Cancellation policy when you book with <?= $company3 ?>. There is no risk; you don't lose out on anything when you cancel your booking.
                                 </div>
                             </div>
                         </div>
@@ -72,12 +72,12 @@
                         <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
                             <h2 class="accordion-header" id="faq-heading-2">
                                 <button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-2" aria-expanded="false" aria-controls="faq-collapse-2">
-                                    2. How are the packing and moving charges calculated?
+                                    2. Why should I pay tokens in advance to Packers and Movers before the move?
                                 </button>
                             </h2>
                             <div id="faq-collapse-2" class="accordion-collapse collapse" aria-labelledby="faq-heading-2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body bg-white text-muted small pt-0">
-                                    Relocation costs depend on several key factors: the total volume of goods, the amount of packing material needed (e.g. bubble wraps, boxes, custom wooden crates), travel distance, the floor levels of the locations, access to lifts, and additional options like warehousing or transit insurance.
+                                    The token is to confirm slot bookings and avoid any last-minute delays or inconveniences. Our team will adjust the token amount in the final quotation payment.
                                 </div>
                             </div>
                         </div>
@@ -86,12 +86,12 @@
                         <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
                             <h2 class="accordion-header" id="faq-heading-3">
                                 <button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-3" aria-expanded="false" aria-controls="faq-collapse-3">
-                                    3. Do you provide insurance for my household goods during transit?
+                                    3. Can I reschedule my packers and movers movement after I have paid the token amount?
                                 </button>
                             </h2>
                             <div id="faq-collapse-3" class="accordion-collapse collapse" aria-labelledby="faq-heading-3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body bg-white text-muted small pt-0">
-                                    Yes, we provide full transit insurance options. We strongly advise taking transit insurance as it covers financial liability for any damage arising due to unexpected road conditions, weather events, or traffic accidents. Our customer service team handles claims smoothly and quickly.
+                                    You can reschedule your movement by informing your dedicated move manager, whose details are in the confirmation email. Your move manager will reschedule the shifting &amp; movement based on the availability of slots.
                                 </div>
                             </div>
                         </div>
@@ -100,12 +100,12 @@
                         <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
                             <h2 class="accordion-header" id="faq-heading-4">
                                 <button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-4" aria-expanded="false" aria-controls="faq-collapse-4">
-                                    4. How much time will it take to relocate my goods?
+                                    4. My movement date still needs to be fixed. How can I book movers in advance?
                                 </button>
                             </h2>
                             <div id="faq-collapse-4" class="accordion-collapse collapse" aria-labelledby="faq-heading-4" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body bg-white text-muted small pt-0">
-                                    Local shifting within a city is usually completed in a single day (typically taking 4 to 8 hours depending on size). For intercity shifting, transit times depend on the distance, route conditions, and checkpoint regulations, usually ranging between 2 to 7 business days.
+                                    You can notify your dedicated movement manager to reschedule movement up to 2 days before the booked date. Change in relocation date is FREE of cost for the following categories: weekdays to weekdays, weekend to weekend, and weekend to weekdays.
                                 </div>
                             </div>
                         </div>
@@ -114,12 +114,12 @@
                         <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
                             <h2 class="accordion-header" id="faq-heading-5">
                                 <button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-5" aria-expanded="false" aria-controls="faq-collapse-5">
-                                    5. Can I track my shipment during transit?
+                                    5. Will the packers and movers dismantle beds and other furniture?
                                 </button>
                             </h2>
                             <div id="faq-collapse-5" class="accordion-collapse collapse" aria-labelledby="faq-heading-5" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body bg-white text-muted small pt-0">
-                                    Yes. We supply tracking options and maintain a dedicated support desk. The branch manager coordinating your shifting will remain in direct contact to provide regular status updates on where the vehicle is and its estimated arrival time.
+                                    Our packers and movers can dismantle and assemble beds and other furniture without extra costs. However, you will have to notify your dedicated shifting manager before moving.
                                 </div>
                             </div>
                         </div>
@@ -128,12 +128,26 @@
                         <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
                             <h2 class="accordion-header" id="faq-heading-6">
                                 <button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-6" aria-expanded="false" aria-controls="faq-collapse-6">
-                                    6. What items are restricted or not loaded for transit?
+                                    6. Is a preliminary inspection required before booking the movement?
                                 </button>
                             </h2>
                             <div id="faq-collapse-6" class="accordion-collapse collapse" aria-labelledby="faq-heading-6" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body bg-white text-muted small pt-0">
-                                    For safety reasons, we do not transport hazardous materials, inflammable substances (gas cylinders, fuel), contraband, perishables, jewelry, cash, and highly valuable documents. We advise clients to carry jewelry, cash, and documents personally.
+                                    No, instant quotes are generated per the apartment &amp; room size/inventory list, movement date, and movement distance.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 7 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="faq-heading-7">
+                                <button class="accordion-button collapsed fw-bold text-dark bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-7" aria-expanded="false" aria-controls="faq-collapse-7">
+                                    7. Do you provide insurance for the items?
+                                </button>
+                            </h2>
+                            <div id="faq-collapse-7" class="accordion-collapse collapse" aria-labelledby="faq-heading-7" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body bg-white text-muted small pt-0">
+                                    You can ensure your items by informing your dedicated move manager. You will be required to purchase our best-secured package. This secured package has many other benefits, along with insurance.
                                 </div>
                             </div>
                         </div>
