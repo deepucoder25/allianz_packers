@@ -41,26 +41,45 @@ $state = ucwords($state);
         </svg>
     </div>
 </section>
-    <div class="pm-list-service-page">
+    <div class="pm-list-service-page py-5 bg-light">
     <div class="container pm-list-feature-section">
-        <div class="row">
+        <!-- Search and Info Wrapper -->
+        <div class="pm-list-search-wrapper">
+            <div class="pm-list-search-info">
+                <h3>Select Your Shifting Destination</h3>
+                <p>We serve <?= count($cities) ?> major cities in <?= $state ?>. Search or select a city below to get quotes.</p>
+            </div>
+            <div class="pm-list-search-box">
+                <input type="text" id="citySearchInput" class="pm-list-search-input" placeholder="Search city or branch...">
+                <i class="bi bi-search"></i>
+            </div>
+        </div>
+
+        <!-- Empty State (No Results) -->
+        <div id="noResultsAlert" class="pm-list-no-results mb-4">
+            <i class="bi bi-geo-alt-fill"></i>
+            <h4>No Branches Found</h4>
+            <p>We couldn't find any Packers and Movers in "<span id="searchedCitySpan"></span>" for <?= $state ?>. Please try another query.</p>
+        </div>
+
+        <div class="row g-3" id="citiesGrid">
             <?php
             $st = str_replace(" ", "-", $state);
             foreach ($cities as $ct) :
                 $link = urlencode(strtolower(str_replace(" ", "-", $ct['nm'])));
                 $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
             ?>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
-                    <a href="<?= site_url("$link-packers-movers-$statename") ?>" class="pm-list-city-card-link d-block h-100 text-decoration-none">
-                        <div class="pm-list-city-card card border-0 shadow h-100">
-                            <div class="card-body pm-list-card-body">
-                                <!-- Truck Icon on Left -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 pm-list-city-card-col" data-city-name="<?= htmlspecialchars($ct['nm']) ?>">
+                    <a href="<?= site_url("$link-packers-movers-$statename") ?>" class="pm-list-city-card-link text-decoration-none">
+                        <div class="pm-list-city-card card border-0 h-100 shadow-sm">
+                            <div class="card-body p-3 d-flex align-items-center gap-2">
+                                <!-- Location Icon -->
                                 <div class="pm-list-icon">
-                                    <i class="bi bi-truck"></i>
+                                    <i class="bi bi-geo-alt"></i>
                                 </div>
-                                <!-- Title on Right -->
+                                <!-- Content -->
                                 <div class="pm-list-city-name">
-                                    <h5>Packers and Movers <b><?= $ct['nm'] ?></b></h5>
+                                    <span>Packers and Movers</span> <strong><?= htmlspecialchars($ct['nm']) ?></strong>
                                 </div>
                             </div>
                         </div>
@@ -71,4 +90,37 @@ $state = ucwords($state);
     </div>
 </div>
 </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('citySearchInput');
+    const noResultsAlert = document.getElementById('noResultsAlert');
+    const searchedCitySpan = document.getElementById('searchedCitySpan');
+    const cards = document.querySelectorAll('.pm-list-city-card-col');
+
+    if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const cityName = card.getAttribute('data-city-name').toLowerCase();
+                if (cityName.includes(query)) {
+                    card.style.display = '';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (visibleCount === 0) {
+                searchedCitySpan.textContent = e.target.value;
+                noResultsAlert.style.display = 'block';
+            } else {
+                noResultsAlert.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
 

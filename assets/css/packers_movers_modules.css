@@ -9,7 +9,8 @@
 
 /* Enforce 5 boxes in one row on desktop (>= 1200px) */
 @media (min-width: 1200px) {
-    .portfolio-area .row > div {
+    .portfolio-area .row > div,
+    #citiesGrid > .pm-list-city-card-col {
         flex: 0 0 20% !important;
         max-width: 20% !important;
     }
@@ -235,3 +236,174 @@
     left: 0;
     border-radius: 2px;
 }
+
+/* City List Compact Design Styles */
+
+/* Search Container Styling */
+.pm-list-search-wrapper {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.pm-list-search-info h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+.pm-list-search-info p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 4px 0 0 0;
+}
+
+.pm-list-search-box {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+}
+
+.pm-list-search-box i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 0.95rem;
+    pointer-events: none;
+}
+
+.pm-list-search-input {
+    width: 100%;
+    padding: 8px 12px 8px 36px;
+    font-size: 0.88rem;
+    border-radius: 50px;
+    border: 1.5px solid #e2e8f0;
+    background-color: #f8fafc;
+    color: #1e293b;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.pm-list-search-input:focus {
+    border-color: #c61a1a;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(198, 26, 26, 0.08);
+}
+
+/* Staggered load animation for city columns */
+@keyframes pmCardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pm-list-city-card-col {
+    animation: pmCardFadeIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+.pm-list-city-card-col:nth-child(1) { animation-delay: 0.01s; }
+.pm-list-city-card-col:nth-child(2) { animation-delay: 0.02s; }
+.pm-list-city-card-col:nth-child(3) { animation-delay: 0.03s; }
+.pm-list-city-card-col:nth-child(4) { animation-delay: 0.04s; }
+.pm-list-city-card-col:nth-child(n+5) { animation-delay: 0.05s; }
+
+/* Card Main Design - Small Box */
+.pm-list-city-card {
+    border-radius: 10px !important;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.01) !important;
+}
+
+.pm-list-city-card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none !important;
+}
+
+.pm-list-city-card-link:hover .pm-list-city-card {
+    transform: translateY(-3px);
+    border-color: rgba(198, 26, 26, 0.15) !important;
+    box-shadow: 0 6px 16px rgba(198, 26, 26, 0.05) !important;
+}
+
+.pm-list-icon {
+    font-size: 1.15rem;
+    color: #8fa0b5;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pm-list-city-card-link:hover .pm-list-icon {
+    color: #c61a1a;
+    transform: scale(1.1);
+}
+
+.pm-list-city-name {
+    font-size: 0.82rem;
+    color: #64748b;
+    line-height: 1.25;
+}
+
+.pm-list-city-name strong {
+    font-weight: 700;
+    color: #1e293b;
+    display: block;
+    font-size: 0.88rem;
+    margin-top: 1px;
+}
+
+.pm-list-city-card-link:hover .pm-list-city-name strong {
+    color: #c61a1a;
+}
+
+/* Search empty state */
+.pm-list-no-results {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    display: none;
+}
+
+.pm-list-no-results i {
+    font-size: 2.2rem;
+    color: #cbd5e1;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.pm-list-no-results h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 4px;
+}
+
+.pm-list-no-results p {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+
