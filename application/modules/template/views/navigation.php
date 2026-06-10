@@ -162,10 +162,7 @@
           </div>
         </a>
 
-        <!-- Get Quote Button for Mobile/Tablet -->
-        <button type="button" class="btn-quote-mobile d-inline-flex d-lg-none align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#qteModal">
-          Get Quote
-        </button>
+
 
         <!-- Hamburger Icon for Mobile/Tablet -->
         <button class="hamburger-toggle d-flex d-lg-none flex-column justify-content-between" id="openMenu" aria-label="Open Navigation Menu">

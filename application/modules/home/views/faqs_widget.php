@@ -353,7 +353,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
                 <div class="contact-option-text ms-2">
                   <span class="label">Call Us</span>
                   <span class="value"><?= $phone ?></span>
-                  <span class="sub">Mon - Sat | 9 AM - 7 PM</span>
+                  <span class="sub">24/7 Hours Available</span>
                 </div>
               </a>
 

@@ -189,8 +189,8 @@ a.top-bar-pill:hover .topbar-icon {
 
 /* Logo image heights */
 .brand-logo-img {
-  height: 86px;
-  width: 150px;
+  height: 90px;
+  width: 210px;
   display: block;
   object-fit: contain;
 }
@@ -385,77 +385,6 @@ a.top-bar-pill:hover .topbar-icon {
   height: 2.5px;
   background-color: var(--brand-dark);
   border-radius: 2px;
-}
-
-/* Get Quote Button for Mobile/Tablet */
-.btn-quote-mobile {
-  background-color: var(--brand-red);
-  color: #ffffff !important;
-  border: none;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 8px 14px;
-  border-radius: 30px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition-smooth);
-  animation: quote-heartbeat 3s infinite ease-in-out;
-  box-shadow: 0 3px 8px rgba(198, 26, 26, 0.2);
-}
-
-.btn-quote-mobile::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -150%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(to right,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.45) 50%,
-      rgba(255, 255, 255, 0) 100%);
-  transform: skewX(-25deg);
-  animation: quote-shimmer 3s infinite ease-in-out;
-}
-
-.btn-quote-mobile:hover {
-  background-color: var(--brand-red-hover);
-  transform: scale(1.04) translateY(-1px);
-  box-shadow: 0 4px 12px rgba(198, 26, 26, 0.35);
-}
-
-@keyframes quote-heartbeat {
-
-  0%,
-  100% {
-    transform: scale(1);
-    box-shadow: 0 3px 8px rgba(198, 26, 26, 0.2);
-  }
-
-  15% {
-    transform: scale(1.06);
-    box-shadow: 0 5px 15px rgba(198, 26, 26, 0.4);
-  }
-
-  30% {
-    transform: scale(1);
-    box-shadow: 0 3px 8px rgba(198, 26, 26, 0.2);
-  }
-
-  45% {
-    transform: scale(1.06);
-    box-shadow: 0 5px 15px rgba(198, 26, 26, 0.4);
-  }
-
-  60% {
-    transform: scale(1);
-    box-shadow: 0 3px 8px rgba(198, 26, 26, 0.2);
-  }
 }
 
 @keyframes quote-shimmer {

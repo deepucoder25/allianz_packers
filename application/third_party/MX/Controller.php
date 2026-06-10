@@ -51,23 +51,23 @@ class MX_Controller
         $this->load = clone load_class('Loader');
         $this->load->initialize($this);
 
-        $this->comp['phone'] = '+91 9899556839';
-        $this->comp['phonehtml'] = 'tel:+919899556839';
+        $this->comp['phone'] = '+91 9999736098';
+        $this->comp['phonehtml'] = 'tel:+919999736098';
         $this->comp['phone1'] = '+91 9999062299';
         $this->comp['phonehtml1'] = 'tel:+919999062299';
-        $this->comp['supportmail'] = 'info@allianzpackers.com';
-        $this->comp['replyToMail'] = 'info@allianzpackers.com';
-        $this->comp['mail'] = 'info@allianzpackers.com';    
-        $this->comp['mailhtml'] = "mailto:info@allianzpackers.com";
+        $this->comp['supportmail'] = 'info@allianzpackers.in';
+        $this->comp['replyToMail'] = 'info@allianzpackers.in';
+        $this->comp['mail'] = 'info@allianzpackers.in';    
+        $this->comp['mailhtml'] = "mailto:info@allianzpackers.in";
         $this->comp['company3'] = "Allianz Packers and Movers Pvt. Ltd.";
-        $this->comp['companydomain'] = 'allianzpackers.com';
+        $this->comp['companydomain'] = 'allianzpackers.in';
 
         $this->comp['facebookhtml'] = "";
         $this->comp['youtubehtml'] = "";
         $this->comp['instagramhtml'] = "";
         $this->comp['twitterhtml'] = "";   
         $this->comp['linkedinhtml'] = "";
-        $this->comp['whatsapphtml'] = "https://wa.me/919899556839";
+        $this->comp['whatsapphtml'] = "https://wa.me/919999736098";
 
         $this->comp['address'] = "Plot No- 44A, B Block, Rangpur, MAHIPALPUR, NEW DELHI 110037, INDIA";
         $this->comp['address1'] = "Plot No- 44A, B Block, Rangpur,";
@@ -77,11 +77,11 @@ class MX_Controller
         $this->comp['companystate'] = "Delhi";
         $this->comp['themeColor'] = "#c61a1a";
 
-        $this->comp['experience'] = "10+";
-        $this->comp['startYear'] = "2016";
+        $this->comp['experience'] = "25+";
+        $this->comp['startYear'] = "2001";
 
-        $this->comp['happyClients'] = "29,850+";
-        $this->comp['yearsExperience'] = "10+";
+        $this->comp['happyClients'] = "75,000+";
+        $this->comp['yearsExperience'] = "25+";
         $this->comp['secureShifting'] = "100%";
         $this->comp['statesCovered'] = "18+";
 

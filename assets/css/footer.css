@@ -532,184 +532,118 @@
   }
 }
 
-/* Floating/Sticky Bottom Action Buttons (Call & Quote) */
-.footer-fixed-actions {
+/* Floating WhatsApp Button */
+.whatsapp-float-btn {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 999;
-  font-family: 'Outfit', sans-serif;
-}
-
-.fixed-actions-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* Base button styles */
-.footer-fixed-actions .action-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 22px;
-  border-radius: 50px;
-  border: none;
-  font-size: 13.5px;
-  font-weight: 700;
-  text-transform: uppercase;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   color: #ffffff !important;
-  text-decoration: none !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s, background-color 0.3s;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.footer-fixed-actions .action-btn-icon {
-  font-size: 15px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s;
+  font-size: 32px;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  z-index: 9999;
+  text-decoration: none !important;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
+  animation: whatsapp-wiggle-pulse 5s infinite ease-in-out;
 }
 
-.footer-fixed-actions .action-btn:hover {
-  transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
-
-.footer-fixed-actions .action-btn:hover .action-btn-icon {
-  transform: rotate(15deg) scale(1.1);
-}
-
-/* Call Button - Brand Red Gradient with pulse animation */
-.footer-fixed-actions .btn-call {
-  background: linear-gradient(135deg, var(--brand-red) 0%, #e53935 100%);
-  box-shadow: 0 8px 25px rgba(198, 26, 26, 0.3);
-  animation: call-pulse-glow 2s infinite ease-in-out;
-}
-
-.footer-fixed-actions .btn-call:hover {
-  background: linear-gradient(135deg, #e53935 0%, var(--brand-red-hover) 100%);
-  box-shadow: 0 12px 30px rgba(198, 26, 26, 0.45);
-}
-
-/* Quote Button - Premium Dark Gradient with heartbeat and shimmer */
-.footer-fixed-actions .btn-quote {
-  background: linear-gradient(135deg, var(--brand-dark) 0%, #333333 100%);
-  box-shadow: 0 8px 25px rgba(26, 26, 26, 0.3);
-  animation: quote-btn-heartbeat 3s infinite ease-in-out;
-}
-
-.footer-fixed-actions .btn-quote:hover {
-  background: linear-gradient(135deg, #333333 0%, var(--brand-dark) 100%);
-  box-shadow: 0 12px 30px rgba(26, 26, 26, 0.45);
-}
-
-/* Shimmer Light sweep animation for quote button */
-.footer-fixed-actions .btn-quote::after {
+/* Pseudo-elements for dual expanding ripples */
+.whatsapp-float-btn::before,
+.whatsapp-float-btn::after {
   content: '';
   position: absolute;
   top: 0;
-  left: -150%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transform: skewX(-25deg);
-  animation: action-button-shimmer 4s infinite ease-in-out;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: #25d366;
+  z-index: -1;
+  opacity: 0.6;
 }
 
-/* Pulse Keyframes for Call Button */
-@keyframes call-pulse-glow {
+.whatsapp-float-btn::before {
+  animation: whatsapp-ripple 2.5s infinite cubic-bezier(0.1, 0, 0.3, 1);
+}
+
+.whatsapp-float-btn::after {
+  animation: whatsapp-ripple 2.5s infinite cubic-bezier(0.1, 0, 0.3, 1);
+  animation-delay: 1.25s;
+}
+
+.whatsapp-float-btn:hover {
+  background: linear-gradient(135deg, #20ba5a 0%, #0d7165 100%);
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float-btn:hover::before,
+.whatsapp-float-btn:hover::after {
+  animation-play-state: paused;
+  opacity: 0;
+}
+
+.whatsapp-float-btn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s;
+}
+
+.whatsapp-float-btn:hover i {
+  transform: scale(1.15) rotate(15deg);
+}
+
+/* Ripple effect keyframes */
+@keyframes whatsapp-ripple {
   0% {
-    box-shadow: 0 0 0 0 rgba(198, 26, 26, 0.6), 0 8px 25px rgba(198, 26, 26, 0.3);
-  }
-  70% {
-    box-shadow: 0 0 0 12px rgba(198, 26, 26, 0), 0 8px 25px rgba(198, 26, 26, 0.3);
+    transform: scale(1);
+    opacity: 0.6;
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(198, 26, 26, 0), 0 8px 25px rgba(198, 26, 26, 0.3);
+    transform: scale(1.8);
+    opacity: 0;
   }
 }
 
-/* Heartbeat Keyframes for Quote Button */
-@keyframes quote-btn-heartbeat {
-  0%, 100% {
+/* Wiggle keyframes to periodically draw attention */
+@keyframes whatsapp-wiggle-pulse {
+  0%, 70%, 100% {
     transform: scale(1);
   }
-  15% {
-    transform: scale(1.04);
+  72% {
+    transform: scale(1.05) rotate(-8deg);
   }
-  30% {
-    transform: scale(1);
+  74% {
+    transform: scale(1.05) rotate(8deg);
   }
-  45% {
-    transform: scale(1.04);
+  76% {
+    transform: scale(1.05) rotate(-8deg);
   }
-  60% {
-    transform: scale(1);
+  78% {
+    transform: scale(1.05) rotate(8deg);
+  }
+  80% {
+    transform: scale(1) rotate(0);
   }
 }
 
-/* Shimmer Keyframe */
-@keyframes action-button-shimmer {
-  0% {
-    left: -150%;
-  }
-  50% {
-    left: 150%;
-  }
-  100% {
-    left: 150%;
+/* Responsive adjustments for mobile/tablet */
+@media (max-width: 768px) {
+  .whatsapp-float-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    font-size: 28px;
   }
 }
 
-/* Responsive Styles for Mobile/Tablet View (max-width: 991.98px) */
-@media (max-width: 991.98px) {
-  .footer-fixed-actions {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    padding: 12px 16px;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
-    display: block;
-  }
-  
-  .fixed-actions-container {
-    flex-direction: row;
-    gap: 12px;
-    width: 100%;
-  }
-  
-  .footer-fixed-actions .action-btn {
-    flex: 1;
-    justify-content: center;
-    padding: 12px 10px;
-    font-size: 13px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    animation: none !important; /* Turn off complex pulse to prevent layout jitter on mobile/tablet */
-  }
-  
-  .footer-fixed-actions .btn-quote::after {
-    animation: none !important;
-  }
-  
-  /* Add padding to body to prevent content overlap on mobile/tablet */
-  body {
-    padding-bottom: 74px !important;
-  }
-}
+
