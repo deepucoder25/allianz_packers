@@ -98,7 +98,7 @@
                 </div>
                 <div class="badge-text-wrap">
                   <span class="badge-label">We've Moved</span>
-                  <strong class="badge-count">20,000+</strong>
+                  <strong class="badge-count"><?= $happyClients ?></strong>
                   <span class="badge-sublabel">Happy Customers</span>
                 </div>
               </div>
