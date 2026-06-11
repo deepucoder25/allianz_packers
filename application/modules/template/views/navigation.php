@@ -60,11 +60,6 @@
           <a href="<?= $phonehtml ?>" class="top-bar-pill text-white text-decoration-none phone-pulse-pill">
             <i class="bi bi-telephone-fill topbar-icon mobile-phone-icon"></i> <span><?= $phone ?></span>
           </a>
-          <?php if (isset($phone1) && !empty($phone1)): ?>
-          <a href="<?= $phonehtml1 ?>" class="top-bar-pill text-white text-decoration-none phone-pulse-pill">
-            <i class="bi bi-telephone-fill topbar-icon mobile-phone-icon"></i> <span><?= $phone1 ?></span>
-          </a>
-          <?php endif; ?>
         </div>
       </div>
 
@@ -73,11 +68,6 @@
         <a href="<?= $phonehtml ?>" class="top-bar-pill text-white text-center text-decoration-none phone-pulse-pill">
           <i class="bi bi-telephone-fill topbar-icon mobile-phone-icon flex-shrink-0"></i> <span class="mobile-phone-text"><?= $phone ?></span>
         </a>
-        <?php if (isset($phone1) && !empty($phone1)): ?>
-        <a href="<?= $phonehtml1 ?>" class="top-bar-pill text-white text-center text-decoration-none phone-pulse-pill">
-          <i class="bi bi-telephone-fill topbar-icon mobile-phone-icon flex-shrink-0"></i> <span class="mobile-phone-text"><?= $phone1 ?></span>
-        </a>
-        <?php endif; ?>
       </div>
     </div>
   </div>
@@ -278,9 +268,7 @@
             <div class="widget-call-info">
               <span class="widget-call-title">Need Help? Call Us</span>
               <a href="<?= $phonehtml ?>" class="widget-call-number d-block"><?= $phone ?></a>
-              <?php if (isset($phone1) && !empty($phone1)): ?>
-              <a href="<?= $phonehtml1 ?>" class="widget-call-number d-block mt-1"><?= $phone1 ?></a>
-              <?php endif; ?>
+              
             </div>
           </div>
         </div>

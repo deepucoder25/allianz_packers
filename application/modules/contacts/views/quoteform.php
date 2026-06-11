@@ -27,17 +27,15 @@
         <!-- Moving From & Moving To Row -->
         <div class="row g-2">
           <div class="col-6">
-            <div class="quote-input-group quote-select-group">
+            <div class="quote-input-group">
               <span class="quote-input-icon"><i class="bi bi-geo-alt"></i></span>
               <input type="text" name="mfrom" class="quote-form-control" value="<?= isset($city) ? $city : '' ?>" placeholder="Moving From" required>
-              <span class="quote-select-caret"><i class="bi bi-chevron-down"></i></span>
             </div>
           </div>
           <div class="col-6">
-            <div class="quote-input-group quote-select-group">
+            <div class="quote-input-group">
               <span class="quote-input-icon"><i class="bi bi-geo-alt"></i></span>
               <input type="text" name="mto" class="quote-form-control" placeholder="Moving To" required>
-              <span class="quote-select-caret"><i class="bi bi-chevron-down"></i></span>
             </div>
           </div>
         </div>
@@ -55,6 +53,9 @@
                 <option value="4 BHK/Villa">4 BHK / Villa</option>
                 <option value="Few Household Items">Few Items</option>
                 <option value="Office Relocation">Office Relocation</option>
+                <option value="Car Shifting">Car Shifting</option>
+                <option value="Bike Shifting">Bike Shifting</option>
+                <option value="Transportation">Transportation</option>
               </select>
               <span class="quote-select-caret"><i class="bi bi-chevron-down"></i></span>
             </div>
@@ -62,7 +63,7 @@
           <div class="col-6">
             <div class="quote-input-group w-100">
               <span class="quote-input-icon"><i class="bi bi-calendar-event"></i></span>
-              <input type="text" name="movedate" onfocus="(this.type='date')" onblur="(this.type='text')" class="quote-form-control" placeholder="Preferred Move Date">
+              <input type="text" name="movedate" onfocus="this.type='date'; if(!this.value) this.value=new Date().toLocaleDateString('en-CA')" onblur="if(!this.value) this.type='text'" class="quote-form-control" placeholder="Preferred Move Date">
             </div>
           </div>
         </div>

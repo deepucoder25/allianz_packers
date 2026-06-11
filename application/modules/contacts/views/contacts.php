@@ -83,9 +83,6 @@ $branch_offices = [
                         <h5 class="contact-card-title">Phone Numbers</h5>
                         <p class="contact-card-text">
                             <a href="<?= $phonehtml ?>" class="contact-unique-link"><?= $phone ?></a>
-                            <?php if (isset($phone1) && !empty($phone1)): ?>
-                            <span class="d-block mt-1"><a href="<?= $phonehtml1 ?>" class="contact-unique-link"><?= $phone1 ?></a></span>
-                            <?php endif; ?>
                         </p>
                     </div>
                 </div>
@@ -99,7 +96,7 @@ $branch_offices = [
                         <h5 class="contact-card-title">Email &amp; Website</h5>
                         <p class="contact-card-text">
                             <a href="<?= $mailhtml ?>" class="contact-unique-link"><?= $mail ?></a>
-                            <span class="d-block mt-1"><a href="http://www.allianzpackers.com/" target="_blank" rel="noopener" class="contact-unique-link">www.allianzpackers.com</a></span>
+                            <span class="d-block mt-1"><a href="http://www.allianzpackers.in/" target="_blank" rel="noopener" class="contact-unique-link">www.allianzpackers.in</a></span>
                         </p>
                     </div>
                 </div>
@@ -118,10 +115,6 @@ $branch_offices = [
                             <div class="col-md-6">
                                 <label class="form-label fw-semibold text-dark">Phone Number *</label>
                                 <input type="tel" name="phone" class="form-control py-2 contact-input-rounded" placeholder="Mobile Number" required>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label fw-semibold text-dark">Email Address</label>
-                                <input type="email" name="email" class="form-control py-2 contact-input-rounded" placeholder="hello@example.com">
                             </div>
                             <div class="col-12">
                                 <label class="form-label fw-semibold text-dark">Your Message</label>

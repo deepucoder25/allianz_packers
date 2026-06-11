@@ -41,6 +41,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <div class="form-icon">
+                                <i class="bi bi-calendar-event"></i>
+                                <input type="text" name="movedate" onfocus="this.type='date'; if(!this.value) this.value=new Date().toLocaleDateString('en-CA')" onblur="if(!this.value) this.type='text'" class="form-control" placeholder="Preferred Move Date">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             <div class="form-group">
                 <div class="form-icon form-textarea-icon">
@@ -58,3 +66,21 @@
         </div>
     </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById('quotemodal');
+  if (form) {
+    form.addEventListener('submit', function () {
+      const movedate = form.querySelector('input[name="movedate"]')?.value || '';
+      const messageField = form.querySelector('textarea[name="message"]');
+      if (messageField && movedate) {
+        const dateStr = 'Preferred Date: ' + movedate;
+        if (!messageField.value.includes(dateStr)) {
+          messageField.value += (messageField.value ? ' | ' : '') + dateStr;
+        }
+      }
+    });
+  }
+});
+</script>
