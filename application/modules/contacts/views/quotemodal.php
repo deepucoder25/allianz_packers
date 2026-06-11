@@ -25,14 +25,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <div class="form-icon">
-                                <i class="bi bi-envelope-at"></i>
-                                <input type="text" class="form-control" name="email" placeholder="Your Email">
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-6">
                         <div class="form-group">
                             <div class="form-icon">
@@ -65,4 +57,4 @@
             </form>
         </div>
     </div>
-</div>
+</div>

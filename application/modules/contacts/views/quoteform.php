@@ -24,12 +24,6 @@
           </div>
         </div>
 
-        <!-- Email - Full Row -->
-        <div class="quote-input-group">
-          <span class="quote-input-icon"><i class="bi bi-envelope"></i></span>
-          <input type="email" name="email" class="quote-form-control" placeholder="Email Address">
-        </div>
-
         <!-- Moving From & Moving To Row -->
         <div class="row g-2">
           <div class="col-6">
