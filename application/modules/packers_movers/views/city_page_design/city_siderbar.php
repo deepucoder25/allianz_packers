@@ -168,7 +168,7 @@
         $link      = urlencode(strtolower(str_replace(" ", "-", $ct['nm'])));
         $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
       ?>
-      <a href="<?= site_url("$link-packers-movers-$statename") ?>"
+      <a href="<?= site_url("$statename/packers-movers-$link") ?>"
          class="nearby-city-pill <?= $is_active ? 'active-city' : '' ?>"
          id="relatedCity-<?= $count ?>">
         <i class="bi bi-building"></i><?= $ct['nm'] ?>
@@ -181,7 +181,7 @@
         $link      = urlencode(strtolower(str_replace(" ", "-", $city)));
         $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
       ?>
-      <a href="<?= site_url("$link-packers-movers-$statename") ?>"
+      <a href="<?= site_url("$statename/packers-movers-$link") ?>"
          class="nearby-city-pill active-city"
          id="relatedCity-active">
         <i class="bi bi-building"></i><?= $city ?>

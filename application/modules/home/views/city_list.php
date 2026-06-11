@@ -68,7 +68,7 @@ $locations = [
     <div class="row g-3 justify-content-center" id="cityCardsRow">
       <?php foreach ($locations as $index => $location): 
           $citySlug = strtolower(str_replace(' ', '-', $location['city']));
-          $link = $citySlug . "-packers-movers-" . $location['state'];
+          $link = $location['state'] . "/packers-movers-" . $citySlug;
           $delay = ($index % 30) * 0.025;
       ?>
         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 city-card-col" style="animation-delay: <?= $delay ?>s;">

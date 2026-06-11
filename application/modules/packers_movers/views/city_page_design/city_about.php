@@ -180,5 +180,22 @@ $reviews = [
       </div><!-- /col-lg-4 -->
 
     </div><!-- /row -->
+
+    <!-- Full width intercity routes list -->
+    <?php
+    $allowed_cities = [
+        "Delhi", "Mumbai", "Bangalore", "Pune", "Hyderabad", 
+        "Chennai", "Kolkata", "Noida", "Gurgaon", "Ghaziabad", 
+        "Goa", "Jaipur", "Lucknow", "Patna", "Ahmedabad"
+    ];
+    if (in_array(strtolower(trim($city)), array_map('strtolower', $allowed_cities))):
+    ?>
+    <div class="row mt-4">
+      <div class="col-12">
+        <?php include 'city_from_to_links.php'; ?>
+      </div>
+    </div>
+    <?php endif; ?>
+
   </div><!-- /container -->
 </section>

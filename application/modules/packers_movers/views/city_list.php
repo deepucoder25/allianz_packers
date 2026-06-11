@@ -70,7 +70,7 @@ $state = ucwords($state);
                 $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
             ?>
                 <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 pm-list-city-card-col" data-city-name="<?= htmlspecialchars($ct['nm']) ?>">
-                    <a href="<?= site_url("$link-packers-movers-$statename") ?>" class="pm-list-city-card-link text-decoration-none">
+                    <a href="<?= site_url("$statename/packers-movers-$link") ?>" class="pm-list-city-card-link text-decoration-none">
                         <div class="pm-list-city-card card border-0 h-100 shadow-sm">
                             <div class="card-body p-3 d-flex align-items-center gap-2">
                                 <!-- Location Icon -->

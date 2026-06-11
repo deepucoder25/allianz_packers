@@ -117,14 +117,14 @@
               </div>
             </a>
             
-            <!-- View Services Button -->
-            <a href="<?= site_url('our-services') ?>" class="hero-cta-btn btn-services shadow-sm text-decoration-none d-flex align-items-center justify-content-center">
+            <!-- Get Quote Button -->
+            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#qteModal" class="hero-cta-btn btn-services shadow-sm text-decoration-none d-flex align-items-center justify-content-center">
               <div class="cta-icon-wrap">
-                <i class="bi bi-file-earmark-text-fill"></i>
+                <i class="bi bi-calculator-fill"></i>
               </div>
               <div class="cta-text-wrap">
-                <span class="cta-label">VIEW OUR SERVICES</span>
-                <strong class="cta-val">Explore More <i class="bi bi-chevron-right ms-1"></i></strong>
+                <span class="cta-label">GET FREE ESTIMATE</span>
+                <strong class="cta-val">Get Quote <i class="bi bi-chevron-right ms-1"></i></strong>
               </div>
             </a>
           </div>

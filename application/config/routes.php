@@ -43,9 +43,9 @@ $route["insurance"] = "services/insurance";
 
 
 // Branch/City Routes
+$route["packers-and-movers-from-(:any)-to-(:any)"] = "packers_movers/city_to_city/$1/$2";
 $route["our-branches"] = "packers_movers/state";
 $route["packers-movers-(:any)-india"] = "packers_movers/state_services/$1";
-$route["(:any)-packers-movers-(:any)"] = "packers_movers/city/$2/$1";
 $route["(:any)/packers-movers-(:any)"] = "packers_movers/city/$1/$2";
 $route["bihar"] = "packers_movers/state_services/bihar";
 $route["delhi"] = "packers_movers/state_services/delhi";

@@ -78,5 +78,101 @@ class Packers_movers extends MX_Controller
         );
         echo Modules::run('template/layout2', $data);
     }
-   
+
+    private function get_city_state($city_name)
+    {
+        $locations = [
+            "Delhi" => "delhi",
+            "Noida" => "uttar-pradesh",
+            "Gurgaon" => "haryana",
+            "Ghaziabad" => "uttar-pradesh",
+            "Chandigarh" => "chandigarh",
+            "Jaipur" => "rajasthan",
+            "Dehradun" => "uttarakhand",
+            "Mohali" => "punjab",
+            "Ambala" => "haryana",
+            "Faridabad" => "haryana",
+            "Kolkata" => "west-bengal",
+            "Lucknow" => "uttar-pradesh",
+            "Patna" => "bihar",
+            "Kanpur" => "uttar-pradesh",
+            "Jammu" => "jammu-and-kashmir",
+            "Indore" => "madhya-pradesh",
+            "Bhubaneswar" => "odisha",
+            "Jabalpur" => "madhya-pradesh",
+            "Hubli" => "karnataka",
+            "Meerut" => "uttar-pradesh",
+            "Mumbai" => "maharashtra",
+            "Pune" => "maharashtra",
+            "Navi Mumbai" => "maharashtra",
+            "Ahmedabad" => "gujarat",
+            "Nagpur" => "maharashtra",
+            "Bhopal" => "madhya-pradesh",
+            "Surat" => "gujarat",
+            "Jhansi" => "uttar-pradesh",
+            "Ranchi" => "jharkhand",
+            "Goa" => "goa",
+            "Chennai" => "tamil-nadu",
+            "Bangalore" => "karnataka",
+            "Hyderabad" => "telangana",
+            "Coimbatore" => "tamil-nadu",
+            "Visakhapatnam" => "andhra-pradesh",
+            "Madurai" => "tamil-nadu",
+            "Mysore" => "karnataka",
+            "Tirupur" => "tamil-nadu",
+            "Kerala" => "kerala"
+        ];
+        
+        return $locations[$city_name] ?? 'india';
+    }
+
+    function city_to_city($from_slug = '', $to_slug = '')
+    {
+        if (empty($from_slug) || empty($to_slug)) {
+            redirect("error?Invalid+Request");
+        }
+        
+        $this->load->helper('text');
+        
+        $from_city = ucwords(str_replace("-", " ", $from_slug));
+        $to_city = ucwords(str_replace("-", " ", $to_slug));
+        
+        $st = $this->get_city_state($from_city);
+        $cities = array();
+        if (file_exists("./application/modules/packers_movers/views/data/$st.php")) {
+            include "./application/modules/packers_movers/views/data/$st.php";
+        }
+        if (empty($cities)) {
+            $cities = array(
+                array('nm' => 'Delhi'),
+                array('nm' => 'Mumbai'),
+                array('nm' => 'Bangalore'),
+                array('nm' => 'Pune'),
+                array('nm' => 'Hyderabad'),
+                array('nm' => 'Chennai'),
+                array('nm' => 'Kolkata'),
+                array('nm' => 'Ahmedabad'),
+                array('nm' => 'Jaipur'),
+                array('nm' => 'Noida'),
+            );
+        }
+        
+        $data = array(
+            "from_city" => $from_city,
+            "to_city" => $to_city,
+            "from_slug" => $from_slug,
+            "to_slug" => $to_slug,
+            "city" => $from_city,
+            "state" => ucwords(str_replace("-", " ", $st)),
+            "st" => $st,
+            "cities" => $cities,
+            "title" => "Best Packers and Movers From $from_city to $to_city | " . $this->comp['company3'],
+            "description" => "Hire top-rated packers and movers from $from_city to $to_city. " . $this->comp['company3'] . " offers secure, reliable, and affordable intercity household shifting and vehicle carrier services.",
+            "keywords" => "packers and movers from $from_city to $to_city, intercity shifting from $from_city to $to_city, movers packers $from_city to $to_city, household relocation $from_city to $to_city",
+            "module" => "packers_movers",
+            "view_file" => "from_to_service",
+        );
+        
+        echo Modules::run('template/layout2', $data);
+    }
 }
