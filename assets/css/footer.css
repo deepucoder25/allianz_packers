@@ -535,7 +535,7 @@
 /* Floating WhatsApp Button */
 .whatsapp-float-btn {
   position: fixed;
-  bottom: 30px;
+  bottom: 136px; /* Placed above the Call and Quote buttons on desktop/tablet */
   right: 30px;
   width: 60px;
   height: 60px;
@@ -635,15 +635,204 @@
   }
 }
 
+/* Floating / Sticky Footer Action Bar (Call, Get Quote) */
+.footer-fixed-actions {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: auto;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  z-index: 9999;
+  padding: 0;
+  display: block;
+}
+
+.fixed-actions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  max-width: none;
+  margin: 0;
+}
+
+.footer-fixed-actions .action-btn {
+  position: relative; /* For absolute positioned pseudo-elements like shine */
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 15px;
+  width: 145px;
+  height: 42px;
+  border-radius: 21px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none !important;
+  border: none;
+  color: #ffffff !important;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  animation: pill-wiggle-pulse 7s infinite ease-in-out;
+}
+
+.footer-fixed-actions .action-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine-gleam 4s infinite ease-in-out;
+}
+
+.footer-fixed-actions .action-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
+.footer-fixed-actions .action-btn:active {
+  transform: scale(0.95);
+}
+
+.footer-fixed-actions .btn-call {
+  background: linear-gradient(135deg, #e12525 0%, #c11e1e 100%);
+}
+
+.footer-fixed-actions .btn-quote {
+  background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+  animation-delay: 3.5s; /* Alternates wiggling */
+}
+
+.footer-fixed-actions .btn-quote::before {
+  animation-delay: 2s; /* Offsets shiny gleam */
+}
+
+.footer-fixed-actions .action-btn-icon {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-fixed-actions .action-btn-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* Responsive adjustments for mobile/tablet */
 @media (max-width: 768px) {
+  body {
+    padding-bottom: 75px !important;
+  }
+
   .whatsapp-float-btn {
-    bottom: 20px;
+    bottom: 80px; /* Moved up to clear the fixed footer action bar */
     right: 20px;
     width: 52px;
     height: 52px;
     font-size: 28px;
   }
+
+  .footer-fixed-actions {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+  }
+
+  .fixed-actions-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .footer-fixed-actions .action-btn {
+    flex: 1;
+    width: auto;
+    height: auto;
+    padding: 10px 8px;
+    border-radius: 30px;
+    justify-content: center;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+    animation: none; /* Disable heartbeat on mobile */
+  }
+
+  .footer-fixed-actions .action-btn::before {
+    animation: none; /* Disable shiny gleam on mobile */
+  }
+
+  .footer-fixed-actions .action-btn:hover {
+    width: auto;
+    box-shadow: none;
+    transform: none;
+  }
+
+  .footer-fixed-actions .action-btn-icon {
+    font-size: 15px;
+  }
+
+  .footer-fixed-actions .action-btn-text {
+    font-size: 13px;
+  }
 }
+
+/* Animation Keyframes */
+@keyframes pill-wiggle-pulse {
+  0%, 75%, 100% {
+    transform: scale(1) rotate(0);
+  }
+  78% {
+    transform: scale(1.03) rotate(-3deg);
+  }
+  82% {
+    transform: scale(1.03) rotate(3deg);
+  }
+  86% {
+    transform: scale(1.03) rotate(-3deg);
+  }
+  90% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes shine-gleam {
+  0% {
+    left: -150%;
+  }
+  25% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
 
 
