@@ -47,10 +47,7 @@
                     <h2 class="service-section-title">Who We Are</h2>
                     <div class="about-service-text mb-4">
                         <p>
-                            <strong><?= $company3 ?></strong> is an experienced Packers and Movers and provides the best relocation services. We provide packing and moving solutions from all major cities in India. <strong><?= $company3 ?></strong> is one of the leading packaging and transportation services, loading unloading services, door to door packing and moving services, home moving services, office relocation services, house shifting, car &amp; bike transport, cargo, insurance services, and packers and movers in India at reasonable prices. We have a vast network of offices all over India.
-                        </p>
-                        <p>
-                            Our Director will oversee the move at every stage including personally meeting you in your home prior to the move to survey the effects to move and assess your needs. He/she will keep you or your employer informed of all developments, including the status of your move, and on the day of the move will call or visit to ensure everything goes smoothly. We believe that our growth and the reputation we achieved is due to our clients. Our goal is to provide timely, hassle-free, and reliable services, thereby establishing long-spanning relationships with our customers. We are always ready to accept the precious advices of our customers.
+                            <strong><?= $company3 ?></strong> is a professional relocation company dedicated to providing safe, efficient, and customer-focused moving solutions. We specialize in helping individuals, families, and businesses relocate their belongings with confidence and peace of mind. With a strong focus on service quality and organized relocation support, we have become a trusted choice for people seeking reliable relocation support. Our approach combines careful planning, experienced manpower, and responsible handling to ensure every move is completed smoothly.
                         </p>
                     </div>
 
@@ -63,7 +60,7 @@
                                 </div>
                                 <h4 class="fw-bold mb-2">Our Mission</h4>
                                 <p class="text-muted small mb-0">
-                                    To deliver seamless, completely secure, and stress-free packing and moving services across India. We commit to utilizing premium multi-layered packing materials and transparent pricing rules to achieve absolute customer trust.
+                                   Our mission is to deliver dependable relocation services that make moving simpler, safer, and more convenient. We aim to provide practical solutions, transparent communication, and exceptional customer support while maintaining high standards of professionalism in every project we undertake.
                                 </p>
                             </div>
                         </div>
@@ -74,45 +71,28 @@
                                 </div>
                                 <h4 class="fw-bold mb-2">Our Vision</h4>
                                 <p class="text-muted small mb-0">
-                                    To lead the Indian packing and logistics industry by setting benchmarks for safety, speed, and client care. We aim to continually expand our Pan-India branch presence to serve every major tier-1 and tier-2 city.
+                                   Our vision is to become one of the most trusted and respected names in the relocation industry by consistently exceeding customer expectations. We aspire to build long-term relationships based on trust, reliability, and service excellence while continuously improving our operations and customer experience.
                                 </p>
                             </div>
                         </div>
                     </div>
+                     <h3>Our Story</h3>
+                    <p>The journey of <b><?= $company3 ?></b> began with a simple idea: moving should be easier than people expect it to be. We noticed that many customers faced unnecessary stress during relocation due to poor coordination, lack of communication, and unsafe handling practices. Determined to make a difference, we built a company focused on professionalism, transparency, and customer care. As more customers recommended our services to friends, families, and businesses, we expanded our operations while continuing to focus on organized planning, careful handling, and responsive customer support. Today, we continue to grow while maintaining the same values that inspired our foundation.</p>
 
-                    <!-- Milestones Vertical Timeline -->
-                    <h2 class="service-section-title mb-4">Our Milestone History</h2>
-                    <div class="about-milestone-timeline position-relative ps-4 text-start">
-                        <!-- Timeline line -->
-                        <div class="timeline-trail-line"></div>
+                    <span class="fs-4">What We Do</span>
+                    <p>We provide comprehensive relocation services designed to meet a variety of moving requirements. Our solutions include household shifting, office relocation, packing and unpacking assistance, vehicle transportation, loading and unloading services, storage support, and domestic moving services. Every relocation project is planned according to the customer's specific needs, ensuring an organized and efficient moving experience from start to finish.</p>
 
-                        <!-- Milestone 1 -->
-                        <div class="timeline-milestone-item position-relative mb-4">
-                            <div class="timeline-bullet-year bg-red-gradient">2020</div>
-                            <div class="timeline-milestone-content p-4 rounded-4 shadow-sm bg-light-card border border-light-subtle">
-                                <h5 class="fw-bold mb-1">Pan-India Fleet Expansion</h5>
-                                <p class="text-muted small mb-0">Upgraded our transport logistics with over 100+ specialized container carriers to streamline transit times across states.</p>
-                            </div>
-                        </div>
+                    <span class="fs-4">Our Approach to Relocation</span>
+                    <p>At <?= $company3 ?>, every move begins with understanding the customer's specific requirements. We assess packing needs, transportation arrangements, handling requirements, and delivery expectations before creating a relocation plan. This organized approach helps improve coordination, reduce unnecessary delays, and provide a smoother moving experience from start to finish.</p>
 
-                        <!-- Milestone 2 -->
-                        <div class="timeline-milestone-item position-relative mb-4">
-                            <div class="timeline-bullet-year bg-dark-gradient">2015</div>
-                            <div class="timeline-milestone-content p-4 rounded-4 shadow-sm bg-light-card border border-light-subtle">
-                                <h5 class="fw-bold mb-1">ISO Certification &amp; IBA Alignment</h5>
-                                <p class="text-muted small mb-0">Attained prestigious ISO certification standards and aligned billing systems to serve major government/bank employee transfers.</p>
-                            </div>
-                        </div>
+                    <span class="fs-5">Understanding Every Move</span>
+                    <p>No two relocations are exactly alike. Some customers require complete household shifting services, while others need office equipment, important documents, furniture, or vehicles transported safely. Our team takes the time to understand individual requirements and create a relocation plan that matches the customer's schedule, destination, and moving priorities.</p>
+                    <span class="fs-5">Our Core Values</span>
+                    <p>At <?= $company3 ?>, our work is guided by honesty, responsibility, customer satisfaction, teamwork, and continuous improvement. These values influence every decision we make and help us maintain the trust of our customers.</p>
 
-                        <!-- Milestone 3 -->
-                        <div class="timeline-milestone-item position-relative">
-                            <div class="timeline-bullet-year bg-red-gradient">2010</div>
-                            <div class="timeline-milestone-content p-4 rounded-4 shadow-sm bg-light-card border border-light-subtle">
-                                <h5 class="fw-bold mb-1">Our Humble Beginnings</h5>
-                                <p class="text-muted small mb-0">Started our first central operations hub in Rangpur, Delhi with a dedicated team of 10 relocation specialists.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h4>Why Customers Choose Us</h4>
+                    <p>Customers choose <em><?= $company3 ?></em> because we prioritize safety, reliability, and transparency. We provide clear communication, professional handling, quality packing materials, and timely execution of services. Our focus is not only on moving belongings but also on ensuring a comfortable and stress-free relocation experience.</p>
+
 
                     <!-- Client satisfaction banner -->
                     <div class="about-commitment-card p-4 border-start border-5 rounded-4 mt-5 d-flex align-items-start gap-3">
@@ -120,9 +100,9 @@
                             <i class="bi bi-patch-check-fill fs-2"></i>
                         </div>
                         <div>
-                            <h5 class="fw-bold mb-1">Our Shifting Commitment</h5>
+                            <h5 class="fw-bold mb-1">Committed to Better Relocation Experiences</h5>
                             <p class="mb-0 text-muted small">
-                                "Every shifting, whether household or commercial, receives the personal oversight of our experienced coordinators. We treat your valuable belongings as our own, guaranteeing safe transit."
+                                At <?= $company3 ?>, we believe relocation should be organized, transparent, and carefully managed from beginning to end. Our team continues to improve processes, communication, and service standards so that customers can move with greater confidence and convenience.
                             </p>
                         </div>
                     </div>

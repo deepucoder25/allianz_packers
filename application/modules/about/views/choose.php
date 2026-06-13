@@ -44,13 +44,14 @@
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
-                    <h2 class="service-section-title">The Difference We Make</h2>
+                    <h2 class="service-section-title">Why Choose <?= $company3 ?></h2>
                     <div class="about-service-text mb-4">
                         <p>
-                            Choosing the right packers and movers is crucial for home relocation; therefore, it is best to verify moving companies before hiring them. By choosing cheap moving companies, you might get lots of fake promises for the best shifting services in India; however, you will face hidden charges after completing the move. <strong><?= $company3 ?></strong> always shares the best quotes including all hidden costs.
+                           Choosing the right relocation partner can make a significant difference in your moving experience. At <strong><?= $company3 ?></strong>, we understand that customers are not simply looking for transportation services, they are looking for reliability, safety, professionalism, and peace of mind. Our focus on organized planning, responsible handling, and clear communication has helped us build long-term relationships with customers across different relocation requirements.
                         </p>
+                        <span class="fs-4">Customer-Centric Approach</span>
                         <p>
-                            We are reliable Packers &amp; Movers who understand customers' requirements correctly and rectify all your problems related to Movers and Packers Services in Delhi, Bangalore, Pune, Ahmedabad, Gurgaon, Mumbai, Hyderabad, Noida, and other major cities.
+                            Every move begins with understanding the unique requirements of our customers. We listen carefully, assess individual needs, and create relocation solutions that fit specific situations. Whether it is a household move, office relocation, or vehicle transportation, our team remains focused on delivering a personalized experience from start to finish.
                         </p>
                     </div>
 
@@ -103,33 +104,32 @@
                         </div>
                     </div>
 
-                    <h2 class="service-section-title mt-4">Why Allianz Packers?</h2>
-                    <div class="about-service-text mb-5">
-                        <div class="mb-4">
-                            <h5 class="fw-bold text-dark"><i class="bi bi-patch-check-fill text-danger me-2"></i>Best Packers and Movers in India</h5>
-                            <p class="small text-muted">Shifting a house starts with searching the best Packers and Movers India through various modes. We always believe in providing the best services in the industry to refer it to other clients through word-of-mouth publicity.</p>
-                        </div>
-                        <div class="mb-4">
-                            <h5 class="fw-bold text-dark"><i class="bi bi-tags-fill text-danger me-2"></i>Packers and Movers Price in India</h5>
-                            <p class="small text-muted">Selecting the best packers and movers next comes a price. We always look for safe, reliable, and cost-effective Packers and Movers India to save time and money. We offer cost-effective solutions for packing and moving household goods anywhere in India.</p>
-                        </div>
-                        <div class="mb-4">
-                            <h5 class="fw-bold text-dark"><i class="bi bi-award-fill text-danger me-2"></i>Top Packers and Movers in India</h5>
-                            <p class="small text-muted">We are known as a reliable packers and movers in India; we prioritize the safety and rest of all your significant goods and belongingness. We provide you with guaranteed security, the best quality packing, and immediate claim settlement.</p>
-                        </div>
-                        <div class="mb-4">
-                            <h5 class="fw-bold text-dark"><i class="bi bi-shield-fill-check text-danger me-2"></i>Secure Packers and Movers in India</h5>
-                            <p class="small text-muted">We have a team of well-experienced employees who do all your packers and movers' services safely in a given time frame. Our consultants provide you with relocation services like transportation, loading, unloading, trailer, custom clearance, and workplace shifting.</p>
-                        </div>
-                        <div class="mb-4">
-                            <h5 class="fw-bold text-dark"><i class="bi bi-cash-coin text-danger me-2"></i>Reasonable Price Packers and Movers in India</h5>
-                            <p class="small text-muted">Packers and movers' demands are high. We provide you with reliable packers and movers services at a reasonable price with the assistance of our experienced employees, providing hassle-free moving with 100% safety and security.</p>
-                        </div>
-                        <div class="mb-4">
-                            <h5 class="fw-bold text-dark"><i class="bi bi-star-fill text-danger me-2"></i>Reputed Packers and Movers in India</h5>
-                            <p class="small text-muted">We are well-reputed packers and movers giving you unmatched packers and movers services. We offer you packing &amp; unpacking, loading &amp; unloading, house relocation, transport, local shifting, office shifting, domestic shifting, custom clearance, warehousing, and trailer services.</p>
-                        </div>
-                    </div>
+                    <h3>Experienced and Skilled Professionals</h3>
+                        <p>Our greatest strength is our team. <?= $company3 ?> employs trained and experienced professionals who understand the complexities of relocation. From careful packing and secure loading to organized transportation and timely delivery, our staff works with dedication and attention to detail. Their professionalism ensures that every move is handled efficiently and responsibly.</p>
+
+                        <span class="fs-3">Safety Comes First</span>
+                        <p>We recognize the value of every item entrusted to us. That is why we use quality packing materials, proven handling techniques, and systematic procedures to protect belongings during transit. Our team takes every precaution necessary to minimize risks and ensure safe transportation throughout the relocation process.</p>
+
+                        <h4>Transparent and Honest Service</h4>
+                        <p>Trust is built through transparency. We provide clear quotations, straightforward communication, and complete information regarding our services. Customers can rely on us for honest guidance without hidden charges or unexpected surprises. Our goal is to create confidence and clarity at every stage of the move.</p>
+
+                        <span class="fs-4">Timely and Organized Execution</span>
+                        <p>Relocation often involves strict schedules and important deadlines. Our team follows a structured process that helps ensure smooth coordination and timely completion of every project. We value our customers' time and work hard to deliver services according to agreed timelines.</p>
+
+                        <span class="fs-4">Comprehensive Relocation Solutions</span>
+                        <p>From packing and unpacking to loading, unloading, transportation, and storage assistance, we provide complete relocation services under one roof. This comprehensive approach allows customers to enjoy a hassle-free moving experience without coordinating with multiple service providers.</p>
+
+                        <span class="fs-5">Commitment to Customer Satisfaction</span>
+                        <p>Customer satisfaction remains at the center of everything we do. We continuously strive to improve our services, exceed expectations, and deliver positive moving experiences. Many of our customers return to us for future relocations or recommend us to friends and family, which reflects the trust we have earned through consistent service quality.</p>
+
+                        <h5>A Partner You Can Depend On</h5>
+                        <p>At <?= $company3 ?>, we understand that every relocation represents an important change. Our team works to make that transition as organized, efficient, and comfortable as possible. Our dedication, professionalism, and customer-focused approach make us a trusted choice for safe and reliable relocation services.</p>
+
+                        <p>Choose <?= $company3 ?> and experience a move handled with care, responsibility, and confidence.</p>
+
+                        <h6>Planned Relocations, Not Last-Minute Solutions</h6>
+                        <p>At <?= $company3 ?>, we believe successful relocations begin with proper planning. Before every move, our team evaluates packing requirements, transportation arrangements, handling priorities, and delivery schedules. This preparation helps improve coordination, reduce unnecessary delays, and create a more organized moving experience for our customers.</p>
+
 
                     <!-- Client satisfaction banner -->
                     <div class="p-4 bg-light border-start border-5 border-success rounded-3 mt-5 about-commitment-card">
