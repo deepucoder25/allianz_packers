@@ -1,7 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<section class="about-section position-relative overflow-hidden py-0">
-  <div class="container-fluid p-0">
+<section class="about-section position-relative overflow-hidden py-5">
+  <div class="container">
     <div class="row g-0">
       
       <!-- Left Content Column -->
@@ -26,10 +26,7 @@
 
           <!-- Description paragraphs from old website -->
           <p class="about-desc mb-3">
-            <strong>Allianz Packers and Movers Pvt. Ltd.</strong> is a leading packing and moving company in India, offering a wide range of relocation services including home shifting, office shifting, car & bike transportation, loading/unloading, cargo, and transit insurance at competitive prices. All your possessions are packed by expert hands and transported to your new destination safely and on time.
-          </p>
-          <p class="about-desc mb-4">
-            We ensure a smooth, secure, and stress-free moving experience. Allianz Packers and Movers cares about your peace of mind, taking the worry out of shifting your belongings and vehicles so you can focus on your new journey.
+            <b><?= $company3 ?></b> provides household shifting, office relocation, vehicle transportation, packing, loading, unloading, and storage solutions for customers looking for a safe and organized moving experience. From local moves within the city to long-distance relocations across India, our team focuses on careful handling, timely delivery, and clear communication at every stage of the move. We understand that relocating a home, office, or business is more than simply transporting belongings. It involves planning, care, timing, and trust. Our team works closely with every customer to ensure a smooth experience from the first call until the final delivery. If you are looking for reliable Packers and Movers who genuinely care about your belongings, you are in the right place.
           </p>
 
           <!-- Read More Button -->
@@ -56,5 +53,9 @@
         <img src="<?=base_url('assets/images/services_modules/img1.jpg') ?>" alt="<?= $company3 ?> Moving Services" class="about-img w-100 h-100 object-fit-cover" loading="lazy">
       </div>
 
+    </div>
+    <div class="col-12 mt-3">
+      <p><strong><?= $company3 ?></strong> offers a complete range of relocation solutions for residential and commercial customers. Our services include household shifting, office relocation, packing and unpacking assistance, vehicle transportation, loading and unloading support, domestic moving, and storage solutions. Every move is carefully planned according to your requirements, ensuring that furniture, electronics, documents, and personal belongings reach their destination safely. As one of the preferred <b>Packers and Movers</b> companies, we focus on delivering practical solutions that save time and simplify relocation. Over the years, we have assisted customers with household shifting, office relocation, vehicle transportation, and other moving requirements across different distances and timelines. Each relocation is planned individually because no two moves are exactly the same.</p>
+    </div>
   </div>
 </section>

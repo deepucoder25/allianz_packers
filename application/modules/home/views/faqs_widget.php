@@ -114,7 +114,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
                   <!-- Question circle Bootstrap Icon -->
                   <i class="bi bi-question-circle"></i>
                 </div>
-                <span class="faq-question-text">How do I get a quote for my move?</span>
+                <span class="faq-question-text">How much do Packers and Movers charges depend on?</span>
                 <div class="faq-chevron-icon">
                   <i class="bi bi-chevron-down"></i>
                 </div>
@@ -122,7 +122,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
             </div>
             <div id="faq-l-1" class="collapse show" data-bs-parent="#faqAccordionLeft">
               <div class="faq-item-body">
-                You can get a free, no-obligation quote by filling out our online enquiry form, calling us directly, or WhatsApp us your moving details. Our team will get back to you with a customized quote.
+                Charges usually depend on the volume of goods, distance, packing requirements, vehicle type, and additional services requested.
               </div>
             </div>
           </div>
@@ -148,56 +148,6 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
             </div>
           </div>
 
-          <!-- Item 3 -->
-          <div class="faq-item-card mb-3">
-            <div class="faq-item-header">
-              <button class="faq-trigger-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-l-3" aria-expanded="false" aria-controls="faq-l-3">
-                <div class="faq-icon-badge">
-                  <!-- Hand truck/trolley outline SVG (Not available in Bootstrap Icons) -->
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="8" cy="21" r="2" />
-                    <line x1="5" y1="3" x2="8" y2="21" />
-                    <line x1="8" y1="21" x2="18" y2="21" />
-                    <line x1="7" y1="17" x2="17" y2="17" />
-                    <line x1="6.5" y1="13" x2="16.5" y2="13" />
-                    <rect x="9.5" y="9" width="8" height="8" rx="1" />
-                    <path d="M3 3h4" />
-                  </svg>
-                </div>
-                <span class="faq-question-text">Can you help with unpacking and set up?</span>
-                <div class="faq-chevron-icon">
-                  <i class="bi bi-chevron-down"></i>
-                </div>
-              </button>
-            </div>
-            <div id="faq-l-3" class="collapse" data-bs-parent="#faqAccordionLeft">
-              <div class="faq-item-body">
-                Yes, we provide end-to-end relocation services which include loading, unloading, unpacking, and arranging your furniture and large items in your new home.
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 4 -->
-          <div class="faq-item-card mb-3">
-            <div class="faq-item-header">
-              <button class="faq-trigger-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-l-4" aria-expanded="false" aria-controls="faq-l-4">
-                <div class="faq-icon-badge">
-                  <!-- Calendar3 Bootstrap Icon -->
-                  <i class="bi bi-calendar3"></i>
-                </div>
-                <span class="faq-question-text">How far in advance should I book my move?</span>
-                <div class="faq-chevron-icon">
-                  <i class="bi bi-chevron-down"></i>
-                </div>
-              </button>
-            </div>
-            <div id="faq-l-4" class="collapse" data-bs-parent="#faqAccordionLeft">
-              <div class="faq-item-body">
-                We recommend booking your move at least 7 to 10 days in advance. This allows us to plan the logistics, arrange premium packing materials, and schedule the appropriate carrier vehicle for your shifting date.
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
 
@@ -218,7 +168,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
                     <path d="M18 11h3" />
                   </svg>
                 </div>
-                <span class="faq-question-text">Do you provide packing materials?</span>
+                <span class="faq-question-text">How early should I book my move?</span>
                 <div class="faq-chevron-icon">
                   <i class="bi bi-chevron-down"></i>
                 </div>
@@ -226,7 +176,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
             </div>
             <div id="faq-r-1" class="collapse" data-bs-parent="#faqAccordionRight">
               <div class="faq-item-body">
-                Yes, we supply high-quality packing materials including bubble wraps, corrugated boxes, foam sheets, stretch film, and heavy-duty tapes to ensure maximum safety for your household items.
+               Booking 5–7 days in advance is generally recommended to ensure preferred scheduling and proper planning.
               </div>
             </div>
           </div>
@@ -248,54 +198,6 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
             <div id="faq-r-2" class="collapse" data-bs-parent="#faqAccordionRight">
               <div class="faq-item-body">
                 We ensure safety by using multi-layer high-quality packing, transporting goods in closed container vehicles, and employing highly trained, experienced packers and loaders.
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 7 -->
-          <div class="faq-item-card mb-3">
-            <div class="faq-item-header">
-              <button class="faq-trigger-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-r-3" aria-expanded="false" aria-controls="faq-r-3">
-                <div class="faq-icon-badge">
-                  <!-- Storage Warehouse outline SVG (Not available in Bootstrap Icons) -->
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 21h18" />
-                    <path d="M3 10l9-6 9 6v11H3V10z" />
-                    <rect x="8" y="12" width="8" height="9" />
-                    <line x1="8" y1="15" x2="16" y2="15" />
-                    <line x1="8" y1="18" x2="16" y2="18" />
-                  </svg>
-                </div>
-                <span class="faq-question-text">Do you offer storage solutions?</span>
-                <div class="faq-chevron-icon">
-                  <i class="bi bi-chevron-down"></i>
-                </div>
-              </button>
-            </div>
-            <div id="faq-r-3" class="collapse" data-bs-parent="#faqAccordionRight">
-              <div class="faq-item-body">
-                Yes, we offer safe and secure short-term and long-term warehousing and storage solutions. Our warehouse facilities are fully guarded and CCTV-monitored 24/7.
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 8 -->
-          <div class="faq-item-card mb-3">
-            <div class="faq-item-header">
-              <button class="faq-trigger-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-r-4" aria-expanded="false" aria-controls="faq-r-4">
-                <div class="faq-icon-badge">
-                  <!-- Credit card Bootstrap Icon -->
-                  <i class="bi bi-credit-card"></i>
-                </div>
-                <span class="faq-question-text">What payment methods do you accept?</span>
-                <div class="faq-chevron-icon">
-                  <i class="bi bi-chevron-down"></i>
-                </div>
-              </button>
-            </div>
-            <div id="faq-r-4" class="collapse" data-bs-parent="#faqAccordionRight">
-              <div class="faq-item-body">
-                We accept all convenient payment methods including bank transfers (NEFT/IMPS), UPI/GPay/PhonePe, Credit/Debit cards, and Cash.
               </div>
             </div>
           </div>

@@ -23,8 +23,8 @@
             </div>
             
             <h1 class="hero-title">
-              WE MOVE YOUR
-              <span class="text-brand-red">WORLD WITH CARE</span>
+              Moving Made Simple.
+              <span class="text-brand-red">Every Step. Every Mile.</span>
             </h1>
             
             <p class="hero-desc">
