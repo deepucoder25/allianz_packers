@@ -14,33 +14,27 @@ if (strtolower($city) == "") {
    
    ";
 } else {
+  $about_content = "
+        <p>Searching for <b>trustworthy movers and packers in $city</b>? Through <strong>$company3</strong>, we offer home-to-home relocation, office relocation, vehicle transport, furniture moving services, and regional relocation services on all locations throughout $city. Our team handles packing, loading, transportation, unloading, and placement of goods with clear pricing and professional support.</p>
+
+   ";
+   $about_content1 ="
+   <p>$city has grown quickly over the last few years and that's one reason many families and businesses prefer it. Good roads, developing residential areas, schools, hospitals, shopping centres,  all these things make life easier here. But moving from one place to another in $city can still be tiring. There are society permissions to arrange, vehicles to book, cartons to pack, and a hundred small things to remember.
+   ";
    $htmlcontent = "
-            <p>
-              Planning a move in <strong> $city </strong>? Here's what you need to know. Traffic delays, apartment timing rules, narrow society lanes, and sudden weather changes can turn a simple shifting job into a long day. That's exactly where <strong> $company3 </strong> helps. We've been handling household relocation, office shifting, bike transport, and local moving in  $city  with trained staff, proper packing methods, and practical planning that actually works on ground level.
-            </p>
-            <p>
-              People searching for <strong>Top Packers and Movers in  $city </strong> usually want one thing — safe shifting without confusion. Nobody wants broken furniture or late delivery calls after packing their whole house.
-            </p>
+            <p>Recently, we assisted a family shifting from one residential area of <b>$city</b> to another. On moving day, the apartment lift unexpectedly stopped working. Instead of delaying the move, our team rearranged manpower and safely carried essential furniture and household items down four floors. The relocation was completed the same day, and the family settled into their new home without disruption.</p>
    ";
    $htmlcontent1 = "
     <!-- What Makes Relocation Different -->
         <div class='city-content-card mt-4'>
-          <h3 class='city-section-title-sm'>What Makes Local Relocation in  $city Different?</h3>
-          <p>Every city has its own moving challenges. In <strong> $city</strong>, monsoon season means extra waterproof wrapping is necessary for wooden furniture and electronics. Some residential areas also have limited parking access for larger trucks, so arranging a local tempo becomes important.</p>
-          <p>That's why families looking for <strong>Best Packers and Movers in  $city</strong> prefer experienced movers instead of random transport vendors. Timing coordination, building permissions, unloading sequence, and proper carton labeling save a lot of confusion later.</p>
+          <h3 class='city-section-title-sm'>Areas We Serve in $city</h3>
+          <p>We provide relocation services across major residential and commercial areas of $city. Whether you are moving within the city or relocating to another destination, our team can arrange packing, transportation, and unloading support according to your requirements.</p>
 
           <!-- Services List -->
-          <h3 class='city-section-title-sm mt-4'>Services Available for Household, Office & Vehicles in  $city</h3>
-          <p> $company3  handles a wide range of relocation needs:</p>
-          <ul class='city-checklist'>
-            <li><i class='bi bi-check2-circle'></i> Household relocation in  $city</li>
-            <li><i class='bi bi-check2-circle'></i> Office and commercial shifting</li>
-            <li><i class='bi bi-check2-circle'></i> Bike and car transportation</li>
-            <li><i class='bi bi-check2-circle'></i> Local moving within  $city</li>
-            <li><i class='bi bi-check2-circle'></i> Storage and warehouse support</li>
-            <li><i class='bi bi-check2-circle'></i> Loading and unloading assistance</li>
-          </ul>
-          <p>Many customers searching for <strong>Relocating Services Near Me in  $city</strong> also ask about part-load shifting. We handle that too — especially for students and small families. Temporary storage is also available for customers waiting for possession dates.</p>
+          <h3 class='city-section-title-sm mt-4'>Understanding Packers and Movers Pricing in $city</h3>
+          <p>For local shifting within $city, costs are usually influenced by the number of items, packing requirements, floor level, and vehicle size. The easiest way to receive an accurate estimate is to request a survey or share your moving details with our team.</p>
+          <p>What will you spend on the move to your new home? A number of factors (distance between locations, amount of goods, level of the floor, whether a lift will be available, how much packing is involved, what type of vehicle to use, and if certain items must be handled with special care) will affect the cost of moving home. As no two moves are identical; therefore, the quotes given to customers will depend on these considerations.</p>
+          <p>We believe in keeping things clear and straightforward, which means customers receive complete pricing information before the move begins. No confusion. No last-minute surprises.</p>
         </div>
 
        
@@ -49,10 +43,8 @@ if (strtolower($city) == "") {
    $htmlcontent2 = "
     <!-- Why Choose Professional Movers -->
         <div class='city-content-card mt-4'>
-          <h3 class='city-section-title-sm'>Why Experienced Movers in  $city Make Relocation Easier</h3>
-          <p>Professional relocation is about timing, coordination, and packing quality. Fragile kitchen items? Packed separately. Glass tables? Corner protected. Washing machine installation? Done carefully after unloading.</p>
-          <p>A trained mover in <strong> $city</strong> understands apartment restrictions, society permissions, local transport timing, and road conditions — without unnecessary delays. Our staff uses lifting belts, furniture sliders, and layered wrapping for delicate items.</p>
-          <p>We keep pricing fair: transparent quotations, no hidden loading charges, and clear discussion before booking is confirmed.</p>
+          <h4 class='city-section-title-sm'>What People Usually Notice After a Successful Move</h4>
+          <p>Most customers tell us the same thing after shifting - they wish they had worried less. Before moving day, everything feels like a big task. There are cartons everywhere, calls to make, and plenty of small details to manage. But once the move is completed properly, people often realize the process was much easier than they expected.</p>
 
       
         </div>

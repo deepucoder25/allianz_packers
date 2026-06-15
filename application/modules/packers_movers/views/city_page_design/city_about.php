@@ -4,55 +4,58 @@ include 'city_content.php';
 
 // Dynamic FAQS Configuration Array
 $faqs = [
-  ["q" => "How do you ensure the safety of my belongings?",
-   "a" => "We use high-quality packing materials, trained professionals, and modern handling techniques to ensure the safety of your items during the entire transit.",
+  ["q" => "How Much Do Packers and Movers Charge in $city?",
+   "a" => "Packers and movers charges in $city depend on the volume of goods, distance, packing requirements, floor level, and vehicle type. Every move is different, so costs vary. Contacting the moving company with your requirements is the best way to get an accurate quotation.",
    "icon" => "bi-shield-fill-check"],
-  ["q" => "Do you provide insurance for goods transportation?",
-   "a" => "Yes, we offer comprehensive goods-in-transit insurance options to cover any unforeseen situations during transportation.",
+  ["q" => "How Many Days Before Shifting Should I Book Movers?",
+   "a" => "Yes, most professional packers and movers provide packing materials as part of their service. These may include carton boxes, bubble wrap, packing paper, foam sheets, and protective covers to help keep household and office items safe during transportation.",
    "icon" => "bi-shield-check"],
-  ["q" => "How long does it take to complete a move?",
-   "a" => "Local moves usually take 4-8 hours depending on size, while domestic or long-distance moves take 2-5 days depending on the distance.",
+  ["q" => "Can I Move Only a Few Items?",
+   "a" => "Yes, you can move only a few items if required. Many customers relocate furniture, appliances, cartons, or office equipment without shifting an entire household. Packers and movers can arrange transportation based on the number and type of items being moved.",
    "icon" => "bi-clock"],
-  ["q" => "Can you help with packing and unpacking?",
-   "a" => "Absolutely! We provide end-to-end packing and unpacking services using high-grade materials and box systems.",
+  ["q" => "How Long Does Local Shifting Take?",
+   "a" => "<b>Local shifting in $city</b> is often completed on the same day. The exact time depends on the quantity of goods, packing requirements, distance between locations, traffic conditions, and accessibility at both the pickup and delivery points.",
    "icon" => "bi-box-seam"],
-  ["q" => "Do you offer interstate and international moving services?",
-   "a" => "Yes, we have a robust national network for interstate moves and offer secure international shipping options.",
-   "icon" => "bi-globe"]
+  ["q" => "How Do I Choose a Reliable Packers and Movers Company?",
+   "a" => "Look for a company with verified customer reviews, transparent pricing, professional packing methods, and clear communication. Asking for a written quotation and understanding the services included can help avoid confusion later.",
+   "icon" => "bi-globe"],
+  ["q" => "Can Packers and Movers Help With Office Relocation?",
+   "a" => "Yes. Professional movers can handle office furniture, computers, documents, workstations, and equipment while minimizing disruption to business operations.",
+   "icon" => "bi-people-fill"]
 ];
 
 // Dynamic Reviews Configuration Array
 $reviews = [
   [
     "stars" => 5,
-    "text" => "$company3 made our home shifting so smooth and hassle-free. Everything arrived on time and in perfect condition.",
-    "name" => "Rahul Mehta",
-    "city" => "Mumbai",
-    "initials" => "RM",
+    "text" => "I was honestly worried about moving because we had a lot of furniture and kitchen items. The team started early in the morning and finished before evening. The best part was that I didn't have to keep reminding anyone what to do.",
+    "name" => "Rahul Sharma",
+    "city" => "Home Shifting",
+    "initials" => "RS",
     "grad" => "grad-1"
   ],
   [
     "stars" => 5,
-    "text" => "Very professional team! They packed everything with care and handled our move with excellent coordination.",
-    "name" => "Priya Sharma",
-    "city" => "Bangalore",
-    "initials" => "PS",
+    "text" => "We shifted our office on a weekday and expected work to get affected. It didn't happen. The staff handled the desks, systems, and files properly. By the next morning, most of our team was working as usual.",
+    "name" => "Neha Gupta",
+    "city" => "Office Relocation",
+    "initials" => "NG",
     "grad" => "grad-2"
   ],
   [
     "stars" => 5,
-    "text" => "Great experience from start to finish. The team was punctual, polite, and very efficient. Highly recommended!",
-    "name" => "Amit Verma",
-    "city" => "Delhi",
-    "initials" => "AV",
+    "text" => "This was my first time transporting a car, so I had a few doubts. The vehicle reached without any issue, and the condition was exactly the same as when it was picked up. That was a relief.",
+    "name" => "Amit Kumar",
+    "city" => "Car Transportation",
+    "initials" => "AK",
     "grad" => "grad-3"
   ],
   [
     "stars" => 5,
-    "text" => "Shifted my flat inside " . $city . ". They arrived at 8 AM sharp and finished packing faster than expected. No damage to wooden furniture.",
-    "name" => "Sandeep Verma",
-    "city" => $city,
-    "initials" => "SV",
+    "text" => "I wasn't moving an entire house, just a few large items and some boxes. Even then, the team treated the job seriously. The work was completed faster than I expected and nothing was misplaced.",
+    "name" => "Priya Verma",
+    "city" => "Local Shifting",
+    "initials" => "PV",
     "grad" => "grad-4"
   ]
 ];
@@ -72,13 +75,8 @@ $reviews = [
           <div class="row align-items-center">
             <div class="col-md-7">
               <div class="banner-eyebrow">About Us</div>
-              <h3 class="banner-title">Making Every Move Simple, Safe & Stress-Free</h3>
-              <p class="banner-desc"><?= $company3 ?> has been a trusted name in the relocation
-                industry for over a decade. We combine experienced professionals, modern equipment, and a customer-first
-                approach to deliver seamless moving experiences.</p>
-              <a href="<?= site_url('about-us') ?>" class="banner-btn">
-                Know More About Us <i class="bi bi-arrow-right"></i>
-              </a>
+              <h3 class="banner-title">Best Packers and Movers in <?= $city ?></h3>
+              <?= $about_content; ?>
             </div>
             <div class="col-md-5 mt-4 mt-md-0">
               <div class="banner-image-wrap">
@@ -86,6 +84,7 @@ $reviews = [
                   alt="About <?= $company3 ?>" class="img-fluid rounded-4" loading="lazy">
               </div>
             </div>
+            <div class="col-12"><?= $about_content1; ?></div>
           </div>
           <!-- Features Row Card -->
           <div class="city-content-card mt-4">
@@ -144,8 +143,8 @@ $reviews = [
 
           <!-- Eyebrow + Heading -->
           <div class="pm-city-section-eyebrow">Top Rated Relocation</div>
-          <h2 class="pm-city-section-title">
-            <span class="pm-city-accent"><?= $city ?></span> Packers and Movers
+          <h2 class="pm-city-section-title">A Small Example From One of Our Recent Moves in
+            <span class="pm-city-accent"> <?= $city ?></span>
           </h2>
 
           <div class="city-prose">
