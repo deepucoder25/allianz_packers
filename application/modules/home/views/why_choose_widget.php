@@ -7,7 +7,7 @@
       <!-- Left Column: Image with Experience Badge -->
       <div class="col-lg-6 col-12">
         <div class="choose-image-wrapper position-relative">
-          <img src="<?= base_url('assets/images/services_modules/img2.jpg') ?>" class="choose-main-img w-100 img-fluid" alt="Why Choose <?= $company3; ?>" loading="lazy">
+          <img src="<?= base_url('assets/images/services_modules/img2.jpg') ?>" class="choose-main-img w-100 img-fluid" alt="Why Choose <?= $company3 ?>" loading="lazy">
           
           <!-- Decorative Background Frame -->
           <div class="choose-image-frame"></div>
