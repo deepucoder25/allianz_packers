@@ -60,6 +60,20 @@ class Contact extends MX_Controller
             }
         }
     }
+    function delete_booking()
+    {
+        if (isset($_GET['id']) && $_GET['id'])
+        {
+            $where['id']=$_GET['id'];
+            $object=json_encode($this->mdl_contact->view_book($where,"*")->result());
+            $data_title= "Booking Details Delete";
+            
+            $this->load->module("logs");
+            if ($this->logs->add_data($data_title,$object)) {
+                echo $this->mdl_contact->delete_booking($where);
+            }
+        }
+    }
 
     function update_booking()
     {

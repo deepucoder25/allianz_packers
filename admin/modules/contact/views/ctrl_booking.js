@@ -53,5 +53,27 @@ app.controller('ctrl_booking',function($scope,$http){
 			}
 		});
 	};
+
+	$scope.delete_booking=function(id)
+	{
+		if(confirm("Deleting Booking may hamper your data associated with it."))
+		{
+			if(confirm("Are you Sure to DELETE ??"))
+			{
+				$http.get("contact/delete_booking?id="+id).success(function(data){
+					console.log(data);
+					if(data=="1")
+					{
+						messages("success", "Success!","Booking Deleted Successfully", 3000);
+					}
+					else
+					{
+						messages("danger", "Warning!","Booking not Deleted", 4000);
+					}
+					$scope.loader();
+				})
+			}
+		}
+	}
 	
 });

@@ -21,6 +21,7 @@
 						<th>Category</th>
                         <th>Message</th>
 						<th>Timestamp</th>
+						<th style="width:100px">Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -31,6 +32,11 @@
 				        <td>{{y.category}}</td>
 				        <td>{{y.message}}</td>
 						<td>{{y.timestamp}}</td>
+						<td>
+							<button class="btn btn-xs btn-danger" ng-click="delete_data(y.id)">
+								<i class="fa fa-trash"></i> Delete
+							</button>
+						</td>
  					</tr>
 				</tbody>
 			</table>

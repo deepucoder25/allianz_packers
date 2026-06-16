@@ -49,6 +49,12 @@ class Mdl_contact extends CI_Model
         $a=$this->db->update("bookings",$data);
         return $this->db->affected_rows($a);
     }
+    function delete_booking($where)
+    {
+        $this->db->where($where);
+        $a=$this->db->delete("bookings");
+        return $this->db->affected_rows($a);
+    }
     
 }
 ?>
