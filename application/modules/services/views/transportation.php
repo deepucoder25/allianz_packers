@@ -121,6 +121,31 @@
                             fuel, secure the car properly, and stay in touch until it reaches the destination. For us,
                             the job isn't finished until you’ve checked the car and signed off.</p>
                     </div>
+                    <?php
+                    $office_faqs = [
+                        [
+                            'q' => "How long will it take?",
+                            'a' => 'It depends on the distance, but we will give you a realistic window. We do not like giving false promises.',
+                            'icon' => 'bi-clock'
+                        ],
+                        [
+                            'q' => 'Is it safe?',
+                            'a' => 'Enclosed carriers offer the best protection, especially for luxury vehicles. For standard sedans, our tie-down methods are industry-standard.',
+                            'icon' => 'bi-pc-display'
+                        ],
+                        [
+                            'q' => 'What about insurance?',
+                            'a' => 'We offer coverage options. Always check the policy details before finalizing, it’s worth the few extra minutes.',
+                            'icon' => 'bi-list-check'
+                        ],
+                        [
+                            'q' => 'How do I get a quote?',
+                            'a' => 'Just call us. We don’t have a complicated portal. Just a conversation about what you need and where it is going.',
+                            'icon' => 'bi-geo-alt'
+                        ]
+                    ];
+                    $this->load->view('packers_movers/city_page_design/city_faq', ['faqs' => $office_faqs]);
+                    ?>
                 </div>
             </div>
 

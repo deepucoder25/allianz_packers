@@ -157,6 +157,41 @@
                         <p>Once approved, documentation is completed before transportation begins. If a claim situation
                             arises, the necessary paperwork and support are provided throughout the process.</p>
                     </div>
+                    <?php
+                    $office_faqs = [
+                        [
+                            'q' => "What is Transit Insurance?",
+                            'a' => 'Transit Insurance provides financial protection against damage or loss of goods during transportation.',
+                            'icon' => 'bi-clock'
+                        ],
+                        [
+                            'q' => 'Is Transit Insurance mandatory?',
+                            'a' => 'No, but it is highly recommended for valuable household and commercial goods.',
+                            'icon' => 'bi-pc-display'
+                        ],
+                        [
+                            'q' => 'Does Transit Insurance cover interstate relocation?',
+                            'a' => 'Yes. Interstate moving insurance is one of the most common coverage options.',
+                            'icon' => 'bi-list-check'
+                        ],
+                        [
+                            'q' => 'Can electronics and appliances be insured?',
+                            'a' => 'Yes. Televisions, refrigerators, washing machines, computers, and similar items can generally be covered.',
+                            'icon' => 'bi-geo-alt'
+                        ],
+                        [
+                            'q' => 'How is the insurance premium calculated?',
+                            'a' => 'The premium is usually based on the declared value of goods and the selected coverage type.',
+                            'icon' => 'bi-list-check'
+                        ],
+                        [
+                            'q' => 'Who should consider Transit Insurance?',
+                            'a' => 'Families, businesses, vehicle owners, and anyone transporting valuable belongings over long distances.',
+                            'icon' => 'bi-geo-alt'
+                        ]
+                    ];
+                    $this->load->view('packers_movers/city_page_design/city_faq', ['faqs' => $office_faqs]);
+                    ?>
                 </div>
             </div>
 

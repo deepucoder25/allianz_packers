@@ -127,6 +127,32 @@
                                 Office Shifting Services</em>, don't focus only on the quotation. Ask about planning,
                             supervision and experience. Those factors usually determine how smoothly the move goes.</p>
                     </div>
+
+                    <?php
+                    $office_faqs = [
+                        [
+                            'q' => "How early should I book office shifts?",
+                            'a' => 'A week or two in advance is usually helpful, particularly for larger offices.',
+                            'icon' => 'bi-clock'
+                        ],
+                        [
+                            'q' => 'Do you handle computers and office electronics?',
+                            'a' => 'Yes. Packing methods are adjusted according to the equipment being moved.',
+                            'icon' => 'bi-pc-display'
+                        ],
+                        [
+                            'q' => 'Can office shifting be done on weekends?',
+                            'a' => 'Absolutely. Many companies prefer weekend relocation to avoid work disruption.',
+                            'icon' => 'bi-list-check'
+                        ],
+                        [
+                            'q' => 'Do you provide Office Shifting Near Me for local moves?',
+                            'a' => 'Yes, local and intercity office shifting projects are both handled.',
+                            'icon' => 'bi-geo-alt'
+                        ]
+                    ];
+                    $this->load->view('packers_movers/city_page_design/city_faq', ['faqs' => $office_faqs]);
+                    ?>
                 </div>
             </div>
 

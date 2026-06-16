@@ -93,6 +93,41 @@
                         <h6 class="fw-bold text-danger mb-2">Pricing Factors for Warehouse Service</h6>
                        <p>Transparent pricing is non-negotiable. We base our rates on the volume of goods, the duration of storage, and any special handling needs like climate control. You won’t find hidden fees here. We believe in providing value for your hard-earned money.</p>
                     </div>
+                    <?php
+                    $office_faqs = [
+                         [
+                            'q' => "Is my property insured while in storage?",
+                            'a' => 'Yes, we provide guidance on insurance options to protect your goods during the entire Warehouse Service period.',
+                            'icon' => 'bi-clock'
+                        ],
+                        [
+                            'q' => 'How do I access my stored items?',
+                            'a' => 'You can schedule a visit by calling us 24 hours in advance, ensuring our team is ready to assist you.',
+                            'icon' => 'bi-pc-display'
+                        ],
+                        [
+                            'q' => 'Do you offer Warehouse Service Near Me for short periods?',
+                            'a' => 'Absolutely. We offer flexible plans starting from a single month to accommodate your specific timeline.',
+                            'icon' => 'bi-list-check'
+                        ],
+                        [
+                            'q' => 'How is pricing calculated for Warehouse Service?',
+                            'a' => 'Costs depend on the total volume of your items and the type of storage unit selected.',
+                            'icon' => 'bi-geo-alt'
+                        ],
+                        [
+                            'q' => 'Is the facility secure?',
+                            'a' => 'We use 24/7 CCTV monitoring and professional security personnel to maintain a safe environment.',
+                            'icon' => 'bi-list-check'
+                        ],
+                        [
+                            'q' => 'Can I store delicate items like paintings?',
+                            'a' => 'Yes, we provide specialized handling and climate control for fragile items.',
+                            'icon' => 'bi-geo-alt'
+                        ]
+                    ];
+                    $this->load->view('packers_movers/city_page_design/city_faq', ['faqs' => $office_faqs]);
+                    ?>
                 </div>
             </div>
 

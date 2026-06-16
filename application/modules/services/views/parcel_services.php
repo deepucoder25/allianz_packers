@@ -125,6 +125,36 @@
                             the items. You won’t find hidden fees here. We believe in providing value for your money.
                         </p>
                     </div>
+                    <?php
+                    $office_faqs = [
+                        [
+                            'q' => "How do I track my shipment?",
+                            'a' => 'We provide a unique tracking number for every Parcel Service order, which you can check on our portal anytime.',
+                            'icon' => 'bi-clock'
+                        ],
+                        [
+                            'q' => 'What items are restricted?',
+                            'a' => 'We follow strict safety guidelines; please check with our team about hazardous or prohibited materials before booking.',
+                            'icon' => 'bi-pc-display'
+                        ],
+                        [
+                            'q' => 'Do you offer Parcel Service Near Me for heavy items?',
+                            'a' => 'Absolutely. We specialize in both small parcels and heavy-weight commercial shipments.',
+                            'icon' => 'bi-list-check'
+                        ],
+                        [
+                            'q' => 'How is the delivery timeline estimated?',
+                            'a' => 'We provide an estimated arrival date based on the distance and the service level you select.',
+                            'icon' => 'bi-geo-alt'
+                        ],
+                        [
+                            'q' => 'Is my parcel insured?',
+                            'a' => 'Yes, we provide multiple insurance coverage levels to protect your goods during the entire Parcel Service journey.',
+                            'icon' => 'bi-list-check'
+                        ]
+                    ];
+                    $this->load->view('packers_movers/city_page_design/city_faq', ['faqs' => $office_faqs]);
+                    ?>
                 </div>
             </div>
 

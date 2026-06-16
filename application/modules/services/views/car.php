@@ -137,6 +137,36 @@
                             Customers place trust in the process too.</p>
 
                     </div>
+                    <?php
+                    $office_faqs = [
+                        [
+                            'q' => "How Long Does Car Transportation Take?",
+                            'a' => 'Delivery timelines depend on distance, route availability, weather conditions, and destination location. Most intercity vehicle transportation projects are completed within a few days, while longer routes may require additional transit time.',
+                            'icon' => 'bi-clock'
+                        ],
+                        [
+                            'q' => 'Can luxury cars be transported safely?',
+                            'a' => 'Yes. There are special care procedures for shipping luxury and expensive vehicles.',
+                            'icon' => 'bi-pc-display'
+                        ],
+                        [
+                            'q' => 'Do you offer door-to-door delivery?',
+                            'a' => 'Yes, in most locations. However, accessibility will be verified prior to confirmation of any booking request.',
+                            'icon' => 'bi-list-check'
+                        ],
+                        [
+                            'q' => 'How can I book Car Transportation Services Near Me?',
+                            'a' => 'Simply contact <?= $company3 ?> for a vehicle assessment and customised quotation.',
+                            'icon' => 'bi-geo-alt'
+                        ],
+                        [
+                            'q' => 'Is insurance available?',
+                            'a' => 'Insurance options can be discussed based on transportation requirements.',
+                            'icon' => 'bi-geo-alt'
+                        ]
+                    ];
+                    $this->load->view('packers_movers/city_page_design/city_faq', ['faqs' => $office_faqs]);
+                    ?>
                 </div>
             </div>
 
