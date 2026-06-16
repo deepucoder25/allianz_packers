@@ -47,7 +47,6 @@ $city = isset($city) ? $city : (isset($addressRegion) ? $addressRegion : 'India'
                     ['slug' => 'office-shifting',        'name' => 'Office Relocation',      'icon' => 'bi-building-fill'],
                     ['slug' => 'car-transportation',     'name' => 'Car Transportation',     'icon' => 'bi-car-front-fill'],
                     ['slug' => 'transportation-service', 'name' => 'Transportation Service', 'icon' => 'bi-truck'],
-                    ['slug' => 'door-to-door-moving',    'name' => 'Door to Door Moving',    'icon' => 'bi-door-open-fill'],
                     ['slug' => 'warehouse-services',     'name' => 'Warehouse & Storage',     'icon' => 'bi-box-seam-fill'],
                     ['slug' => 'parcel-services',        'name' => 'Parcel Services',        'icon' => 'bi-gift-fill'],
                     ['slug' => 'insurance',              'name' => 'Transit Insurance',      'icon' => 'bi-shield-fill-check'],

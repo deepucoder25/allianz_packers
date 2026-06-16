@@ -47,15 +47,6 @@ class Services extends MX_Controller
         echo Modules::run('template/layout2', $data);
     }
 
-    function door_to_door()
-    {
-        $data['title'] = "Seamless Door to Door Shifting Services | " . $this->comp['company3'];
-        $data['description'] = "Get secure door-to-door moving and packaging services from " . $this->comp['company3'] . ". Complete packing, loading, transport, and unloading at your doorstep.";
-        $data['module'] = "services";
-        $data['view_file'] = "door_to_door";
-        echo Modules::run('template/layout2', $data);
-    }
-
     function warehouse()
     {
         $data['title'] = "Secure Warehousing & Storage Services | " . $this->comp['company3'];

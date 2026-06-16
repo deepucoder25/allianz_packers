@@ -53,7 +53,6 @@
             <li><a href="<?= site_url('office-shifting') ?>"><i class="bi bi-chevron-right"></i> Office Shifting</a></li>
             <li><a href="<?= site_url('car-transportation') ?>"><i class="bi bi-chevron-right"></i> Car Transportation</a></li>
             <li><a href="<?= site_url('transportation-service') ?>"><i class="bi bi-chevron-right"></i> Transportation Service</a></li>
-            <li><a href="<?= site_url('door-to-door-moving') ?>"><i class="bi bi-chevron-right"></i> Door to Door Moving</a></li>
             <li><a href="<?= site_url('warehouse-services') ?>"><i class="bi bi-chevron-right"></i> Warehouse Services</a></li>
             <li><a href="<?= site_url('parcel-services') ?>"><i class="bi bi-chevron-right"></i> Parcel Services</a></li>
             <li><a href="<?= site_url('insurance') ?>"><i class="bi bi-chevron-right"></i> Transit Insurance</a></li>

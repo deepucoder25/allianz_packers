@@ -12,7 +12,7 @@
       $active_tab = 'home';
   } elseif ($class === 'about' || in_array($segment1, ['about-us', 'why-choose-us', 'faqs', 'testimonials'])) {
       $active_tab = 'about';
-  } elseif ($class === 'services' || in_array($segment1, ['our-services', 'home-relocation', 'office-shifting', 'car-transportation', 'transportation-service', 'door-to-door-moving', 'warehouse-services', 'parcel-services', 'insurance'])) {
+  } elseif ($class === 'services' || in_array($segment1, ['our-services', 'home-relocation', 'office-shifting', 'car-transportation', 'transportation-service', 'warehouse-services', 'parcel-services', 'insurance'])) {
       $active_tab = 'services';
   } elseif ($class === 'packers_movers' || $segment1 === 'our-branches') {
       $active_tab = 'locations';
@@ -116,7 +116,6 @@
             <li><a class="dropdown-item<?= $segment1 === 'office-shifting' ? ' active' : '' ?>" href="<?= site_url('office-shifting') ?>">Office Shifting</a></li>
             <li><a class="dropdown-item<?= $segment1 === 'car-transportation' ? ' active' : '' ?>" href="<?= site_url('car-transportation') ?>">Car Transportation</a></li>
             <li><a class="dropdown-item<?= $segment1 === 'transportation-service' ? ' active' : '' ?>" href="<?= site_url('transportation-service') ?>">Transportation Service</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'door-to-door-moving' ? ' active' : '' ?>" href="<?= site_url('door-to-door-moving') ?>">Door to Door Moving</a></li>
             <li><a class="dropdown-item<?= $segment1 === 'warehouse-services' ? ' active' : '' ?>" href="<?= site_url('warehouse-services') ?>">Warehouse Services</a></li>
             <li><a class="dropdown-item<?= $segment1 === 'parcel-services' ? ' active' : '' ?>" href="<?= site_url('parcel-services') ?>">Parcel Services</a></li>
             <li><a class="dropdown-item<?= $segment1 === 'insurance' ? ' active' : '' ?>" href="<?= site_url('insurance') ?>">Transit Insurance</a></li>
@@ -222,7 +221,6 @@
               <li><a href="<?= site_url('office-shifting') ?>" class="<?= $segment1 === 'office-shifting' ? 'active' : '' ?>">Office Shifting</a></li>
               <li><a href="<?= site_url('car-transportation') ?>" class="<?= $segment1 === 'car-transportation' ? 'active' : '' ?>">Car Transportation</a></li>
               <li><a href="<?= site_url('transportation-service') ?>" class="<?= $segment1 === 'transportation-service' ? 'active' : '' ?>">Transportation Service</a></li>
-              <li><a href="<?= site_url('door-to-door-moving' ) ?>" class="<?= $segment1 === 'door-to-door-moving' ? 'active' : '' ?>">Door to Door Moving</a></li>
               <li><a href="<?= site_url('warehouse-services') ?>" class="<?= $segment1 === 'warehouse-services' ? 'active' : '' ?>">Warehouse Services</a></li>
               <li><a href="<?= site_url('parcel-services') ?>" class="<?= $segment1 === 'parcel-services' ? 'active' : '' ?>">Parcel Services</a></li>
               <li><a href="<?= site_url('insurance') ?>" class="<?= $segment1 === 'insurance' ? 'active' : '' ?>">Transit Insurance</a></li>

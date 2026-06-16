@@ -71,13 +71,6 @@
                     'desc' => 'Fast, safe, and commercial goods transportation service. A huge fleet of clean container trucks handles logistics with tracking.'
                 ],
                 [
-                    'slug' => 'door-to-door-moving',
-                    'name' => 'Door to Door Moving',
-                    'icon' => 'bi-door-open',
-                    'image' => 'local_shifting.jpg',
-                    'desc' => 'Comprehensive shifting solutions covering complete doorstep-to-doorstep transition, packing, transporting, loading, and setup.'
-                ],
-                [
                     'slug' => 'warehouse-services',
                     'name' => 'Warehouse Services',
                     'icon' => 'bi-box-seam',

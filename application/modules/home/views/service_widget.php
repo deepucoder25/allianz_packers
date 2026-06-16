@@ -31,7 +31,7 @@ $services_list = [
     [
         'title_1' => 'Car',
         'title_2' => 'Transportation',
-        'desc' => 'Safe and timely car transportation across India with door-to-door delivery.',
+        'desc' => 'Safe and timely car transportation across India.',
         'slug' => 'car-transportation',
         'image' => 'img4.jpg',
         'icon' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -56,14 +56,16 @@ $services_list = [
                 </svg>'
     ],
     [
-        'title_1' => 'Door to Door',
-        'title_2' => 'Moving',
-        'desc' => 'Quick and reliable local moving services in your city, whenever you need us.',
-        'slug' => 'door-to-door-moving',
-        'image' => 'local_shifting.jpg',
+        'title_1' => 'Transportation',
+        'title_2' => 'Service',
+        'desc' => 'Fast, safe, and commercial goods transportation service with real-time tracking.',
+        'slug' => 'transportation-service',
+        'image' => 'img1.jpg',
         'icon' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
+                  <path d="M10 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6v14z" />
+                  <path d="M14 17h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-6v10z" />
+                  <circle cx="7.5" cy="17.5" r="2.5" />
+                  <circle cx="16.5" cy="17.5" r="2.5" />
                 </svg>'
     ],
     [
