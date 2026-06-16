@@ -4,11 +4,10 @@ app.controller('ctrl_blog',function($scope,$http){
 	
 	$scope.loader=function(){
 		$http.get("blog/view_data").success(function(data){
-			
 			$scope.datadb=data;
 		})
 	}
-	 $('#DOB1').datepicker();
+	$('#DOB1').datepicker();
 	
 	$scope.loader();
 	$scope.showSeo=false;
@@ -16,6 +15,8 @@ app.controller('ctrl_blog',function($scope,$http){
 	$scope.update_call=function(y){
 		$scope.x=y;
 		$scope.showSeo=true;
+		$scope.step='basic';
+		window.scrollTo(0,0);
 	}
 	$scope.slugify=function(){
 		if(!$scope.x || !$scope.x.title) return;
@@ -30,6 +31,7 @@ app.controller('ctrl_blog',function($scope,$http){
 	$scope.filter_new=function(){
 		$scope.x={};
 		$scope.showSeo=false;
+		$scope.step='basic';
 	}
 	
 	$scope.options = {
@@ -45,14 +47,17 @@ app.controller('ctrl_blog',function($scope,$http){
 		        ]
 		  };
 	
-	
 	$scope.save_data=function(y){
-		$('#form1').ajaxForm({
+		$('#submitbtn').attr('disabled',true);
+		var formData = new FormData(document.getElementById('form1'));
+		$.ajax({
 			type: "POST",
 			url: "blog/save_data",
+			data: formData,
+			contentType: false,
+			processData: false,
 			beforeSend: function()
 			{
-				$('#submitbtn').attr('disabled',true);
 				$('#webprogress').css('display','inline');
 			},
 			success: function(data){
@@ -63,6 +68,7 @@ app.controller('ctrl_blog',function($scope,$http){
 					$scope.loader();
 					messages("success", "Success!","blog Saved Successfully", 3000);
 					$scope.filter_new();
+					document.getElementById('image') && (document.getElementById('image').value='');
 				}
 				else if(data=="0")
 				{
@@ -74,9 +80,15 @@ app.controller('ctrl_blog',function($scope,$http){
 				}
 				$('#webprogress').css('display','none');
 				$('#submitbtn').attr('disabled',false);
+			},
+			error: function(xhr, status, error) {
+				messages("danger", "Error!", "Server Error: " + error, 4000);
+				$('#webprogress').css('display','none');
+				$('#submitbtn').attr('disabled',false);
 			}
 		});
 	}
+
 	$scope.delete_data=function(id)
 	{
 		if(confirm("Deleting Blog may hamper your data associated with it."))

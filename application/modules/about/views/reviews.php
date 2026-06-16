@@ -24,17 +24,19 @@
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <?php if (!empty($reviews)): ?>
-                <?php foreach (array_reverse($reviews) as $r): ?>
-                    <div class="about-review-card">
-                        <div class="about-review-rating">
-                            <?php for($i=1; $i<=5; $i++): ?>
-                                <i class="bi bi-star<?= $i <= ($r['rating'] ?? 5) ? '-fill' : '' ?>"></i>
-                            <?php endfor; ?>
-                        </div>
-                        <div class="about-review-text">
-                            "<?= htmlspecialchars($r['review']) ?>"
+        <?php if (!empty($reviews)): ?>
+            <?php foreach (array_reverse($reviews) as $r): ?>
+                <div class="col-md-6 mb-4 d-flex">
+                    <div class="about-review-card w-100">
+                        <div class="about-review-content-body">
+                            <div class="about-review-rating">
+                                <?php for($i=1; $i<=5; $i++): ?>
+                                    <i class="bi bi-star<?= $i <= ($r['rating'] ?? 5) ? '-fill' : '' ?>"></i>
+                                <?php endfor; ?>
+                            </div>
+                            <div class="about-review-text">
+                                "<?= htmlspecialchars($r['review']) ?>"
+                            </div>
                         </div>
                         <div class="about-review-author">
                             <div class="about-author-avatar">
@@ -46,14 +48,16 @@
                             </div>
                         </div>
                     </div>
-                <?php endforeach; ?>
-            <?php else: ?>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="col-lg-8">
                 <div class="text-center p-5 bg-light rounded-4">
                     <i class="bi bi-chat-left-dots display-1 text-muted mb-3 d-block"></i>
                     <p class="text-muted fs-5">No reviews yet. Be the first to share your experience!</p>
                 </div>
-            <?php endif; ?>
-        </div>
+            </div>
+        <?php endif; ?>
     </div>
 </div>
 

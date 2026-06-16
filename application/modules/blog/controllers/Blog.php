@@ -14,9 +14,24 @@ class Blog extends MX_Controller {
     }
 
     private function loadBlogs() {
-        $path = FCPATH . 'admin_data/blogs.json';
-        if (!file_exists($path)) return [];
-        return json_decode(file_get_contents($path), true) ?: [];
+        $this->load->database();
+        $query = $this->db->order_by('b_id', 'asc')->get('blog');
+        $blogs = [];
+        foreach ($query->result() as $row) {
+            $blogs[] = [
+                "id" => $row->b_id,
+                "title" => $row->title,
+                "slug" => $row->slug,
+                "date" => $row->date,
+                "time" => $row->time,
+                "author" => $row->author,
+                "image" => $row->image,
+                "description" => $row->description,
+                "content" => $row->description, // Mapped for view.php
+                "created_at" => $row->date . ' ' . $row->time
+            ];
+        }
+        return $blogs;
     }
 
     function index() {
@@ -71,7 +86,6 @@ class Blog extends MX_Controller {
     }
 
     function read($slug = '') {
-        // die("DEBUG: Slug received: " . $slug);
         $this->load->helper('text');
 
         $all_blogs = $this->loadBlogs();
@@ -81,7 +95,6 @@ class Blog extends MX_Controller {
             $custom_slug = $b['slug'] ?? '';
             $auto_slug = $this->slugify($b['title']);
             
-            // Handle CI's translate_uri_dashes by replacing _ back to - in incoming slug
             $search_slug = str_replace('_', '-', $slug);
 
             if (
@@ -102,7 +115,7 @@ class Blog extends MX_Controller {
             $data['description'] = word_limiter(strip_tags($selected_blog->description), 200);
             
             $image_file = $selected_blog->image;
-            $data['img'] = ($image_file && file_exists(FCPATH . 'uploads/blogs/' . $image_file)) ? base_url('uploads/blogs/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
+            $data['img'] = ($image_file && file_exists(FCPATH . 'assets/uploads/blog/' . $image_file)) ? base_url('assets/uploads/blog/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
             
             $data['module'] = "blog";
             $data['view_file'] = "view"; 

@@ -6,13 +6,14 @@
 .blog-card:hover img { transform: scale(1.05); }
 .blog-title-link { transition: color 0.2s ease; line-height: 1.4; }
 .blog-title-link:hover { color: #ffb800 !important; }
-.blog-card .btn:hover { background: #052c6e !important; }
+.blog-card .btn:hover { background: #052c6e !important; color: #ffffff !important; }
 
 .blog-title-highlight { color:#073c91; }
 .blog-card-img { height: 240px; object-fit: cover; width: 100%; transition: transform 0.4s ease; }
 .blog-date-badge { font-size: 0.9rem; }
 .blog-icon-primary { color: #073c91; }
 .blog-btn-primary { background: #073c91; color: #fff; transition: background 0.3s ease; }
+.blog-btn-primary:hover { background: #052c6e !important; color: #ffffff !important; }
 
 .blog-post-link-item:hover .blog-post-title { color: #ffb800 !important; }
 .blog-post-link-item:hover img { transform: scale(1.05); }

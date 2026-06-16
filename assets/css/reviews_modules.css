@@ -1,4 +1,4 @@
-﻿/* reviews_modules.css */
+/* reviews_modules.css */
 
 /* reviews.php and single_review.php */
 .reviews-service-page {
@@ -23,12 +23,17 @@
 .reviews-header-title {
     font-size: 1.5rem;
     font-weight: 800;
-    color: #001333;
+    color: var(--brand-dark);
 }
 .reviews-write-btn {
-    background: #0a4ebd;
-    border-color: #0a4ebd;
+    background: var(--brand-red);
+    border-color: var(--brand-red);
     font-weight: 700;
+    transition: var(--transition-smooth);
+}
+.reviews-write-btn:hover {
+    background: var(--brand-red-hover);
+    border-color: var(--brand-red-hover);
 }
 .reviews-header-line {
     position: absolute;
@@ -36,14 +41,14 @@
     left: 0;
     width: 60px;
     height: 3px;
-    background: #ff6600;
+    background: var(--brand-red);
 }
 .reviews-fade-in {
     visibility: visible;
     animation: fadeInUp 0.6s ease-in-out;
 }
 .reviews-write-review-btn {
-    background-color: #e21b22;
+    background-color: var(--brand-red);
     color: #fff;
     border: none;
     width: 100%;
@@ -51,6 +56,10 @@
     font-weight: bold;
     border-radius: 5px;
     padding: 10px;
+    transition: var(--transition-smooth);
+}
+.reviews-write-review-btn:hover {
+    background-color: var(--brand-red-hover);
 }
 .reviews-single-review {
     display: flex;
@@ -79,11 +88,11 @@
     flex-grow: 1;
 }
 .reviews-review-author {
-    color: #f4854a;
+    color: var(--brand-red);
     font-size: 0.9rem;
 }
 .reviews-author-name {
-    background-color: #000;
+    background-color: var(--brand-dark);
     padding: 3px;
     border-radius: 5px;
     color: #fff;
@@ -120,7 +129,7 @@
     margin: 20px auto;
 }
 .reviews-read-more-btn {
-    background-color: #007bff;
+    background-color: var(--brand-red);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -129,10 +138,10 @@
     margin-top: 10px;
     cursor: pointer;
     align-self: flex-start;
-    transition: background-color 0.3s;
+    transition: var(--transition-smooth);
 }
 .reviews-read-more-btn:hover {
-    background-color: #0056b3;
+    background-color: var(--brand-red-hover);
 }
 
 /* single_review.php extra styles */
@@ -158,24 +167,28 @@
     }
 }
 .reviews-btn-write-review {
-    background:#f4854a;
-    color:white;
-    border:none;
-    width:100%;
-    font-size:100%;
-    font-weight:bold;
+    background: var(--brand-red);
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 100%;
+    font-weight: bold;
+    transition: var(--transition-smooth);
+}
+.reviews-btn-write-review:hover {
+    background: var(--brand-red-hover);
 }
 .reviews-author-badge {
-    color:white;
-    background-color:black;
-    padding:5px;
-    border-radius:5px;
+    color: white;
+    background-color: var(--brand-dark);
+    padding: 5px;
+    border-radius: 5px;
 }
 .reviews-float-right-span {
     float: right;
 }
 .reviews-star-saver-black {
-    color:black;
+    color: var(--brand-dark);
 }
 .reviews-title-black {
     font-weight: bold;
@@ -205,7 +218,7 @@
 
 /* reviewmodal.php */
 .reviews-modal-content {
-    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+    background: linear-gradient(107.2deg, var(--brand-dark) 10.6%, var(--brand-red) 91.1%);
 }
 .reviews-modal-title {
     color: white; 
@@ -226,7 +239,12 @@
     color:white;
 }
 .reviews-modal-submit {
-    background-color: #FBA707;
+    background-color: var(--brand-red);
+    color: white;
+    transition: var(--transition-smooth);
+}
+.reviews-modal-submit:hover {
+    background-color: var(--brand-red-hover);
 }
 .reviews-modal-clear {
     background-color: white; 
@@ -258,4 +276,226 @@
 .reviews-rating>input:checked~label,
 .reviews-rating>input:checked~label~label {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+/* ==========================================================
+   New Premium Design Styles for Public Reviews & Modal Form
+   ========================================================== */
+
+/* Header section on public reviews page */
+.about-review-header {
+    background: linear-gradient(135deg, var(--brand-dark) 0%, #2d2d2d 100%);
+    padding: 70px 0;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 50px;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+.about-review-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, color-mix(in srgb, var(--brand-red) 8%, transparent) 0%, transparent 60%);
+    pointer-events: none;
+}
+.about-review-header h1 {
+    font-size: 2.85rem;
+    font-weight: 850;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+.about-review-header p {
+    color: #94a3b8 !important;
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Call-to-action button */
+.about-btn-submit-inline {
+    background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-red-hover) 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 14px 40px !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    border-radius: 50px !important;
+    box-shadow: 0 6px 20px color-mix(in srgb, var(--brand-red) 30%, transparent) !important;
+    transition: var(--transition-smooth) !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+.about-btn-submit-inline:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 25px color-mix(in srgb, var(--brand-red) 45%, transparent) !important;
+    color: #ffffff !important;
+}
+.about-btn-submit-inline i {
+    font-size: 1.1rem;
+}
+
+/* Review cards */
+.about-review-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    border: 1px solid #e2e8f0;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.about-review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    border-color: var(--brand-red);
+}
+.about-review-rating {
+    margin-bottom: 15px;
+}
+.about-review-rating i {
+    color: #f59e0b;
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+.about-review-text {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-gray);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.about-review-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px dashed #e2e8f0;
+    padding-top: 20px;
+}
+.about-author-avatar {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-dark) 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px color-mix(in srgb, var(--brand-red) 25%, transparent);
+}
+.about-author-info h6 {
+    font-weight: 700;
+    color: var(--brand-dark);
+    margin: 0 0 2px 0;
+    font-size: 1.02rem;
+}
+.about-author-info span {
+    font-size: 0.82rem;
+    color: var(--text-gray);
+    opacity: 0.85;
+}
+
+/* ==========================================================
+   Review Submission Modal Form Styles
+   ========================================================== */
+.contact-review-modal-content {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+    overflow: hidden;
+}
+.contact-review-modal-title {
+    font-size: 1.5rem !important;
+    font-weight: 800 !important;
+    color: var(--brand-dark) !important;
+    letter-spacing: -0.5px;
+}
+.contact-review-form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-gray);
+    margin-bottom: 6px;
+    display: block;
+}
+.contact-review-form-control {
+    border: 1.5px solid #cbd5e1 !important;
+    border-radius: 12px !important;
+    padding: 11px 16px !important;
+    font-size: 0.95rem !important;
+    color: #1e293b !important;
+    background-color: #f8fafc !important;
+    transition: var(--transition-smooth) !important;
+}
+.contact-review-form-control:focus {
+    border-color: var(--brand-red) !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-red) 12%, transparent) !important;
+    outline: none;
+}
+.contact-rating-select {
+    display: flex;
+    gap: 8px;
+}
+.contact-rating-item {
+    font-size: 1.85rem;
+    color: #cbd5e1;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.contact-rating-item.active {
+    color: #f59e0b !important;
+}
+.contact-rating-item:hover {
+    transform: scale(1.15);
+}
+.contact-review-rating-wrap {
+    background: #f8fafc;
+    border: 1px solid #edf2f7;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+.contact-review-emoji {
+    font-size: 1.25rem;
+}
+.contact-review-number {
+    font-weight: 800;
+    color: var(--brand-dark);
+    font-size: 1.1rem;
+}
+.contact-review-total {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.contact-btn-submit-review {
+    background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-red-hover) 100%) !important;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border: none;
+    width: 100%;
+    padding: 13px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px color-mix(in srgb, var(--brand-red) 25%, transparent);
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+.contact-btn-submit-review:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px color-mix(in srgb, var(--brand-red) 35%, transparent);
+}
+.contact-btn-submit-review:active {
+    transform: translateY(0);
 }
