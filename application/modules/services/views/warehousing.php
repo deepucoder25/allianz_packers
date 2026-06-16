@@ -45,21 +45,25 @@
             <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Secure Household Goods &amp; Commercial Storage</h2>
-                    <p>
-                        Whether you are moving abroad, facing a delay in your new house keys, or running out of office archive space, storing your valuable belongings securely is crucial. At <strong><?= $company3 ?></strong>, we provide clean, spacious, and highly secure warehousing and storage units across India.
-                    </p>
-                    <p>
-                        Our storage centers are built to international safety standards. They feature 24/7 CCTV surveillance, fire prevention and detection systems, regular pest control cycles, and high-security perimeter gates. We offer flexible weekly, monthly, and yearly storage plans tailored to your budget.
-                    </p>
+                    <h2 class="service-section-title">Warehouse Service</h2>
+                    <p>Most people underestimate what goes into proper Warehouse Service. The difference between adequate and excellent? Experience, attention to detail, and the right approach. Whether you are shifting your home or need space for business inventory, you deserve a secure spot for your belongings.</p>
 
-                    <h3 class="service-section-title mt-5">Warehouse Safety Features</h3>
+<p><strong><?= $company3 ?></strong> provides Warehouse Service designed to give you peace of mind. You don't just need a room; you need a climate-controlled, pest-free, and highly monitored environment. Professional storage is about more than space. It helps protect furniture, household goods, business inventory, documents, and equipment from moisture, dust, pests, and unnecessary damage. They should remain in the exact condition you left them. If you’re searching for <b>Warehouse Services Near Me</b>, we’re here to help.</p>
+
+                    <h3 class="service-section-title mt-5">What’s Included in Our Warehouse Service</h3>
+                    <p>Our Warehouse Service is about more than just square footage. We take a systematic approach to protecting your goods.</p>
                     <ul class="service-features-list">
-                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>CCTV Surveillance:</strong> 24/7 continuous video recording and security guards on the premises.</span></li>
-                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Pest Control:</strong> Regular cycles of anti-termite and rodent control treatments.</span></li>
-                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Moisture Control:</strong> Well-ventilated, moisture-free storage rooms to prevent mold.</span></li>
-                        <li><i class="bi bi-check-circle-fill"></i> <span><strong>Detailed Inventory:</strong> We record and tag all items before storing them for easy retrieval.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span>Professional packing and crating</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span>Inventory tagging and tracking</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span>Climate-controlled storage units</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span>24/7 CCTV surveillance</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span>Regular pest control treatments</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span>Insurance documentation support</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span>Flexible short-term and long-term rental plans</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i> <span>Scheduled access for clients</span></li>
                     </ul>
+                    <h4 class="service-section-title mt-4">Why Choose Professional Warehouse Service</h4>
+                    <p>Yes, Warehouse Service requires investment, but here is why it’s worth it. Moving is already taxing, and you don’t need the added stress of worrying about your goods. Professional providers handle the logistics, security, and maintenance. We manage the heavy lifting so you don't have to. You'll find that the best <b>Warehouse Services</b> are those that prioritize item safety above all else. For instance, when handling expensive electronics or wooden furniture, we use specific anti-moisture padding to stop damage before it starts (a small detail that makes a massive difference).</p>
 
                     <h3 class="service-section-title mt-5">Our Storage Process</h3>
                     <div class="service-process-timeline">
@@ -80,12 +84,14 @@
                             <p>When you are ready, notify us, and we will deliver, unload, and set up your items at your new address.</p>
                         </div>
                     </div>
+                    <span class="fs-4 fw-bold">Our Warehouse Service Process</span>
+                    <p>We begin by assessing exactly what you need to store. Our team visits your site to survey the items, ensuring we have the right space ready. Once we finalize the inventory list, we handle the professional packing at your location. We tag every single box.</p>
+
+<p>We then transport your goods to our facility. Upon arrival, we place your items in your assigned unit, creating a digital record for you to review. You can visit or request retrieval anytime. It’s that simple.</p>
 
                     <div class="p-4 bg-light border-start border-5 border-danger rounded-3 mt-5">
-                        <h5 class="fw-bold text-danger mb-2">Short &amp; Long Term Storage</h5>
-                        <p class="mb-0 text-muted small">
-                            We provide flexible options for all storage needs, whether for a few weeks or several years. All stored items are eligible for comprehensive fire and transit damage coverage.
-                        </p>
+                        <h6 class="fw-bold text-danger mb-2">Pricing Factors for Warehouse Service</h6>
+                       <p>Transparent pricing is non-negotiable. We base our rates on the volume of goods, the duration of storage, and any special handling needs like climate control. You won’t find hidden fees here. We believe in providing value for your hard-earned money.</p>
                     </div>
                 </div>
             </div>
